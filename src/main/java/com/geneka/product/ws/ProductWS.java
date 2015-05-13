@@ -104,7 +104,7 @@ public class ProductWS {
 		return "ok";
 	}
 	
-	@RequestMapping(value = "/saveProductImages", method = RequestMethod.POST)
+	/*@RequestMapping(value = "/saveProductImages", method = RequestMethod.POST)
 	public @ResponseBody String saveProductImages(@RequestBody String paramsCategories) throws Exception
 	{
 		Map<String, Object> attributesDef = new DefaultContextImpl();
@@ -124,7 +124,7 @@ public class ProductWS {
 			return e.getCause().toString();
 		}
 		return "ok";
-	}
+	}*/
 	
 	
 

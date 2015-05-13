@@ -19,6 +19,8 @@ public class Product {
 	private String description;
 	
 	private String code;
+
+	private Boolean state;
 	
 	private List<Category> categories;
 
@@ -71,5 +73,12 @@ public class Product {
 	public void setImages(List<Image> images) {
 		this.images = images;
 	}
-	
+
+	public Boolean getState() {
+		return state;
+	}
+
+	public void setState(Boolean state) {
+		this.state = state;
+	}
 }
