@@ -1,9 +1,6 @@
 package com.geneka.product.ws;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.geneka.common.util.DefaultContextImpl;
 import com.geneka.common.util.Tools;
 import com.geneka.model.Category;
-import com.geneka.model.User;
 import com.geneka.modelnosql.Image;
 import com.geneka.modelnosql.Product;
 import com.geneka.product.bs.ProductService;
@@ -48,7 +44,8 @@ public class ProductWS {
 		category.setId(1);
 		categories.add(category);
 		Image image = new Image();
-		image.setSource("sdfdfvzxcvxfvttyhbtyntyntntnytby");
+		image.setThumbnail("sdfdfvzxcvxfvttyhbtyntyntntnytby");
+		image.setFile("c:user.txt");
 		image.setId(1);
 		image.setName("name image");
 		List<Image> images = new ArrayList<>();
@@ -86,27 +83,34 @@ public class ProductWS {
 			product.setName((String) attributesDef.get("name"));
 			product.setCode((String) attributesDef.get("code"));
 			product.setActive((Boolean) attributesDef.get("active"));
-			Map<String, Object> categoriesMap = (Map) attributesDef.get("categories");
-			if(categoriesMap != null)
+			List<Map<String, Object>> lstCategories = (List) attributesDef.get("categories");
+			if(lstCategories != null)
 			{
 				List<Category> categories = new ArrayList<>();
-				Category category = new Category();
-				category.setId((Integer) categoriesMap.get("id"));
-				category.setDescription((String) categoriesMap.get("description"));
-				category.setName((String) categoriesMap.get("name"));
-
-				categories.add(category);
-
-				product.setCategories(categories);			
+				for (Map<String, Object> categoryMap : lstCategories)
+				{
+					Category category = new Category();
+					category.setId((Integer) categoryMap.get("id"));
+					category.setDescription((String) categoryMap.get("description"));
+					category.setName((String) categoryMap.get("name"));
+					category.setParentsId((Integer) categoryMap.get("parentsId"));
+					category.setValue((Integer) categoryMap.get("value"));
+					categories.add(category);
+				}
+				product.setCategories(categories);
 			}
-			String imagesJson = (String) attributesDef.get("images");
-			if(imagesJson != null)
+			List<Map<String, Object>> lstImages = (List)attributesDef.get("images");
+			if(lstImages != null)
 			{
 				List<Image> images = new ArrayList<>();
-				List listImage = Tools.deserializeFromJSon(imagesJson, List.class);
-				for(Object i : listImage)
+				for (Map<String, Object> imageMap : lstImages)
 				{
-					Image image = (Image) i;
+					Image image = new Image();
+					image.setId((Integer) imageMap.get("id"));
+					image.setName((String) imageMap.get("name"));
+					image.setDescription((String) imageMap.get("description"));
+					image.setThumbnail((String) imageMap.get("thumbnail"));
+					image.setFile((String) imageMap.get("file"));
 					images.add(image);
 				}
 				product.setImages(images);

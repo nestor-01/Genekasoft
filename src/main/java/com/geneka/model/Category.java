@@ -31,7 +31,7 @@ public class Category implements Serializable {
 	@Column(length=255)
 	private String name;
 
-	private int value;
+	private Integer value;
 
 	@Column(name="parents_id")
 	private Integer parentsId;
@@ -63,11 +63,11 @@ public class Category implements Serializable {
 		this.name = name;
 	}
 
-	public int getValue() {
+	public Integer getValue() {
 		return this.value;
 	}
 
-	public void setValue(int value) {
+	public void setValue(Integer value) {
 		this.value = value;
 	}
 
