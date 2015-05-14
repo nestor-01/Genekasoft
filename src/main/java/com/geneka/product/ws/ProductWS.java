@@ -3,11 +3,7 @@ package com.geneka.product.ws;
 import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.geneka.common.util.DefaultContextImpl;
 import com.geneka.common.util.Tools;
@@ -64,7 +60,7 @@ public class ProductWS {
 	}
 
 	@RequestMapping(value = "/getById", method = RequestMethod.GET)
-	public @ResponseBody String getProductById(String  id) throws Exception
+	public @ResponseBody String getProductById(@RequestParam(value="id", required=true) String  id) throws Exception
 	{
 		Product product = productService.getProductById(id);
 		return Tools.serializeToJSon(product);
@@ -123,29 +119,12 @@ public class ProductWS {
 		}
 		return "ok";
 	}
-	
-	/*@RequestMapping(value = "/saveProductImages", method = RequestMethod.POST)
-	public @ResponseBody String saveProductImages(@RequestBody String paramsCategories) throws Exception
+
+	@RequestMapping(value = "/inactive", method = RequestMethod.GET)
+	public @ResponseBody String inactive(@RequestParam(value="id", required=true) String id,
+										 @RequestParam(value="active", required=true) Boolean active) throws Exception
 	{
-		Map<String, Object> attributesDef = new DefaultContextImpl();
-		try
-		{
-			List<Category> categories = new ArrayList<>();
-			List listCategory = Tools.deserializeFromJSon(paramsCategories, List.class);
-			for(Object c : listCategory)
-			{
-				Category category = (Category) c;
-				categories.add(category);
-			}
-			//productService.addProduct(product);
-		}
-		catch (Exception e)
-		{
-			return e.getCause().toString();
-		}
-		return "ok";
-	}*/
-	
-	
+		return productService.inactive(id, active)?"ok":"null";
+	}
 
 }

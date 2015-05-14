@@ -61,7 +61,7 @@ public class UserWS {
 	}
 	
 	@RequestMapping(value = "/getUserById", method = RequestMethod.POST)
-	public @ResponseBody String getUserById(@RequestParam("id") Integer id) throws Exception
+	public @ResponseBody String getUserById(@RequestParam(value="id", required=true) Integer id) throws Exception
 	{
 		User user = userService.getUserById(id);
 		return Tools.serializeToJSon(user);

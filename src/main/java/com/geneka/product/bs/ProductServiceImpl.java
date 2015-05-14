@@ -71,10 +71,17 @@ public class ProductServiceImpl implements ProductService
 	}
 
 	@Override
-	public boolean deleteProduct(Integer productId) throws Exception
+	public boolean deleteProduct(String productId) throws Exception
 	{
 		// TODO Auto-generated method stub
 		return false;
+	}
+
+	@Override
+	public boolean inactive(String productId, Boolean active) throws Exception {
+		Product product = daoNS.updateByQuery(Product.class, "id",
+				productId, "active", active);
+		return product != null? false : true;
 	}
 
 }
