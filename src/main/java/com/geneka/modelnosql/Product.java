@@ -20,7 +20,7 @@ public class Product {
 	
 	private String code;
 
-	private Boolean state;
+	private Boolean active;
 	
 	private List<Category> categories;
 
@@ -74,11 +74,11 @@ public class Product {
 		this.images = images;
 	}
 
-	public Boolean getState() {
-		return state;
+	public Boolean getActive() {
+		return active;
 	}
 
-	public void setState(Boolean state) {
-		this.state = state;
+	public void setActive(Boolean active) {
+		this.active = active;
 	}
 }

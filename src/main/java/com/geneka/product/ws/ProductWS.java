@@ -35,7 +35,7 @@ public class ProductWS {
 		return Tools.serializeToJSon(lstProducts);
 	}
 	
-	@RequestMapping(value = "/save", method = RequestMethod.GET)
+	@RequestMapping(value = "/saveTest", method = RequestMethod.GET)
 	public @ResponseBody String saveProductTest() throws Exception
 	{
 		Product product = new Product();
@@ -58,8 +58,22 @@ public class ProductWS {
 		productService.saveProduct(product);
 		return "ok";
 	}
+
+	@RequestMapping(value = "/getAll", method = RequestMethod.GET)
+	public @ResponseBody String getAllProducts() throws Exception
+	{
+		List<Product> lstProducts = productService.getAllProducts();
+		return Tools.serializeToJSon(lstProducts);
+	}
+
+	@RequestMapping(value = "/getById", method = RequestMethod.GET)
+	public @ResponseBody String getProductById(String  id) throws Exception
+	{
+		Product product = productService.getProductById(id);
+		return Tools.serializeToJSon(product);
+	}
 	
-	@RequestMapping(value = "/saveProduct", method = RequestMethod.POST)
+	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public @ResponseBody String saveProduct(@RequestBody String paramsNewProduct) throws Exception
 	{
 		Map<String, Object> attributesDef = new DefaultContextImpl();
@@ -71,16 +85,18 @@ public class ProductWS {
 			product.setDescription((String) attributesDef.get("description"));
 			product.setName((String) attributesDef.get("name"));
 			product.setCode((String) attributesDef.get("code"));
-			String catgoriesJson = (String) attributesDef.get("categories");
-			if(catgoriesJson != null)
+			product.setActive((Boolean) attributesDef.get("active"));
+			Map<String, Object> categoriesMap = (Map) attributesDef.get("categories");
+			if(categoriesMap != null)
 			{
 				List<Category> categories = new ArrayList<>();
-				List listCategory = Tools.deserializeFromJSon(catgoriesJson, List.class);
-				for(Object c : listCategory)
-				{
-					Category category = (Category) c;
-					categories.add(category);
-				}
+				Category category = new Category();
+				category.setId((Integer) categoriesMap.get("id"));
+				category.setDescription((String) categoriesMap.get("description"));
+				category.setName((String) categoriesMap.get("name"));
+
+				categories.add(category);
+
 				product.setCategories(categories);			
 			}
 			String imagesJson = (String) attributesDef.get("images");

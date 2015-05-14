@@ -7,5 +7,6 @@
 
 	<context:component-scan base-package="com.geneka.user.ws"></context:component-scan>
 	<context:component-scan base-package="com.geneka.product.ws"></context:component-scan>
+	<context:component-scan base-package="com.geneka.common.ws"></context:component-scan>
 
 </beans>
