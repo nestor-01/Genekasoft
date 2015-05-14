@@ -8,7 +8,9 @@ public class Image {
 	
 	private String description;
 	
-	private String source;
+	private String thumbnail;
+
+	private String file;
 	
 	public Image() {
 	}
@@ -37,12 +39,19 @@ public class Image {
 		this.description = description;
 	}
 
-	public String getSource() {
-		return source;
+	public String getThumbnail() {
+		return thumbnail;
 	}
 
-	public void setSource(String source) {
-		this.source = source;
+	public void setThumbnail(String thumbnail) {
+		this.thumbnail = thumbnail;
 	}
 
+	public String getFile() {
+		return file;
+	}
+
+	public void setFile(String file) {
+		this.file = file;
+	}
 }
