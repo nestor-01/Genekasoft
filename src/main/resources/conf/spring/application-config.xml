@@ -69,7 +69,9 @@
 	<bean id="categoryService" class="com.geneka.common.bs.CategoryServiceImpl" />
 	<!-- End service classes -->
 
-
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="1000000000"/>
+	</bean>
 
 	<!-- Factory bean that creates the Mongo instance -->
 <!-- 	<bean id="mongo" class="org.springframework.data.mongodb.core.MongoFactoryBean"> -->

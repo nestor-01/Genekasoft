@@ -1,16 +1,15 @@
 package com.geneka.product.ws;
 
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.geneka.common.util.DefaultContextImpl;
 import com.geneka.common.util.Tools;
@@ -19,6 +18,12 @@ import com.geneka.model.User;
 import com.geneka.modelnosql.Image;
 import com.geneka.modelnosql.Product;
 import com.geneka.product.bs.ProductService;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.ServletContext;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 
 @RestController
@@ -118,6 +123,48 @@ public class ProductWS {
 			return e.getCause().toString();
 		}
 		return "ok";
+	}
+
+	@RequestMapping(value = "/uploadImages", method = RequestMethod.POST)
+	public @ResponseBody String openApp(HttpServletRequest request, HttpServletResponse response, @RequestParam("productName") String productName, @RequestParam("file") MultipartFile image)
+	{
+		if(!image.isEmpty())
+        {
+            String name = image.getOriginalFilename();
+
+            HttpSession session = request.getSession();
+            ServletContext sc = session.getServletContext();
+            String path = sc.getRealPath("/") + "build\\img\\products\\" + productName + "\\";
+
+            try
+            {
+                File pathObj = new File(path);
+                pathObj.mkdirs();
+                if(pathObj.exists())
+                {
+                    byte[] bytes = image.getBytes();
+                    BufferedOutputStream stream =
+                            new BufferedOutputStream(new FileOutputStream(new File(path + name)));
+                    stream.write(bytes);
+                    stream.close();
+                    return "You successfully uploaded " + name + "!";
+                }
+
+                else
+                {
+                    return "bad folder creation";
+                }
+            }
+            catch(Exception e)
+            {
+                return "You failed to upload " + name + " => " + e.getMessage();
+            }
+        }
+
+        else
+        {
+            return "You failed to upload because the file was empty.";
+        }
 	}
 	
 	/*@RequestMapping(value = "/saveProductImages", method = RequestMethod.POST)
