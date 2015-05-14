@@ -8,7 +8,7 @@ var TextField = React.createClass({
         placeholder: React.PropTypes.string
     },
 
-    getDefaultProps: function()
+    getDefaultProps()
     {
         return {
             id: "textfield-x",
@@ -16,11 +16,16 @@ var TextField = React.createClass({
         };
     },
 
-    render: function()
+    render()
     {
         return (
-            <input type="text" name={this.props.id} id={this.props.id} className="input-field form-control" placeholder={this.props.placeholder} />
+            <input ref="textfield" type="text" name={this.props.id} id={this.props.id} className="input-field form-control" placeholder={this.props.placeholder} />
         );
+    },
+
+    getValue()
+    {
+      return $(React.findDOMNode(this.refs.textfield)).val();
     }
 });
 

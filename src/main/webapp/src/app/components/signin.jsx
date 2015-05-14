@@ -22,7 +22,9 @@ var SignIn = React.createClass({
       top: _top + 'px',
       left: _left + 'px',
       opacity: 0,
-      opacityButton: 0
+      opacityButton: 0,
+      missingInfo: 'none',
+      invalidInfo: 'none'
     };
   },
   
@@ -50,6 +52,18 @@ var SignIn = React.createClass({
   
   render()
   {
+    var errorsStyle = {
+      fontWeight: '900',
+      fontSize: '14px',
+      textAlign: 'center',
+      textShadow: '0px 0px 2px #fff',
+      color: '#C55050',
+      //paddingBottom: '5px'
+    };
+
+    var missingInfoStyle = $.extend({display: this.state.missingInfo}, errorsStyle);
+    var invalidInfoStyle = $.extend({display: this.state.invalidInfo}, errorsStyle)
+
     return (
       <div className="col-xs-12 col-sm-12 col-md-12 loginFormContainer">
         <div className="loginForm center-block" ref="loginContainer" style={{height: this.state.height, width: this.state.width, background: 'rgba(255,255,255,'+this.state.opacity+')', opacity: this.state.opacityButton, backgroundColor: "white", borderRadius: "4px" }}>
@@ -63,12 +77,14 @@ var SignIn = React.createClass({
             <br/>
             
             <span style={{color: 'white'}}>Contraseña</span>
-            <TextField />
+            <TextField ref="passwordTextField" />
             
             <br/>
+            <div style={missingInfoStyle}>{"Faltan datos"}</div>
+            <div style={invalidInfoStyle}>{"Combinación de usuario y contraseña incorrecta"}</div>
             <br/>
-            
-            <a href="" className="btn btn-success col-md-12" style={{width: '100%'}}>Entrar</a>
+
+            <button onTouchTap={this.onSignIn} className="btn btn-success col-md-12" style={{width: '100%'}}>Entrar</button>
           </div>
         </div>
         <br/>
@@ -77,6 +93,38 @@ var SignIn = React.createClass({
         </div>
       </div>
     );
+  },
+
+  onSignIn(e)
+  {
+    var user = this.refs.userTextfield.getValue();
+    var password = this.refs.passwordTextField.getValue();
+
+    if($.trim(user) != '' && $.trim(password) != '') {
+      var data = {
+        email: user,
+        password: password
+      };
+
+      $.post('/geneka/api/user/loginUser', data)
+        .done(function (response) {
+          alert(response);
+        })
+        .fail(function (error) {
+          this.setState({
+            invalidInfo: 'block',
+            missingInfo: 'none'
+          });
+        }.bind(this));
+    }
+
+    else
+    {
+      this.setState({
+        missingInfo: 'block',
+        invalidInfo: 'none'
+      });
+    }
   }
 });
 

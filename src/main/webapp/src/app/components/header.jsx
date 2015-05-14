@@ -23,7 +23,7 @@ var Header = React.createClass({
     
                         {/* Top Bar */}
                         <div className="top-bar">
-                            <div className="container">
+                            <div className="container" id="header">
                                 <div className="row">
                                     <div className="col-md-12">
     
@@ -31,7 +31,7 @@ var Header = React.createClass({
                                         <div className="logo">
                                             <a title="" href="#">Geneka!</a>
                                         </div>
-    
+
                                         <TopMenu items={[
                                             {
                                                 url: "#/",

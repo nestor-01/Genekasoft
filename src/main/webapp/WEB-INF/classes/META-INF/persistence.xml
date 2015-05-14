@@ -8,5 +8,6 @@
 		<class>com.geneka.model.Localization</class>
 		<class>com.geneka.model.Module</class>
 		<class>com.geneka.model.User</class>
+		
 	</persistence-unit>
 </persistence>

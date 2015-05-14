@@ -1116,6 +1116,7 @@ select[multiple].input-lg {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+    margin: 3px;
 }
 .btn:focus {
   outline: thin dotted #333;

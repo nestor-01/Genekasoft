@@ -12,6 +12,7 @@ var React = require('react'),
     Content = require('./components/content.jsx'),
     Particles = require('./components/miscellaneous/particles.jsx'),
     Authenticated = require('./authenticated.jsx'),
+    Products = require('./components/products/productsForm.jsx'),
     
     Router = require('react-router'),
     DefaultRoute = Router.DefaultRoute,
@@ -51,6 +52,7 @@ var routes = (
   <Route name="home" path="/" handler={App}>
     <Route name="signin" handler={SignIn} />
     <Route name="signup" handler={SignUp} />
+    <Route name="products" handler={Products} />
     <DefaultRoute handler={Content} />
   </Route>
 );
