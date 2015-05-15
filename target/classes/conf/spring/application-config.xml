@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
-	xmlns:jpa="http://www.springframework.org/schema/data/jpa" xmlns:tx="http://www.springframework.org/schema/tx"
-	xmlns:mongo="http://www.springframework.org/schema/data/mongo"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:jpa="http://www.springframework.org/schema/data/jpa" xmlns:tx="http://www.springframework.org/schema/tx"
+	   xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd
@@ -18,7 +18,7 @@
 	<!-- packages to scan for components and services -->
 	<context:component-scan base-package="com.geneka" />
 	<bean id="dataSource"
-		class="org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy">
+		  class="org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy">
 		<property name="targetDataSource">
 			<bean class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
 				<property name="driverClass" value="com.mysql.jdbc.Driver" />
@@ -34,7 +34,7 @@
 	</bean>
 
 	<bean id="emf"
-		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		  class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
 		<property name="dataSource" ref="dataSource" />
 		<property name="jpaVendorAdapter">
 			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
@@ -57,9 +57,9 @@
 
 	<!-- Repositories definition -->
 	<jpa:repositories base-package="com.geneka"
-		entity-manager-factory-ref="emf" transaction-manager-ref="transactionManager" />
+					  entity-manager-factory-ref="emf" transaction-manager-ref="transactionManager" />
 	<bean
-		class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
+			class="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" />
 	<!-- End of Repositories definition -->
 
 	<!-- Service classes -->
@@ -69,21 +69,19 @@
 	<bean id="categoryService" class="com.geneka.common.bs.CategoryServiceImpl" />
 	<!-- End service classes -->
 
-	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-		<property name="maxUploadSize" value="1000000000"/>
-	</bean>
+
 
 	<!-- Factory bean that creates the Mongo instance -->
-<!-- 	<bean id="mongo" class="org.springframework.data.mongodb.core.MongoFactoryBean"> -->
-<!-- 		<property name="host" value="localhost" /> -->
-<!-- 		<property name="port" value="27017" /> -->
-<!-- 	</bean> -->
+	<!-- 	<bean id="mongo" class="org.springframework.data.mongodb.core.MongoFactoryBean"> -->
+	<!-- 		<property name="host" value="localhost" /> -->
+	<!-- 		<property name="port" value="27017" /> -->
+	<!-- 	</bean> -->
 
 	<!-- MongoTemplate for connecting and quering the documents in the database -->
-<!-- 	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate"> -->
-<!-- 		<constructor-arg name="mongo" ref="mongo" /> -->
-<!-- 		<constructor-arg name="databaseName" value="test" /> -->
-<!-- 	</bean> -->
+	<!-- 	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate"> -->
+	<!-- 		<constructor-arg name="mongo" ref="mongo" /> -->
+	<!-- 		<constructor-arg name="databaseName" value="test" /> -->
+	<!-- 	</bean> -->
 
 	<!-- Use this post processor to translate any MongoExceptions thrown in 
 		@Repository annotated classes -->
