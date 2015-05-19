@@ -42,8 +42,8 @@
    h2 { font-size: 26px; margin-bottom: 20px; }
    .icon-wrap h3 { font-size: 21px; margin-bottom: 20px; }
    .subheadline { font-size: 18px; line-height: 26px; }
-   #intro { padding-top: 90px; height: 100% }
-   header { height: 600px; }
+   #intro { min-height: 580px; height: 100% }
+   header { height: 70px; }
    .headline p { padding: 0 20px; }
    .top-bar.slidedown { display: none; }
    .top-bar { position: fixed; top: 0; left: 0; width: 100%; z-index: 999; padding: 0 0 10px; margin: 0; }
@@ -66,8 +66,6 @@
    .arrow-left { left: 10px; }
    .arrow-right { right: 10px; }
    .arrow-left, .arrow-right { margin-top: -40px; }
-   
-   .get-started { padding-top: 160px; }
    
    .feature img { width: 55%; }
    .feature .first { left: 110px; top: 70px; }

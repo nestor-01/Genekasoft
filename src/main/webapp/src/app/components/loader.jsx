@@ -4,10 +4,10 @@ var Loader = React.createClass({
 
     componentDidMount: function()
     {
-        $(window).load(function() {
+        /*$(window).load(function() {
             $(React.findDOMNode(this.refs.loadWrapper)).delay(450).fadeOut();
             $(React.findDOMNode(this.refs.loader)).delay(750).fadeOut('slow');
-        }.bind(this));
+        }.bind(this));*/
     },
 
     render: function()

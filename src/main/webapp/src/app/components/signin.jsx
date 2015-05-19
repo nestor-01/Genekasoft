@@ -62,10 +62,10 @@ var SignIn = React.createClass({
     };
 
     var missingInfoStyle = $.extend({display: this.state.missingInfo}, errorsStyle);
-    var invalidInfoStyle = $.extend({display: this.state.invalidInfo}, errorsStyle)
+    var invalidInfoStyle = $.extend({display: this.state.invalidInfo}, errorsStyle);
 
     return (
-      <div className="col-xs-12 col-sm-12 col-md-12 loginFormContainer">
+      <div className="col-xs-12 col-sm-12 col-md-12" style={{marginTop: '80px'}}>
         <div className="loginForm center-block" ref="loginContainer" style={{height: this.state.height, width: this.state.width, background: 'rgba(255,255,255,'+this.state.opacity+')', opacity: this.state.opacityButton, backgroundColor: "white", borderRadius: "4px" }}>
           <div style={{padding: '20px 20px'}}>
             <h3 style={{color: 'white'}}>Autenticación</h3>

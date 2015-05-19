@@ -15,15 +15,14 @@ var Header = React.createClass({
     render()
     {
         return (
-            <div style={{position: 'absolute', top: '0', height: '200px', width: '100%', backgroundColor: 'rgba(255, 255, 255, 0)'}}>
-                <header style={{backgroundColor: 'rgba(255, 255, 255, 0)'}}>
+                <header>
     
                     {/* Intro */}
-                    <div id="intro" data-scroll-index="0" style={{backgroundColor: 'rgba(255, 255, 255, 0)'}}>
+                    <div className="overlay-gradient" data-scroll-index="0">
     
                         {/* Top Bar */}
                         <div className="top-bar">
-                            <div className="container" id="header">
+                            <div className="container">
                                 <div className="row">
                                     <div className="col-md-12">
     
@@ -70,7 +69,6 @@ var Header = React.createClass({
                         </div>
                     </div>
                 </header>
-            </div>
         );
     }
 });

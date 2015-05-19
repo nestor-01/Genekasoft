@@ -18,7 +18,7 @@ var Swiper = React.createClass({
 
     componentDidMount: function()
     {
-        // Phone Slider Function
+        /*// Phone Slider Function
         var getSlide = function() {
             var wW = $(window).width();
             if (wW < 601) {
@@ -56,13 +56,13 @@ var Swiper = React.createClass({
                 mySwiper.params.slidesPerView = 3;
             }
             mySwiper.reInit();
-        });
+        });*/
     },
     
     componentWillUnmount: function()
     {
-        $('.swiper-container').off();
-        $(window).off();
+        /*$('.swiper-container').off();
+        $(window).off();*/
     },
 
     render: function()

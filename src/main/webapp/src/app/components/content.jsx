@@ -20,6 +20,7 @@ var Content = React.createClass({
     {
         return (
             <div id="content">
+                {/*<Swiper baseDir="img/bg/" images={["phone1.png", "phone2.png", "phone3.png"]} />*/}
                 <GallerySection />
                 <FeatureSection features={[
                     {

@@ -7,7 +7,7 @@ var SwiperSection = React.createClass({
     render: function()
     {
         return (
-                <div id="intro" className="overlay-gradient" data-scroll-index="0">
+                <div className="overlay-gradient" data-scroll-index="0">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12">
@@ -19,7 +19,7 @@ var SwiperSection = React.createClass({
                                 </div>
                                 {/* Intro Heading End */}
 
-                                <Swiper baseDir="img/bg/" images={["phone1.png", "phone2.png", "phone3.png"]} />
+                                
                             </div>
                         </div>
                     </div>

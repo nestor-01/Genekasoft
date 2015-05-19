@@ -7,8 +7,8 @@
 
 
       // Preloader Website
-      $(window).load(function() {
-         $('#loader-wrapper').delay(450).fadeOut();
+      $(window).load(function() { 
+         $('#loader-wrapper').delay(450).fadeOut(); 
          $('#loader').delay(750).fadeOut('slow');
       });
 
@@ -153,13 +153,13 @@ $(document).ready(function() {
          verticalOffset: 0,
          responsive: false,
          horizontalScrolling: false,
-      });
-
-
+      });     
+      
+      
       //----------------------------------------------
-
-
-      // Mailchimp
+      
+      
+      // Mailchimp 
       $('#newsletter-form').ajaxChimp({
         callback: callbackFunction,
         url:'http://testtesttest.us9.list-manage2.com/subscribe/post?u=008a9a2d943991d29216928b5&id=058e093803'
@@ -176,8 +176,8 @@ $(document).ready(function() {
             $(".subscribe-message").html('<i class="fa fa-warning"></i> You must enter a valid e-mail address.').fadeIn().css("color","#ef4b4b");
             $("#mc-email").addClass("error");
           }
-      }
-
+      }     
+      
       
       //---------------------------------------------
       

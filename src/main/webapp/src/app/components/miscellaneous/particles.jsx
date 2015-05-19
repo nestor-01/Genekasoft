@@ -40,6 +40,8 @@ var Particles = React.createClass({
         proximity: 100,
         parallax: true,
         parallaxMultiplier: 5,
+        zIndex: "0",
+        percentage: false,
         onInit: function(){},
         onDestroy: function(){}
       };
@@ -55,6 +57,16 @@ var Particles = React.createClass({
     componentDidMount()
     {
       $(React.findDOMNode(this.refs.refParticlesSystem)).particleground(this.props);
+      $(window).on('resize', function(){
+        if(this.props.percentage && this.props.percentage === true)
+        {
+          this.setSize('100%');
+        }
+        else
+        {
+          this.setSize($(window).height());
+        }
+      }.bind(this));
     },
 
     componentDidUpdate()
@@ -67,7 +79,7 @@ var Particles = React.createClass({
     render()
     {
       return (
-        <div id="refParticlesSystem" className="overlay-gradient hidden-xs" ref="refParticlesSystem" style={{height: this.state.height, width: '100%'}}></div>
+        <div ref="refParticlesSystem" id="intro" className="particles" style={{height: this.state.height, zIndex: this.props.zIndex}}></div>
       );
     },
 
