@@ -25,6 +25,15 @@
     </servlet>->
 
     <!-  Processes application requests -->
+    <filter>
+        <filter-name>cors</filter-name>
+        <filter-class>com.geneka.remoting.bs.CorsFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>cors</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
     <servlet>
         <servlet-name>dispatcherServlet</servlet-name>

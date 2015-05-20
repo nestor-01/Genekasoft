@@ -77,20 +77,20 @@ var SignIn = React.createClass({
             <br/>
             
             <span style={{color: 'white'}}>Contraseña</span>
-            <TextField ref="passwordTextField" />
+            <TextField type="password" ref="passwordTextField" />
             
             <br/>
             <div style={missingInfoStyle}>{"Faltan datos"}</div>
-            <div style={invalidInfoStyle}>{"Combinación de usuario y contraseña incorrecta"}</div>
+            <div style={invalidInfoStyle}>{"Usuario o contraseña incorrecta"}</div>
             <br/>
 
             <button onTouchTap={this.onSignIn} className="btn btn-success col-md-12" style={{width: '100%'}}>Entrar</button>
           </div>
         </div>
         <br/>
-        <div className="transition" style={{textAlign: 'center', opacity: this.state.opacityButton}}>
+        {/*<div className="transition" style={{textAlign: 'center', opacity: this.state.opacityButton}}>
           <a href="#/signup" style={{color: 'white', fontWeight: '500', fontSize: '12px'}}>{"¿No tienes una cuenta?"}</a>
-        </div>
+        </div>*/}
       </div>
     );
   },
@@ -106,9 +106,9 @@ var SignIn = React.createClass({
         password: password
       };
 
-      $.post('/geneka/api/user/loginUser', data)
+      $.post('http://localhost:8080/geneka/api/user/loginUser', data)
         .done(function (response) {
-          alert(response);
+          window.location.replace('#/admin/users');
         })
         .fail(function (error) {
           this.setState({

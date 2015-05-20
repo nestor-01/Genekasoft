@@ -2,21 +2,27 @@ var React = require('react');
 
 var Loader = React.createClass({
 
-    componentDidMount: function()
+    componentDidMount()
     {
-        /*$(window).load(function() {
+        $(window).load(function() {
             $(React.findDOMNode(this.refs.loadWrapper)).delay(450).fadeOut();
             $(React.findDOMNode(this.refs.loader)).delay(750).fadeOut('slow');
-        }.bind(this));*/
+        }.bind(this));
     },
 
-    render: function()
+    render()
     {
         return (
             <div ref="loadWrapper" id="loader-wrapper">
                 <div ref="loader" id="loader"></div>
             </div>
         );
+    },
+
+    hide()
+    {
+        $(React.findDOMNode(this.refs.loadWrapper)).delay(450).fadeOut();
+        $(React.findDOMNode(this.refs.loader)).delay(750).fadeOut('slow');
     }
 });
 

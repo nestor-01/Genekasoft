@@ -105,7 +105,7 @@ var Admin = React.createClass({
                 </ol>
               </div>
               <div style={{width: '40px', float: 'right'}}>
-                <button className="btn btn-info" style={{width: '40px'}}><i className="glyphicon glyphicon-off"></i></button>
+                <button onTouchTap={this._onSignOff} className="btn btn-info" style={{width: '40px'}}><i className="glyphicon glyphicon-off"></i></button>
               </div>
             </div>
           </div>
@@ -136,6 +136,11 @@ var Admin = React.createClass({
     {
       this.refs.particlesEffect.start();
     }
+  },
+
+  _onSignOff()
+  {
+    window.location.replace('#/signin');
   }
 });
 module.exports = Admin;

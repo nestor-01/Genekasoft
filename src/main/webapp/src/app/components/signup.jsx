@@ -108,7 +108,7 @@ var SignUp = React.createClass({
               <div className="form-group">
                 <label for="gender" className="col-sm-3 control-label">Género</label>
                 <div className="col-sm-8">
-                  <div class="radio">
+                  <div className="radio">
                     <label style={{paddingRight: '20px'}}>
                       <input ref="genderTextFieldM" type="radio" name="genderTextField" id="genderTextFieldM" value="M" /> Masculino
                     </label>

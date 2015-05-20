@@ -21,7 +21,7 @@ var Main = React.createClass(
   {
     return (
       <div>
-        <Loader />
+        <Loader ref="loader" />
         <Particles ref="particlesEffect" />
         <Header />
         <RouteHandler onInit={this._onChangeView} />
@@ -31,23 +31,31 @@ var Main = React.createClass(
 
   _onChangeView(item)
   {
-    if(this.refs.particlesEffect) {
-      this.refs.particlesEffect.pause();
+    try
+    {
+      if(this.refs.particlesEffect) {
+        this.refs.particlesEffect.pause();
 
-      var height = '800px';
+        var height = '800px';
 
-      if (item === "signin") {
-        height = $(window).height() + 'px';
-      }
-      else if(item === "app")
-      {
-        height = '800px';
-      }
-      else {
-        height = '150px';
-      }
+        if (item === "signin") {
+          this.refs.loader.hide();
+          height = $(window).height() + 'px';
+        }
+        else if(item === "app")
+        {
+          height = '800px';
+        }
+        else {
+          height = '150px';
+        }
 
-      this.refs.particlesEffect.setSize(height);
+        this.refs.particlesEffect.setSize(height);
+      }
+    }
+    catch(e)
+    {
+      console.log("ee");
     }
   }
 });
