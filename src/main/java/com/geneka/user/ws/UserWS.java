@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
@@ -96,8 +97,11 @@ public class UserWS {
 	}
 	
 	@RequestMapping(value = "/loginUser", method = RequestMethod.POST)
-	public @ResponseBody String loginUser(@RequestBody String paramsUser)
+	public @ResponseBody String loginUser(HttpServletResponse response, @RequestBody String paramsUser)
 	{
+        /*response.setHeader("Access-Control-Allow-Origin", "*");
+        response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE");*/
+
 		Map<String, Object> attributesDef = new DefaultContextImpl();
 		try
 		{
@@ -109,7 +113,8 @@ public class UserWS {
 		}
 		catch (Exception e)
 		{
-			return e.getCause().toString();
+			e.printStackTrace();
+			return e.getMessage();
 		}
 	}
 	
