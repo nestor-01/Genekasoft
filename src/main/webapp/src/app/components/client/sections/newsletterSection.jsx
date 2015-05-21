@@ -1,9 +1,9 @@
 var React = require('react');
 
-var Form = require('../forms/form.jsx');
-var EmailField = require('../forms/emailfield.jsx');
-var Label = require('../forms/label.jsx');
-var Submit = require('../forms/submit.jsx');
+var Form = require('../../common/widgets/forms/form/form.jsx');
+var EmailField = require('../../common/widgets/forms/emailfield/emailfield.jsx');
+var Label = require('../../common/widgets/forms/label/label.jsx');
+var Submit = require('../../common/widgets/forms/submit/submit.jsx');
 
 var Newsletter = React.createClass({
 

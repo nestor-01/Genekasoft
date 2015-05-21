@@ -1,14 +1,14 @@
 var React = require('react');
 
 // Form imports
-var Form = require('./../forms/form.jsx');
-var TextField = require('./../forms/textfield.jsx');
-var TextArea = require('./../forms/textarea.jsx');
-var Submit = require('./../forms/submit.jsx');
+var Form = require('../../common/widgets/forms/form/form.jsx');
+var TextField = require('../../common/widgets/forms/textfield/textfield.jsx');
+var TextArea = require('../../common/widgets/forms/textarea/textarea.jsx');
+var Submit = require('../../common/widgets/forms/submit/submit.jsx');
 
 // Social imports
-var SocialLinks = require('./../social/socialLinks.jsx');
-var ContactCard = require('./../social/contactCard.jsx');
+var SocialLinks = require('../social/socialLinks.jsx');
+var ContactCard = require('../social/contactCard.jsx');
 
 var ContactSection = React.createClass({
 

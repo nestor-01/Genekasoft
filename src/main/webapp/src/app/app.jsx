@@ -5,15 +5,21 @@
 })();
 
 var React = require('react'),
-    SignIn = require('./components/signin.jsx'),
-    SignUp = require('./components/signup.jsx'),
-    Content = require('./components/content.jsx'),
-    Products = require('./components/products/productsForm.jsx'),
-    Main = require('./components/main.jsx'),
-    Admin = require('./components/admin.jsx'),
-    
-    Router = require('react-router'),
-    DefaultRoute = Router.DefaultRoute,
+    Router = require('react-router');
+
+var Main = require('./components/client/main.jsx'),
+    Content = require('./components/client/content/content.jsx'),
+    SignIn = require('./components/client/signin/signin.jsx'),
+
+    Admin = require('./components/admin/admin.jsx'),
+
+    UsersList = require('./components/admin/users/usersList/usersList.jsx'),
+    UsersForm = require('./components/admin/users/usersForm/usersForm.jsx'),
+
+    ProductsList = require('./components/admin/products/productsList/productsList.jsx'),
+    ProductsForm = require('./components/admin/products/productsForm/productsForm.jsx');
+
+var DefaultRoute = Router.DefaultRoute,
     Route = Router.Route;
 
 var routes = (
@@ -23,8 +29,10 @@ var routes = (
       <DefaultRoute handler={Content} />
     </Route>
     <Route path="/admin" handler={Admin}>
-      <Route name="users" handler={SignUp} />
-      <Route name="products" handler={Products} />
+      <Route name="users" handler={UsersList} />
+      <Route name="users/newUser" handler={UsersForm} />
+      <Route name="products" handler={ProductsList} />
+      <Route name="products/newProduct" handler={ProductsForm} />
     </Route>
   </Route>
 );

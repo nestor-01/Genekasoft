@@ -1,7 +1,7 @@
 var React = require('react');
-var TextField = require('./forms/textfield.jsx');
-var Label = require('./forms/label.jsx');
-var Authenticated = require('../authenticated.jsx');
+var TextField = require('../../common/widgets/forms/textfield/textfield.jsx');
+var Label = require('../../common/widgets/forms/label/label.jsx');
+var Authenticated = require('../../common/mixins/authenticated.jsx');
 
 var SignIn = React.createClass({
 

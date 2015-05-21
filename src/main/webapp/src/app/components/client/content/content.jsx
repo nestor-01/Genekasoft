@@ -1,12 +1,12 @@
 var React = require('react');
-var SwiperSection = require('./sections/swiperSection.jsx');
-var ContactSection = require('./sections/contactSection.jsx');
-var NewsletterSection = require('./sections/newsletterSection.jsx');
-var GallerySection = require('./sections/gallerySection.jsx');
-var FeatureSection = require('./sections/featureSection.jsx');
-var TestimonialSection = require('./sections/testimonialsSection.jsx');
+var SwiperSection = require('./../sections/swiperSection.jsx');
+var ContactSection = require('./../sections/contactSection.jsx');
+var NewsletterSection = require('./../sections/newsletterSection.jsx');
+var GallerySection = require('./../sections/gallerySection.jsx');
+var FeatureSection = require('./../sections/featureSection.jsx');
+var TestimonialSection = require('./../sections/testimonialsSection.jsx');
 
-var Icons = require('./media/icons.jsx');
+var Icons = require('../../common/constants/icons.jsx');
 
 var Content = React.createClass({
 

@@ -21,7 +21,7 @@
 /**************
 **   FONTS   **
 **************/
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500|Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500|Michroma|Cabin+Sketch|Paytone+One|Patrick+Hand+SC|Frijole|Russo+One|Sigmar+One|Monoton|Orbitron|Nova+Square|Squada+One|Audiowide|Electrolize|Ceviche+One|Chelsea+Market|Kranky);
 
 
 /******************
@@ -478,10 +478,10 @@ header {
 }
 
 .logo a {
-    font-size: 48px;
-    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    font-family: 'Frijole';
     color: #fff;
-    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    text-shadow: 4px 7px 13px rgba(0,0,0,.3);
 }
 
 /* Menu */

@@ -1,7 +1,7 @@
 var React = require('react');
-var Icons = require('../media/icons.jsx');
+var Icons = require('../../../common/constants/icons.jsx');
 
-var Products = React.createClass({
+var ProductsForm = React.createClass({
 
   componentDidMount()
   {
@@ -186,4 +186,4 @@ var Products = React.createClass({
   }
 });
 
-module.exports = Products;
+module.exports = ProductsForm;

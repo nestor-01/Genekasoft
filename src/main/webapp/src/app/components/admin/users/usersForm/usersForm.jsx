@@ -1,7 +1,8 @@
 var React = require('react');
-var Authenticated = require('../authenticated.jsx');
-var MapContainer = require('./map.jsx');
-var Events = require('./events.jsx');
+var UserFormStyles = require('./usersFormStyles.jsx');
+
+var MapContainer = require('../../../common/widgets/map/map.jsx');
+var Events = require('../../../common/constants/events.jsx');
 
 var SignUp = React.createClass({
 
@@ -54,13 +55,7 @@ var SignUp = React.createClass({
 
         element.parent().parent().addClass('has-error');
 
-        error.css({
-          "font-weight": "500",
-          "color": "rgb(208, 105, 105)",
-          "font-size": "11px",
-          "width": "100%",
-          "text-align": "right"
-        });
+        error.css(UserFormStyles.errorField);
         error.insertAfter(element);
       }
     });
@@ -84,7 +79,7 @@ var SignUp = React.createClass({
           </div>
         </div>
         <br /><br />
-        <div style={{height: '100%', padding: '45px 50px 0 25px'}}>
+        <div style={{height: '100%', padding: '40px 50px 0 25px'}}>
           <div className="col-md-6">
             <form className="form-horizontal" id="myForm" ref="newUserForm" role="form">
               <div className="form-group">

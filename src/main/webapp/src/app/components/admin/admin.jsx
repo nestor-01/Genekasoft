@@ -1,8 +1,7 @@
 var React = require('react');
-var TopMenu = require('./topMenu.jsx');
-var Icons = require('./media/icons.jsx');
-var Particles = require('./miscellaneous/particles.jsx');
-var Events = require('./events.jsx');
+var Icons = require('../common/constants/icons.jsx');
+var Particles = require('../common/widgets/particles/particles.jsx');
+var Events = require('../common/constants/events.jsx');
 
 var Router = require('react-router'),
 DefaultRoute = Router.DefaultRoute,
@@ -67,10 +66,10 @@ var Admin = React.createClass({
                 <span><i className="glyphicon glyphicon-user"></i><a href="#/admin/users">Usuarios</a></span>
                 <ul>
                   <li>
-                    <span><i className="glyphicon glyphicon-plus"></i><a>Nuevo Usuario</a></span>
+                    <span><i className="glyphicon glyphicon-plus"></i><a href="#/admin/users/newUser">Nuevo Usuario</a></span>
                   </li>
                   <li>
-                    <span><i className="glyphicon glyphicon-stats"></i><a>Estadísticas</a></span>
+                    <span><i className="glyphicon glyphicon-stats"></i><a href="#/admin/users/userStatistics">Estadísticas</a></span>
                   </li>
                 </ul>
               </li>
@@ -79,10 +78,10 @@ var Admin = React.createClass({
                 <span><i className="glyphicon glyphicon-th"></i><a href="#/admin/products">Productos</a></span>
                 <ul>
                   <li>
-                    <span><i className="glyphicon glyphicon-plus"></i><a>Nuevo Producto</a></span>
+                    <span><i className="glyphicon glyphicon-plus"></i><a href="#/admin/products/newProduct">Nuevo Producto</a></span>
                   </li>
                   <li>
-                    <span><i className="glyphicon glyphicon-stats"></i><a>Estadísticas</a></span>
+                    <span><i className="glyphicon glyphicon-stats"></i><a href="#/admin/products/productStatistics">Estadísticas</a></span>
                   </li>
                 </ul>
               </li>

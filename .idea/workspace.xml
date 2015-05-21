@@ -8,11 +8,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02f66e1a-9e80-41b9-bce9-53ab81921636" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/geneka/model/Category.class" afterPath="$PROJECT_DIR$/target/classes/com/geneka/model/Category.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/geneka/modelnosql/Image.class" afterPath="$PROJECT_DIR$/target/classes/com/geneka/modelnosql/Image.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/geneka/product/ws/ProductWS.class" afterPath="$PROJECT_DIR$/target/classes/com/geneka/product/ws/ProductWS.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/geneka/user/ws/UserWS.class" afterPath="$PROJECT_DIR$/target/classes/com/geneka/user/ws/UserWS.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/mixins/authenticated.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsList/productsList.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/header/topBar.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/users/usersForm/usersFormStyles.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/users/usersList/usersList.jsx" />
+      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\npm-debug.log" afterPath="" />
+      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\common\Authenticated.jsx" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/app.js" afterPath="$PROJECT_DIR$/src/main/webapp/build/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/app/app.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/app.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/gulp/tasks/browserify.js" afterPath="$PROJECT_DIR$/src/main/webapp/gulp/tasks/browserify.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/gulp/config.js" afterPath="$PROJECT_DIR$/src/main/webapp/gulp/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/js/custom.js" afterPath="$PROJECT_DIR$/src/main/webapp/build/js/custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/www/js/custom.js" afterPath="$PROJECT_DIR$/src/main/webapp/src/www/js/custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/package.json" afterPath="$PROJECT_DIR$/src/main/webapp/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/css/styles/style-blue.css" afterPath="$PROJECT_DIR$/src/main/webapp/build/css/styles/style-blue.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/www/css/styles/style-blue.css" afterPath="$PROJECT_DIR$/src/main/webapp/src/www/css/styles/style-blue.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\admin.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/admin.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\carousels\carousel.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/carousels/carousel/carousel.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\carousels\swiper.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/carousels/swiper/swiper.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\carousels\testiCarousel.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/carousels/testiCarousel/testiCarousel.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\content.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/content/content.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\events.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/constants/events.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\footer.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/footer/footer.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\forms\emailfield.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/emailfield/emailfield.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\forms\form.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/form/form.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\forms\label.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/label/label.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\forms\submit.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/submit/submit.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\forms\textarea.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/textarea/textarea.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\forms\textfield.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/textfield/textfield.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\header.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/header/header.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\loader.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/loader/loader.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\main.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/main.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\map.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/map/map.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\media\icons.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/constants/icons.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\miscellaneous\particles.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/particles/particles.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\products\productsForm.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productsForm.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\sections\contactSection.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/sections/contactSection.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\sections\featureSection.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/sections/featureSection.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\sections\gallerySection.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/sections/gallerySection.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\sections\newsletterSection.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/sections/newsletterSection.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\sections\swiperSection.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/sections/swiperSection.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\sections\testimonialsSection.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/sections/testimonialsSection.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\signin.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/signin/signin.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\signup.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/users/usersForm/usersForm.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\social\contactCard.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/social/contactCard.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\social\facebookButton.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/social/facebookButton.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\social\socialLinks.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/social/socialLinks.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\social\tumblerButton.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/social/tumblerButton.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\social\twitterButton.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/social/twitterButton.jsx" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\topMenu.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/topMenu/topMenu.jsx" />
     </list>
     <ignored path="Geneka.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -972,7 +1018,7 @@
       <workItem from="1431408209580" duration="457000" />
       <workItem from="1431479962455" duration="2478000" />
       <workItem from="1431571870277" duration="9866000" />
-      <workItem from="1432088194366" duration="5551000" />
+      <workItem from="1432088194366" duration="6235000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1431480952304</created>
@@ -998,11 +1044,17 @@
       <option name="project" value="LOCAL" />
       <updated>1432130310822</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Links 3">
+      <created>1432130328469</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1432130328469</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28678000" />
+    <option name="totallyTimeSpent" value="29362000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1014,7 +1066,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1031,13 +1083,13 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.340625" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2647504" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2647504" sideWeight="0.4883721" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2647504" sideWeight="0.5116279" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39879155" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1062,7 +1114,8 @@
     <MESSAGE value="changes" />
     <MESSAGE value="Upload images to the public folder in the server.... OK." />
     <MESSAGE value="Links 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Links 2" />
+    <MESSAGE value="Links 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Links 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

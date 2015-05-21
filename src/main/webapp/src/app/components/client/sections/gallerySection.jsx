@@ -1,5 +1,5 @@
 var React = require('react');
-var Carousel = require('../carousels/carousel.jsx');
+var Carousel = require('../carousels/carousel/carousel.jsx');
 
 var GallerySection = React.createClass(
 {
@@ -24,7 +24,7 @@ var GallerySection = React.createClass(
 
                                 {/* Heading */}
                                 <div className="heading center">
-                                    <h2>Haz un tour por nuestra galería de productos</h2>
+                                    <h2 style={{color: 'white'}}>Haz un tour por nuestra galería de productos</h2>
                                     <p className="subheadline">Haz click en cada producto para ver los detalles</p>
                                 </div>
                             </div>

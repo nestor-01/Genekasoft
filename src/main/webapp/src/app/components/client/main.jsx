@@ -1,19 +1,17 @@
 var React = require('react');
+var Router = require('react-router');
 
-var Loader = require('./loader.jsx');
-var Header = require('./header.jsx');
-var Footer = require('./footer.jsx');
-var Content = require('./content.jsx');
-var TopMenu = require('./topMenu.jsx');
-var Swiper = require('./carousels/swiper.jsx');
-var Particles = require('./miscellaneous/particles.jsx');
+var Loader = require('./loader/loader.jsx');
+var Header = require('./header/header.jsx');
+var Footer = require('./footer/footer.jsx');
+var Content = require('./content/content.jsx');
+var TopMenu = require('./topMenu/topMenu.jsx');
+var Swiper = require('./carousels/swiper/swiper.jsx');
+var Particles = require('../common/widgets/particles/particles.jsx');
 
-var Router = require('react-router'),
-DefaultRoute = Router.DefaultRoute,
-Route = Router.Route,
-RouteHandler = Router.RouteHandler;
-
-var Icons = require('./media/icons.jsx');
+var DefaultRoute = Router.DefaultRoute,
+    Route = Router.Route,
+    RouteHandler = Router.RouteHandler;
 
 var Main = React.createClass(
 {

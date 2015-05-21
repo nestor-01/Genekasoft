@@ -1,6 +1,6 @@
 var React = require('react');
 
-var Icons = require('../media/icons.jsx');
+var Icons = require('../../common/constants/icons.jsx');
 
 var SwiperSection = React.createClass({
 

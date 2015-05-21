@@ -7,16 +7,12 @@
 
 
       // Preloader Website
-      $(window).load(function() { 
-         $('#loader-wrapper').delay(450).fadeOut(); 
+      /*$(window).load(function() {
+         $('#loader-wrapper').delay(450).fadeOut();
          $('#loader').delay(750).fadeOut('slow');
-      });
+      });*/
 
-$(document).ready(function() {     
-    
-
-      // Sticky Navabr
-      $("header").before($(".top-bar").clone().addClass("slidedown"));
+$(document).ready(function() {
       $(window).on("scroll", function () {
          $("body").toggleClass("slide-menu", ($(window).scrollTop() > 600));
       });
@@ -37,7 +33,7 @@ $(document).ready(function() {
       
       
       // Phone Carousel            
-      var mySwiper = $('.swiper-container').swiper({
+      /*var mySwiper = $('.swiper-container').swiper({
       
          mode:'horizontal',
          loop: true,
@@ -55,7 +51,7 @@ $(document).ready(function() {
               slideShadows: false
           }
          
-      });
+      });*/
       
       // Set number of slide based on device width
       $(window).resize(function() {

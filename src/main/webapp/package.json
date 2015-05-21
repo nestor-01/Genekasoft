@@ -17,7 +17,8 @@
           "es6": true
         }
       ]
-    ]
+    ],
+    "debug": true
   },
   "devDependencies": {
     "browser-sync": "^1.8.1",
@@ -39,6 +40,7 @@
     "react": "^0.13.2",
     "react-mini-router": "^1.1.2",
     "react-router": "^0.13.2",
+    "react-style": "^0.5.5",
     "react-tap-event-plugin": "^0.1.3"
   }
 }

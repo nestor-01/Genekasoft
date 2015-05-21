@@ -1,5 +1,5 @@
 var React = require('react');
-var TestiCarousel = require('../carousels/testiCarousel.jsx');
+var TestiCarousel = require('../carousels/testiCarousel/testiCarousel.jsx');
 
 var TestimonialsSection = React.createClass({
 
