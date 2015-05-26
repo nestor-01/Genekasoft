@@ -3,6 +3,7 @@ package com.geneka.product.bs;
 import java.util.List;
 import java.util.UUID;
 
+import com.geneka.modelnosql.Search;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Repository;
@@ -78,10 +79,17 @@ public class ProductServiceImpl implements ProductService
 	}
 
 	@Override
-	public boolean inactive(String productId, Boolean active) throws Exception {
+	public boolean inactive(String productId, Boolean active) throws Exception
+	{
 		Product product = daoNS.updateByQuery(Product.class, "id",
 				productId, "active", active);
 		return product != null? false : true;
+	}
+
+	public boolean saveSearch(Search search) throws Exception
+	{
+		daoNS.save(search);
+		return true;
 	}
 
 }

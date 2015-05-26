@@ -2,6 +2,7 @@ package com.geneka.product.bs;
 
 import java.util.List;
 
+import com.geneka.modelnosql.Search;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -27,4 +28,6 @@ public interface ProductService {
 	public boolean deleteProduct(String productId)throws Exception;
 
 	public boolean inactive(String productId, Boolean active)throws Exception;
+
+	public boolean saveSearch(Search search) throws Exception;
 }
