@@ -1563,14 +1563,14 @@ footer p {
     right: auto
 }
 .tree li::before {
-    border-left: 1px solid #81A8BE;
+    border-left: 1px solid #ccc;
     bottom: 50px;
     height: 100%;
-    top: -8px;
+    top: -5px;
     width: 1px
 }
 .tree li::after {
-    border-top: 1px solid #81A8BE;
+    border-top: 1px solid #ccc;
     height: 20px;
     top: 21px;
     width: 10px
@@ -1599,10 +1599,10 @@ footer p {
     position: relative;
 }
 .tree>ul>li::before, .tree>ul>li::after {
-    border: 0
+    border: 0;
 }
 .tree li:last-child::before {
-    height: 30px
+    height: 27px;
 }
 
 
