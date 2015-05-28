@@ -1,6 +1,8 @@
 package com.geneka.product.bs;
 
+import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 import com.geneka.modelnosql.Search;
@@ -86,8 +88,13 @@ public class ProductServiceImpl implements ProductService
 		return product != null? false : true;
 	}
 
-	public boolean saveSearch(Search search) throws Exception
+	public boolean saveSearch(Integer userId, String date, Map params) throws Exception
 	{
+		Search search = new Search();
+		search.setUserId(userId);
+		SimpleDateFormat formatter = new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss");
+		search.setDate(date == null ? null : formatter.parse(date));
+		search.setParams(params);
 		daoNS.save(search);
 		return true;
 	}

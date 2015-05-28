@@ -1,6 +1,7 @@
 package com.geneka.product.bs;
 
 import java.util.List;
+import java.util.Map;
 
 import com.geneka.modelnosql.Search;
 import org.springframework.data.domain.Page;
@@ -29,5 +30,5 @@ public interface ProductService {
 
 	public boolean inactive(String productId, Boolean active)throws Exception;
 
-	public boolean saveSearch(Search search) throws Exception;
+	public boolean saveSearch(Integer userId, String date, Map params) throws Exception;
 }

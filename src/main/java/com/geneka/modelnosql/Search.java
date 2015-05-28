@@ -12,7 +12,7 @@ public class Search {
 
     private Date date;
 
-    private Map params;
+    private Map<String, String> params;
 
     public Search() {
     }

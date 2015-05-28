@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.*;
 
+import com.geneka.modelnosql.Search;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -180,6 +181,25 @@ public class ProductWS {
 										 @RequestParam(value="active", required=true) Boolean active) throws Exception
 	{
 		return productService.inactive(id, active)?"ok":"null";
+	}
+
+	@RequestMapping(value = "/saveSearch", method = RequestMethod.POST)
+	public @ResponseBody String saveSearch(@RequestBody String paramsNewSearch) throws Exception
+	{
+		Map<String, Object> attributesDef = new DefaultContextImpl();
+		try
+		{
+			HashMap attributes = Tools.deserializeFromJSon(paramsNewSearch, HashMap.class);
+			attributesDef.putAll(attributes);
+			Search search = new Search();
+			search.setUserId((Integer) attributesDef.get("userId"));
+
+		}
+		catch (Exception e)
+		{
+			return e.getCause().toString();
+		}
+		return "ok";
 	}
 
 }
