@@ -22,7 +22,7 @@ public class CategoryWS {
     @Autowired
     CategoryService categoryService;
 
-    @RequestMapping(value = "/getAllCategories", method = RequestMethod.GET)
+    @RequestMapping(value = "/getAll", method = RequestMethod.GET)
     public @ResponseBody
     String getAllCategories() throws Exception
     {

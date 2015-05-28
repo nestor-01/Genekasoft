@@ -53,21 +53,21 @@ public class UserWS {
 		return Tools.serializeToJSon(lstUsers);
 	}
 	
-	@RequestMapping(value = "/getAllUsers", method = RequestMethod.GET)
+	@RequestMapping(value = "/getAll", method = RequestMethod.GET)
 	public @ResponseBody String getAllUsers() throws Exception
 	{
 		List<User> lstUsers = userService.getAllUsers();
 		return Tools.serializeToJSon(lstUsers);
 	}
 	
-	@RequestMapping(value = "/getUserById", method = RequestMethod.POST)
+	@RequestMapping(value = "/getById", method = RequestMethod.POST)
 	public @ResponseBody String getUserById(@RequestParam(value="id", required=true) Integer id) throws Exception
 	{
 		User user = userService.getUserById(id);
 		return Tools.serializeToJSon(user);
 	}
 	
-	@RequestMapping(value = "/saveUser", method = RequestMethod.POST)
+	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public @ResponseBody String saveUser(@RequestBody String paramsNewUser)
 	{
 		Map<String, Object> attributesDef = new DefaultContextImpl();
@@ -95,7 +95,7 @@ public class UserWS {
 		return "ok";
 	}
 	
-	@RequestMapping(value = "/loginUser", method = RequestMethod.POST)
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public @ResponseBody String loginUser(@RequestBody String paramsUser)
 	{
 		Map<String, Object> attributesDef = new DefaultContextImpl();
@@ -112,7 +112,12 @@ public class UserWS {
 			return e.getCause().toString();
 		}
 	}
-	
-	
+
+	@RequestMapping(value = "/changeStatus", method = RequestMethod.GET)
+	public @ResponseBody String inactive(@RequestParam(value="id", required=true) Integer id,
+										 @RequestParam(value="active", required=true) Boolean active) throws Exception
+	{
+		return userService.inactive(id, active)?"ok":"null";
+	}
 
 }

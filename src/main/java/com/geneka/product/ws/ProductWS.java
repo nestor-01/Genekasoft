@@ -176,7 +176,7 @@ public class ProductWS {
         }
 	}
 
-	@RequestMapping(value = "/inactive", method = RequestMethod.GET)
+	@RequestMapping(value = "/changeStatus", method = RequestMethod.GET)
 	public @ResponseBody String inactive(@RequestParam(value="id", required=true) String id,
 										 @RequestParam(value="active", required=true) Boolean active) throws Exception
 	{
@@ -200,6 +200,12 @@ public class ProductWS {
 			return e.getCause().toString();
 		}
 		return "ok";
+	}
+
+	@RequestMapping(value = "/findByWord", method = RequestMethod.GET)
+	public @ResponseBody String findByWord(@RequestParam(value="", required=true) String id) throws Exception
+	{
+		return "";
 	}
 
 }
