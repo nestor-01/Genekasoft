@@ -43,21 +43,19 @@ var CheckBox = React.createClass({
 
   _controlCheckbox( el, type, svgDef )
   {
-    console.log("1");
     var svg = this._createSVGEl( svgDef );
     el.parentNode.appendChild( svg );
 
-    el.addEventListener( 'change', function() {
-      console.log("1.1");
+    var onClick = function() {
       if( el.checked ) {
-        console.log("1.1.1");
         this._draw( el, type );
       }
       else {
-        console.log("1.1.2");
         this._reset( el );
       }
-    }.bind(this));
+    }.bind(this);
+
+    el.addEventListener( 'change', onClick);
   },
 
   _draw( el, type )
