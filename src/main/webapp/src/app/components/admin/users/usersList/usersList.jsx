@@ -39,20 +39,42 @@ componentDidMount()
       }
     });
       $("#status").click(function(){
-          if ($(this).is(':checked')) {
-              $('input:checked').attr("disabled", false);
-          }
-          else if ($(this).not(':checked')) {
-              var remove = '';
-              $('input:checked').attr ('value', remove);
-              $('input:checked').attr("disabled", true);
-          }
+          $('#mytable tbody tr').find('input:checkbox').each(function(index, input){
+
+              if ($(input).is(':checked')) {
+                  $(input).parent().parent().attr({
+                      "style":"background-color:red;"
+                  });
+                  console.log($(this).is(':checked'))
+              }
+              else if (!$(input).is(':checked')) {
+
+                  $(input).parent().parent().attr("disabled", false);
+                  console.log($(this).is(':checked'))
+              }
+          })
+
 
 
       });
       $("#remove").click(function() {
-          $('table tr').has('input:checked').parents("tr").remove()
 
+          $('table tr').find('input:checkbox').each(function(index, input){
+              console.log(input)
+              if($(input).is(":checked")){
+                  console.log(index);
+                  console.log($(input).parent().parent());
+                 $(input).parent().parent().remove();
+                  console.log(input);
+              }
+
+          })
+
+
+      })
+
+      $("#delete").click(function(){
+          alert("aa");
       })
 
   });
@@ -67,17 +89,22 @@ componentDidMount()
         console.log(users)
 
 
+          $.each(users, function (index, user){
+              var $tr = $('<tr/>');
+              var $td_c = $('<td/>').appendTo($tr);
+              $('<input/>', {type: "checkbox"}).appendTo($td_c);
+              $('<td/>', {text: user.name, className: "myName"}).appendTo($tr);
+              $('<td/>', {text: user.lastName, className: "myLastname"}).appendTo($tr);
+              $('<td/>', {text: user.email, className: "myEmail"}).appendTo($tr);
+              $('<button id="remove" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></button>',{type: "button"}).appendTo($tr);
 
-        for (var i=0; i< users.length; i++) {
-          console.log(users[i].name)
-          $('.myName').append('<tr><td>' + users[i].name + '</td></tr>');
-          $('.myLastname').append('<tr><td>' + users[i].lastName + '</td></tr>');
-          $('.myEmail').append('<tr><td>' + users[i].email + '</td></tr>');
-          $('.myChekbox').append('<tr><td><input type="checkbox" className="checkthis" />' + [i] + '</td></tr>');
 
 
 
-        }
+              $tr.appendTo($('#mytable tbody'));
+              console.log($('#mytable tbody'))
+          } )
+
 
       })
       .fail(function (error) {
@@ -103,7 +130,7 @@ render()
     <i className="glyphicon glyphicon-upload"></i>
     <span>Estado</span>
     </button>
-    <button data-dz-remove className="btn btn-danger delete" id="remove" data-method="remove" >
+    <button  className="btn btn-danger delete" id="remove"  >
     <i className="glyphicon glyphicon-trash"></i>
     <span> Eliminar</span>
     </button>
@@ -118,15 +145,11 @@ render()
     <th>Nombre</th>
     <th>Apellido</th>
     <th>Correo</th>
+    <th>Delete</th>
     </tr>
     </thead>
     <tbody>
-    <tr>
-    <td className="myChekbox"></td>
-    <td className="myName"> </td>
-    <td className="myLastname"> </td>
-    <td className="myEmail"> </td>
-    </tr>
+
     </tbody>
     </table>
     <div className="clearfix"></div>
@@ -152,6 +175,7 @@ render()
 
 )
 }
+
 
 });
 
