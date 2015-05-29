@@ -2096,3 +2096,18 @@ fieldset[disabled] .btn-link:focus {
 .btn-block + .btn-block {
   margin-top: 5px;
 }
+
+
+/**** Products ***/
+.tt-suggestion {
+  height: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.tt-suggestion:hover {
+  height: 30px;
+  padding: 5px 10px;
+  background-color: rgb(81, 158, 211);
+  color: white;
+}

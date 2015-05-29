@@ -8,647 +8,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02f66e1a-9e80-41b9-bce9-53ab81921636" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/adminStyles.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/checkbox/checkbox.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/checkbox/checkboxStyles.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productBasicForm/productBasicForm.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productCRUDStyles.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productCategoriesForm/productCategoriesForm.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productImagesForm/productImagesForm.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/wizard/wizard.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/wizard/wizardPage.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/wizard/wizardStyles.jsx" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\.idea\.name" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\.idea\codeStyleSettings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\.idea\encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\.idea\jsLibraryMappings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\.idea\libraries\webapp_node_modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\.idea\modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\.idea\scopes\scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\.idea\vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\.idea\webapp.iml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\.idea\workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\app.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\animate.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\bootstrap.vertical-tabs.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\bootstrap.vertical-tabs.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\entypo\css\animation.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\entypo\css\entypo-codes.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\entypo\css\entypo-embedded.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\entypo\css\entypo-ie7-codes.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\entypo\css\entypo-ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\entypo\css\entypo.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\entypo\font\entypo.eot" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\entypo\font\entypo.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\entypo\font\entypo.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\entypo\font\entypo.woff" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\fileupload\jquery.fileupload-noscript.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\fileupload\jquery.fileupload-ui-noscript.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\fileupload\jquery.fileupload-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\fileupload\jquery.fileupload.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\jquery.fileupload-noscript.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\jquery.fileupload-ui-noscript.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\jquery.fileupload-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\jquery.fileupload.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\magnific-popup.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\media.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\neon-core.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\neon-forms.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\owl.carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\owl.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\styles\style-blue.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\css\swiper.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\entypo\css\animation.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\entypo\css\entypo-codes.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\entypo\css\entypo-embedded.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\entypo\css\entypo-ie7-codes.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\entypo\css\entypo-ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\entypo\css\entypo.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\entypo\font\entypo.eot" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\entypo\font\entypo.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\entypo\font\entypo.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\entypo\font\entypo.woff" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\Logo Native Digital.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\Logo Native Digital\Logo Native Digital\native-logo.bmp" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\Logo Native Digital\Logo Native Digital\native-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\Logo Native Digital\Logo Native Digital\native.ai" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\Logo Native Digital\Logo Native Digital\native.dxf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\Logo Native Digital\Logo Native Digital\native_vectorized.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\Logo Native Digital\Logo Native Digital\native_vectorizedx24.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\Logo Native Digital\Logo Native Digital\native_vectorizedx6.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\arrow-left.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\arrow-right.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\big-images\1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\big-images\2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\ipad-phone.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\mail-ico.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\phone1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\phone2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\phone3.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\phones1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\phones2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\phones3.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\phones4.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\screen1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\screen2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\screen3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\screen4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\bg\testi.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\native-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\10300871_496953323779360_7841292633001632517_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\10505363_637909759638552_6529425343391862500_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\10526050_1517695025127568_4075822045169808730_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\10563066_771424062879794_480906379601817294_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\11089_340828596102752_3959431895122456433_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\1390707007_Bus_Stop.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\1545760_1457524397801827_924576183_n.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\250px-Trollface.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\2711817.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\4095836.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\4381210.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\4m79ai.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\4pkwgk.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\8856.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\8915629.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\a mi no me engaÃ±as.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\a2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\ah1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\aliens.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\products\productTest\bus.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\img\progressbar.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\bootstrap-3.3.4-dist.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\bootstrap-datepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\bootstrap-vertical-tabs-1.2.1.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\custom.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\dropzone.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\fileupload\jquery.fileupload-image.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\fileupload\jquery.fileupload-jquery-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\fileupload\jquery.fileupload-process.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\fileupload\jquery.fileupload-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\fileupload\jquery.fileupload-validate.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\fileupload\jquery.fileupload.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\fileupload\jquery.iframe-transport.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\fileupload\main.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\jQuery-File-Upload-9.9.3.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\jquery-1.11.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\jquery-validation-1.13.1.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\jquery.ajaxchimp.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\jquery.easing.1.3.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\jquery.magnific-popup.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\jquery.particleground.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\jquery.stellar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\jquery.ui.widget.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\jquery.validate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\neon-api.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\neon-custom.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\neon-forgotpassword.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\owl.carousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\scrollIt.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\swiper.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\js\wow.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\build\main.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\gulp\config.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\gulp\tasks\browserSync.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\gulp\tasks\browserify.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\gulp\tasks\build.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\gulp\tasks\default.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\gulp\tasks\less.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\gulp\tasks\markup.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\gulp\tasks\setWatch.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\gulp\tasks\svgs.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\gulp\tasks\watch.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\gulp\util\bundleLogger.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\gulp\util\handleErrors.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\gulpfile.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\custom.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\entypo\css\animation.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\entypo\css\entypo-codes.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\entypo\css\entypo-embedded.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\entypo\css\entypo-ie7-codes.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\entypo\css\entypo-ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\entypo\css\entypo.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\entypo\font\entypo.eot" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\entypo\font\entypo.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\entypo\font\entypo.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\entypo\font\entypo.woff" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\font-awesome\css\font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\font-awesome\css\font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\font-awesome\fonts\FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\font-awesome\fonts\fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\font-awesome\fonts\fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\font-awesome\fonts\fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\font-icons\font-awesome\fonts\fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\neon-core.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\neon-forms.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\neon-theme.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\css\skins\facebook.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\img\logo@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\img\thumb-1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\TimelineLite.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\TimelineMax.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\TweenLite.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\TweenMax.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\easing\EasePack.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\jquery.gsap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\main-gsap.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\AttrPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\BezierPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\CSSPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\CSSRulePlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\ColorPropsPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\DirectionalRotationPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\EaselPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\KineticPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\Physics2DPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\PhysicsPropsPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\RaphaelPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\RoundPropsPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\ScrambleTextPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\ScrollToPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\TextPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\plugins\ThrowPropsPlugin.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\utils\Draggable.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\gsap\utils\SplitText.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\joinable.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jquery-1.11.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jquery-ui\css\no-theme\jquery-ui-1.10.3.custom.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jquery-ui\css\no-theme\jquery-ui-1.10.3.custom.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jquery-ui\js\jquery-1.9.1.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jquery-ui\js\jquery-ui-1.10.3.custom.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jquery-ui\js\jquery-ui-1.10.3.custom.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jquery-ui\js\jquery-ui-1.10.3.minimal.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jquery.sparkline.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-1.2.2.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-1.2.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-ar-merc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-at-merc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-au-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-be-merc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-ca-lcc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-ch-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-cn-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-de-merc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-dk-merc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-es-merc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-europe-merc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-europe-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-fr-merc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-it-merc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-nl-merc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-uk-merc-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-us-aea-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-us-ny-newyork-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\jvectormap\jquery-jvectormap-world-mill-en.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\morris.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\neon-api.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\neon-chat.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\neon-custom.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\neon-demo.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\raphael-min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\resizeable.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\rickshaw\rickshaw.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\rickshaw\rickshaw.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\rickshaw\rickshaw.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\rickshaw\rickshaw.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\rickshaw\vendor\d3.layout.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\rickshaw\vendor\d3.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\rickshaw\vendor\d3.v2.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\rickshaw\vendor\d3.v3.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\assets\js\toastr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\legacy\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\package.json" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\Authenticated.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\app.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\carousels\carousel.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\carousels\swiper.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\carousels\testiCarousel.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\content.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\footer.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\forms\emailfield.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\forms\form.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\forms\label.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\forms\submit.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\forms\textarea.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\forms\textfield.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\header.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\loader.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\main.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\map.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\media\icons.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\miscellaneous\particles.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\products\productsForm.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\sections\contactSection.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\sections\featureSection.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\sections\gallerySection.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\sections\newsletterSection.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\sections\swiperSection.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\sections\testimonialsSection.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\signin.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\signup.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\social\contactCard.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\social\facebookButton.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\social\socialLinks.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\social\tumblerButton.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\social\twitterButton.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\app\components\topMenu.jsx" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\.csscomb.json" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\.csslintrc" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\_ts5tmp.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\badges.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\bootstrap.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\breadcrumbs.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\button-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\carousel.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\close.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\code.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\component-animations.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\dropdowns.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\forms.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\glyphicons.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\grid.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\input-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\jumbotron.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\labels.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\list-group.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\main.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\media.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\background-variant.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\border-radius.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\center-block.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\clearfix.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\forms.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\gradients.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\grid-framework.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\grid.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\hide-text.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\image.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\labels.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\list-group.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\nav-divider.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\nav-vertical-align.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\opacity.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\panels.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\progress-bar.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\reset-filter.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\resize.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\responsive-visibility.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\size.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\tab-focus.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\table-row.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\text-emphasis.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\text-overflow.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\mixins\vendor-prefixes.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\modals.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\navs.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\normalize.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\pager.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\panels.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\popovers.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\print.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\progress-bars.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\responsive-embed.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\responsive-utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\scaffolding.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\tables.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\theme.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\thumbnails.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\tooltip.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\type.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\variables.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\less\wells.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\animate.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\bootstrap.vertical-tabs.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\bootstrap.vertical-tabs.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\fileupload\jquery.fileupload-noscript.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\fileupload\jquery.fileupload-ui-noscript.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\fileupload\jquery.fileupload-ui.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\fileupload\jquery.fileupload.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\magnific-popup.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\media.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\neon-core.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\neon-forms.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\owl.carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\owl.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\styles\style-blue.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\css\swiper.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\entypo\css\animation.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\entypo\css\entypo-codes.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\entypo\css\entypo-embedded.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\entypo\css\entypo-ie7-codes.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\entypo\css\entypo-ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\entypo\css\entypo.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\entypo\font\entypo.eot" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\entypo\font\entypo.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\entypo\font\entypo.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\entypo\font\entypo.woff" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\glyphicons-halflings-regular.eot" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\glyphicons-halflings-regular.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\glyphicons-halflings-regular.woff" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\fonts\glyphicons-halflings-regular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\Logo Native Digital.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\Logo Native Digital\Logo Native Digital\native-logo.bmp" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\Logo Native Digital\Logo Native Digital\native-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\Logo Native Digital\Logo Native Digital\native.ai" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\Logo Native Digital\Logo Native Digital\native.dxf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\Logo Native Digital\Logo Native Digital\native_vectorized.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\Logo Native Digital\Logo Native Digital\native_vectorizedx24.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\Logo Native Digital\Logo Native Digital\native_vectorizedx6.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\Logo Native Digital\__MACOSX\Logo Native Digital\._native-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\Logo Native Digital\__MACOSX\Logo Native Digital\._native_vectorized.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\Logo Native Digital\__MACOSX\Logo Native Digital\._native_vectorizedx24.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\arrow-left.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\arrow-right.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\big-images\1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\big-images\2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\ipad-phone.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\mail-ico.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\phone1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\phone2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\phone3.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\phones1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\phones2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\phones3.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\phones4.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\screen1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\screen2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\screen3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\screen4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\bg\testi.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\native-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\img\progressbar.gif" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\bootstrap-3.3.4-dist.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\bootstrap-datepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\bootstrap-vertical-tabs-1.2.1.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\custom.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\dropzone.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\fileupload\jquery.fileupload-image.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\fileupload\jquery.fileupload-jquery-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\fileupload\jquery.fileupload-process.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\fileupload\jquery.fileupload-ui.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\fileupload\jquery.fileupload-validate.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\fileupload\jquery.fileupload.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\fileupload\jquery.iframe-transport.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\fileupload\main.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\jQuery-File-Upload-9.9.3.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\jquery-1.11.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\jquery-validation-1.13.1.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\jquery.ajaxchimp.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\jquery.easing.1.3.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\jquery.magnific-popup.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\jquery.particleground.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\jquery.stellar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\jquery.ui.widget.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\jquery.validate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\neon-api.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\neon-custom.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\neon-forgotpassword.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\owl.carousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\scrollIt.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\swiper.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\src\www\js\wow.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\documentation\assets\css\documenter_style.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\documentation\assets\css\img\info.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\documentation\assets\css\img\warning.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\documentation\assets\images\image_1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\documentation\assets\js\google-code-prettify\prettify.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\documentation\assets\js\google-code-prettify\prettify.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\documentation\assets\js\jquery.easing.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\documentation\assets\js\jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\documentation\assets\js\jquery.scrollTo.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\documentation\assets\js\script.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\documentation\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\LICENSE\GPL-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\LICENSE\MIT-LICENSE.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\LICENSE\ReadMe.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\contact\_ts5tmp.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\contact\contact.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\css\animate.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\css\bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\css\font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\css\magnific-popup.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\css\media.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\css\owl.carousel.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\css\owl.theme.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\css\styles\style-blue.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\css\styles\style-green.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\css\styles\style-orange.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\css\styles\style-pink.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\css\styles\style-red.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\css\swiper.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\fonts\FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\fonts\fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\fonts\fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\fonts\fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\fonts\fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\fonts\fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\arrow-left.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\arrow-right.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\big-images\1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\big-images\2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\ipad-phone.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\ipad.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\mail-ico.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\phone1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\phone2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\phone3.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\phones1.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\phones2.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\phones3.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\phones4.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\screen1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\screen2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\screen3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\screen4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\img\bg\testi.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\index.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\index2.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\index3.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\index4.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\index5.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\js\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\js\custom.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\js\jquery-1.11.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\js\jquery.ajaxchimp.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\js\jquery.easing.1.3.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\js\jquery.magnific-popup.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\js\jquery.particleground.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\js\jquery.stellar.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\js\modernizr.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\js\owl.carousel.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\js\scrollIt.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\js\swiper.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\js\wow.min.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\.csscomb.json" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\.csslintrc" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\_ts5tmp.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\badges.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\bootstrap.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\breadcrumbs.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\button-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\carousel.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\close.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\code.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\component-animations.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\dropdowns.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\forms.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\glyphicons.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\grid.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\input-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\jumbotron.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\labels.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\list-group.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\media.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\background-variant.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\border-radius.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\center-block.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\clearfix.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\forms.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\gradients.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\grid-framework.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\grid.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\hide-text.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\image.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\labels.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\list-group.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\nav-divider.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\nav-vertical-align.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\opacity.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\panels.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\progress-bar.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\reset-filter.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\resize.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\responsive-visibility.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\size.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\tab-focus.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\table-row.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\text-emphasis.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\text-overflow.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\mixins\vendor-prefixes.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\modals.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\navs.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\normalize.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\pager.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\panels.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\popovers.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\print.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\progress-bars.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\responsive-embed.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\responsive-utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\scaffolding.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\tables.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\theme.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\thumbnails.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\tooltip.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\type.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\variables.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\html\less\wells.less" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\template\products-WB009H8J6.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\Authenticated.jsx" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/app.js" afterPath="$PROJECT_DIR$/src/main/webapp/build/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/js/dropzone.js" afterPath="$PROJECT_DIR$/src/main/webapp/build/js/dropzone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/www/js/dropzone.js" afterPath="$PROJECT_DIR$/src/main/webapp/src/www/js/dropzone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/main.css" afterPath="$PROJECT_DIR$/src/main/webapp/build/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/less/main.less" afterPath="$PROJECT_DIR$/src/main/webapp/src/less/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productsForm.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productsForm.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/gulp/tasks/browserSync.js" afterPath="$PROJECT_DIR$/src/main/webapp/gulp/tasks/browserSync.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/build/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/www/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/src/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productCategoriesForm/productCategoriesForm.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productCategoriesForm/productCategoriesForm.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/css/styles/style-blue.css" afterPath="$PROJECT_DIR$/src/main/webapp/build/css/styles/style-blue.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/www/css/styles/style-blue.css" afterPath="$PROJECT_DIR$/src/main/webapp/src/www/css/styles/style-blue.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/users/usersForm/usersForm.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/users/usersForm/usersForm.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\.idea\misc.xml" afterPath="$PROJECT_DIR$/src/main/webapp/.idea/misc.xml" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\old\.idea\watcherTasks.xml" afterPath="$PROJECT_DIR$/src/main/webapp/.idea/watcherTasks.xml" />
     </list>
     <ignored path="Geneka.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -672,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProductWS.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProductWS.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8122867">
-              <caret line="166" column="13" selection-start-line="166" selection-start-column="13" selection-end-line="166" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="163" column="17" selection-start-line="163" selection-start-column="17" selection-end-line="163" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -688,10 +56,28 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/ws/CategoryWS.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/bs/CategoryServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/dao/Dao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -701,21 +87,17 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="116" column="34" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CorsFilter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CorsFilter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/remoting/bs/CorsFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.6857143">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -748,8 +130,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geneka/remoting/bs/CORSFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geneka/user/ws/UserWS.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geneka/remoting/bs/CorsFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geneka/remoting/bs/CorsFilter.java" />
       </list>
     </option>
   </component>
@@ -1713,7 +1095,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42340000" />
+    <option name="totallyTimeSpent" value="43174000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1725,7 +1107,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1736,7 +1118,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.47106108" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="0" y="235" width="1366" height="312" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4847512" sideWeight="0.49707174" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4847512" sideWeight="0.49707174" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.340625" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1785,16 +1167,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2046,27 +1418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/dao/Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2905983">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/bs/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33903134">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/bs/CategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/dao/DaoNS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2">
@@ -2135,16 +1486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/user/ws/UserWS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="116" column="34" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.70989764">
@@ -2153,33 +1494,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="163" column="17" selection-start-line="163" selection-start-column="17" selection-end-line="163" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/bs/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25714287">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/dao/DaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.53277314">
+          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/dao/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/ws/CategoryWS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/bs/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/user/ws/UserWS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="116" column="34" selection-start-line="116" selection-start-column="34" selection-end-line="116" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/remoting/bs/CorsFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8122867">
-          <caret line="166" column="13" selection-start-line="166" selection-start-column="13" selection-end-line="166" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.6857143">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
