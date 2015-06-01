@@ -73,7 +73,7 @@ var TreeCategories = React.createClass({
           </li>
         );
       }.bind(this)));
-    }.bind(this); //
+    }.bind(this);
 
     return (
       <div style={{height: '100%'}}>
