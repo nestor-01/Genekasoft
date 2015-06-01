@@ -106,15 +106,19 @@ var CheckBox = React.createClass({
       // Go!
       path.style.strokeDashoffset = '0';
     }
+
+    this.refs.checkbox.value = true;
   },
 
   _reset( el ) {
     Array.prototype.slice.call( el.parentNode.querySelectorAll( 'svg > path' ) ).forEach( function( el ) { el.parentNode.removeChild( el ); } );
+    this.refs.checkbox.value = false;
   },
 
   componentDidMount()
   {
     this._controlCheckbox(React.findDOMNode(this.refs.checkbox), 'checkmark' );
+    this.refs.checkbox.value = false;
 
     // CSS before injection
     CheckBoxStyles.labelStyle_before();
@@ -124,10 +128,15 @@ var CheckBox = React.createClass({
   {
     return (
       <div className="genekaCheckbox">
-        <input ref="checkbox" name="checkbox" type="checkbox" style={CheckBoxStyles.checkBoxStyle} />
+        <input id={this.props.id} ref="checkbox" name="checkbox" type="checkbox" style={CheckBoxStyles.checkBoxStyle} />
         <label htmlFor="checkbox" style={CheckBoxStyles.labelStyle}>{this.props.label}</label>
       </div>
     );
+  },
+
+  isChecked()
+  {
+    return this.refs.checkbox.value;
   }
 });
 

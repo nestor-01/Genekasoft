@@ -45,6 +45,10 @@ var Wizard = React.createClass({
           visibility: WizardStyles.pageVisible
         });
       }
+
+      return React.cloneElement(page, {
+        visibility: WizardStyles.pageHidden
+      });
     }.bind(this));
   },
 

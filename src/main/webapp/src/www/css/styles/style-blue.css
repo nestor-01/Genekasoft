@@ -2111,3 +2111,7 @@ fieldset[disabled] .btn-link:focus {
   background-color: rgb(81, 158, 211);
   color: white;
 }
+
+.twitter-typeahead {
+  width: 100%;
+}

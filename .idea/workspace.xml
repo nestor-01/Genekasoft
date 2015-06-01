@@ -8,15 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02f66e1a-9e80-41b9-bce9-53ab81921636" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productCategoriesForm/productCategoriesFormStyles.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productCategoriesForm/treeCategories/treeCategoriesStyles.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productCategoriesForm/valuedCategories/valuedCategories.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productCategoriesForm/valuedCategories/valuedCategoriesStyles.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/app.js" afterPath="$PROJECT_DIR$/src/main/webapp/build/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/gulp/tasks/browserSync.js" afterPath="$PROJECT_DIR$/src/main/webapp/gulp/tasks/browserSync.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/build/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/www/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/src/www/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/checkbox/checkbox.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/checkbox/checkbox.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productCategoriesForm/productCategoriesForm.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productCategoriesForm/productCategoriesForm.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/css/styles/style-blue.css" afterPath="$PROJECT_DIR$/src/main/webapp/build/css/styles/style-blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/www/css/styles/style-blue.css" afterPath="$PROJECT_DIR$/src/main/webapp/src/www/css/styles/style-blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/users/usersForm/usersForm.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/users/usersForm/usersForm.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productsForm.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productsForm.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productCategoriesForm/treeCategories/treeCategories.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productCategoriesForm/treeCategories/treeCategories.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/wizard/wizard.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/wizard/wizard.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\admin\products\productsForm\productCategoriesForm\treeCategories\TreeCategories.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productCategoriesForm/treeCategories/treeCategories.jsx" />
     </list>
     <ignored path="Geneka.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProductWS.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ProductWS.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="163" column="17" selection-start-line="163" selection-start-column="17" selection-end-line="163" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.6">
+              <caret line="85" column="11" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,17 +69,17 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/bs/CategoryServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/dao/Dao.java">
+      <file leaf-file-name="DaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/dao/DaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -92,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CorsFilter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CorsFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/remoting/bs/CorsFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6857143">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -198,7 +201,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -517,7 +520,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1060,6 +1063,7 @@
       <workItem from="1432414622281" duration="7375000" />
       <workItem from="1432606864505" duration="95000" />
       <workItem from="1432606998398" duration="5503000" />
+      <workItem from="1433013667979" duration="11561000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1431480952304</created>
@@ -1095,7 +1099,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43174000" />
+    <option name="totallyTimeSpent" value="54742000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1107,7 +1111,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1494,52 +1498,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="163" column="17" selection-start-line="163" selection-start-column="17" selection-end-line="163" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/bs/CategoryService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.25714287">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/dao/DaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53277314">
-          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/dao/Dao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/remoting/bs/CorsFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/ws/CategoryWS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/bs/CategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1552,11 +1521,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/remoting/bs/CorsFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/bs/CategoryServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6857143">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/dao/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/dao/DaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/ws/CategoryWS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6">
+          <caret line="85" column="11" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

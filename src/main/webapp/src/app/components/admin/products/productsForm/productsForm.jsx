@@ -30,7 +30,7 @@ var ProductsForm = React.createClass({
         </div>
         <div className="col-md-4 col-xs-6" style={{textAlign: 'right', right: '50px'}}>
           <div className="btn-group" role="group" aria-label="...">
-            <button onTouchTap={this.onSignUp} type="button" className="btn btn-default"><i className="glyphicon glyphicon-floppy-disk"></i> Guardar</button>
+            <button onTouchTap={this.onSave} type="button" className="btn btn-default"><i className="glyphicon glyphicon-floppy-disk"></i> Guardar</button>
             <button type="button" className="btn"><i className="glyphicon glyphicon-floppy-disk"></i> Limpiar</button>
           </div>
         </div>
@@ -44,7 +44,7 @@ var ProductsForm = React.createClass({
             <ProductImagesForm />
           </WizardPage>
           <WizardPage key="categories">
-            <ProductCategoriesForm />
+            <ProductCategoriesForm ref="categoriesForm" />
           </WizardPage>
         </Wizard>
         {/*<div style={{height: '100%', padding: '45px 65px 0 25px'}}>
@@ -122,16 +122,10 @@ var ProductsForm = React.createClass({
     );
   },
 
-  _onPrev()
+  onSave()
   {
-    $('#imagesUploaderPanel').hide();
-    $('#basicDataPanel').show();
-  },
-
-  _onNext()
-  {
-    $('#basicDataPanel').hide();
-    $('#imagesUploaderPanel').show();
+    console.log("Categories:", this.refs.categoriesForm.getCategories());
+    console.log("Valued categories:", this.refs.categoriesForm.getValuedCategories());
   }
 });
 
