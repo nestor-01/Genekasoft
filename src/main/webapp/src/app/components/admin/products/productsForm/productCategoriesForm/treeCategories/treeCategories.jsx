@@ -62,7 +62,13 @@ var TreeCategories = React.createClass({
         var withoutChildren = category.children.length == 0;
         var checkbox = <CheckBox ref={withoutChildren ? category.id : 'parent_'+category.id} key={category.id} label={category.name} />;
 
-        if(withoutChildren) this.checkboxes.push(category.id);
+        if(withoutChildren) this.checkboxes.push({
+          id: category.id,
+          name: category.name,
+          description: category.description,
+          parentsId: category.parentsId,
+          value: category.value
+        });
 
         return (
           <li key={category.id}>
@@ -78,7 +84,12 @@ var TreeCategories = React.createClass({
     return (
       <div style={{height: '100%'}}>
         <div style={ProductCategoriesFormStyles.toolBarSection}>
-          <input className="form-control" placeholder="Buscar categorías" />
+          <div className="input-group">
+            <input type="text" className="form-control" id="exampleInputAmount" placeholder="Amount" />
+              <div className="input-group-addon">
+                <i className="glyphicon glyphicon-search"></i>
+              </div>
+          </div>
         </div>
         <div style={ProductCategoriesFormStyles.bodySection}>
           <div ref="treeCategories" className="tree">
@@ -92,7 +103,7 @@ var TreeCategories = React.createClass({
   getCheckedCategories()
   {
     return this.checkboxes.filter(function(checkbox) {
-      if(this.refs[checkbox].isChecked()) return checkbox;
+      if(this.refs[checkbox.id].isChecked()) return checkbox;
     }.bind(this));
   }
 });

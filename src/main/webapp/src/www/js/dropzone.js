@@ -251,10 +251,6 @@
         if (this.previewsContainer) {
           file.previewElement = Dropzone.createElement(this.options.previewTemplate.trim());
           file.previewTemplate = file.previewElement;
-          $(file.previewElement).attr("data-reactid", $(file.previewElement).attr('data-reactid')+file.name)
-          $(file.previewElement).find('*').each(function(child, index){
-            $(this).attr("data-reactid", $(this).attr('data-reactid')+file.name);
-          });
           this.previewsContainer.appendChild(file.previewElement);
           _ref = file.previewElement.querySelectorAll("[data-dz-name]");
           for (_i = 0, _len = _ref.length; _i < _len; _i++) {
