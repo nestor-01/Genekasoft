@@ -48,7 +48,7 @@ var SignUp = React.createClass({
       }.bind(this)
     );
 
-    $('#myForm').validate({
+    $(React.findDOMNode(this.refs.newUserForm)).validate({
       errorPlacement: function(error, element)
       {
         console.log(error);
@@ -73,7 +73,7 @@ var SignUp = React.createClass({
           </div>
           <div className="col-md-4 col-xs-6" style={{textAlign: 'right', right: '50px'}}>
             <div className="btn-group" role="group" aria-label="...">
-              <button onTouchTap={this.onSignUp} type="button" className="btn btn-default"><i className="glyphicon glyphicon-floppy-disk"></i> Guardar</button>
+              <button ref="myButton" onTouchTap={this.onSignUp} type="button" className="btn btn-default"><i className="glyphicon glyphicon-floppy-disk"></i> Guardar</button>
               <button type="button" className="btn"><i className="glyphicon glyphicon-floppy-disk"></i> Limpiar</button>
             </div>
           </div>
