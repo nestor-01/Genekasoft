@@ -3,62 +3,11 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="Geneka:war" />
-      <artifact name="Geneka:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02f66e1a-9e80-41b9-bce9-53ab81921636" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/mixins/authenticated.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsList/productsList.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/header/topBar.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/users/usersForm/usersFormStyles.jsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/users/usersList/usersList.jsx" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\npm-debug.log" afterPath="" />
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\common\Authenticated.jsx" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/app.js" afterPath="$PROJECT_DIR$/src/main/webapp/build/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/app/app.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/app.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/gulp/tasks/browserify.js" afterPath="$PROJECT_DIR$/src/main/webapp/gulp/tasks/browserify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/gulp/config.js" afterPath="$PROJECT_DIR$/src/main/webapp/gulp/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/js/custom.js" afterPath="$PROJECT_DIR$/src/main/webapp/build/js/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/www/js/custom.js" afterPath="$PROJECT_DIR$/src/main/webapp/src/www/js/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/package.json" afterPath="$PROJECT_DIR$/src/main/webapp/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/css/styles/style-blue.css" afterPath="$PROJECT_DIR$/src/main/webapp/build/css/styles/style-blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/src/www/css/styles/style-blue.css" afterPath="$PROJECT_DIR$/src/main/webapp/src/www/css/styles/style-blue.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\admin.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/admin.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\carousels\carousel.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/carousels/carousel/carousel.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\carousels\swiper.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/carousels/swiper/swiper.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\carousels\testiCarousel.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/carousels/testiCarousel/testiCarousel.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\content.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/content/content.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\events.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/constants/events.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\footer.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/footer/footer.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\forms\emailfield.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/emailfield/emailfield.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\forms\form.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/form/form.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\forms\label.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/label/label.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\forms\submit.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/submit/submit.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\forms\textarea.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/textarea/textarea.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\forms\textfield.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/forms/textfield/textfield.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\header.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/header/header.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\loader.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/loader/loader.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\main.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/main.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\map.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/map/map.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\media\icons.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/constants/icons.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\miscellaneous\particles.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/common/widgets/particles/particles.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\products\productsForm.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/products/productsForm/productsForm.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\sections\contactSection.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/sections/contactSection.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\sections\featureSection.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/sections/featureSection.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\sections\gallerySection.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/sections/gallerySection.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\sections\newsletterSection.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/sections/newsletterSection.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\sections\swiperSection.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/sections/swiperSection.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\sections\testimonialsSection.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/sections/testimonialsSection.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\signin.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/signin/signin.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\signup.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/admin/users/usersForm/usersForm.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\social\contactCard.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/social/contactCard.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\social\facebookButton.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/social/facebookButton.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\social\socialLinks.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/social/socialLinks.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\social\tumblerButton.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/social/tumblerButton.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\social\twitterButton.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/social/twitterButton.jsx" />
-      <change type="MOVED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\topMenu.jsx" afterPath="$PROJECT_DIR$/src/main/webapp/src/app/components/client/topMenu/topMenu.jsx" />
     </list>
     <ignored path="Geneka.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,9 +35,9 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="136" column="97" selection-start-line="136" selection-start-column="68" selection-end-line="136" selection-end-column="97" />
+              <caret line="189" column="0" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1433299263974" expanded="false" signature="39:250" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -98,29 +47,85 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/user/ws/UserWS.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="102" column="91" selection-start-line="102" selection-start-column="91" selection-end-line="102" selection-end-column="91" />
-              <folding />
+              <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
+              <folding>
+                <marker date="1433299263981" expanded="false" signature="37:140" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8168498">
-              <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CorsFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/remoting/bs/CorsFilter.java">
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/user/bs/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1433299263977" expanded="false" signature="37:83" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/user/bs/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="73" column="63" selection-start-line="84" selection-start-column="12" selection-end-line="85" selection-end-column="87" />
+              <folding>
+                <marker date="1433299263979" expanded="false" signature="36:358" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/bs/ProductServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="75" column="42" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/modelnosql/Product.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/src/app/app.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.66775775">
+              <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Image.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/modelnosql/Image.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/bs/ProductService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+              <folding>
+                <marker date="1433299263970" expanded="false" signature="39:55" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -137,6 +142,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="search" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -149,13 +159,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/geneka/user/bo/UserEngineImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/geneka/modelnosql/Image.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/conf/spring/application-config.xml" />
+        <option value="$PROJECT_DIR$/target/classes/conf/spring/application-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geneka/remoting/bs/CORSFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geneka/remoting/bs/CorsFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/geneka/user/ws/UserWS.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geneka/modelnosql/Search.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geneka/product/bs/ProductService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/geneka/product/bs/ProductServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/src/app/app.jsx" />
       </list>
     </option>
   </component>
@@ -194,9 +206,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="y" value="6" />
     <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="height" value="770" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -221,6 +233,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -297,7 +312,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -319,11 +338,97 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Geneka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Genekasoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Geneka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Genekasoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Geneka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Genekasoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -346,10 +451,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -378,6 +479,14 @@
               <option name="myItemId" value="geneka" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ws" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -405,7 +514,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bs" />
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Geneka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Genekasoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geneka" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -472,18 +607,79 @@
               <option name="myItemId" value="product" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Geneka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Genekasoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geneka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modelnosql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Geneka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Genekasoft" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="geneka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.21149425" />
     <property name="FullScreen" value="false" />
@@ -518,15 +714,13 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="JavaScriptLanguageLevel" value="JSX" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Documents\Projects\Genekasoft\src\main\webapp\WEB-INF\classes" />
       <recent name="C:\Users\Nestor\IdeaProjects\Geneka\src\main\webapp\WEB-INF\classes" />
       <recent name="C:\Users\Nestor\IdeaProjects\Geneka" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Documents\Projects\Genekasoft\src\main\webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Maven.geneka">
@@ -1017,8 +1211,19 @@
       <workItem from="1431403471992" duration="4154000" />
       <workItem from="1431408209580" duration="457000" />
       <workItem from="1431479962455" duration="2478000" />
-      <workItem from="1431571870277" duration="9866000" />
-      <workItem from="1432088194366" duration="6235000" />
+      <workItem from="1431571870277" duration="8320000" />
+      <workItem from="1431581708450" duration="455000" />
+      <workItem from="1432417330225" duration="1224000" />
+      <workItem from="1432500129634" duration="1142000" />
+      <workItem from="1432606128924" duration="3437000" />
+      <workItem from="1432692040547" duration="3902000" />
+      <workItem from="1432778037678" duration="1791000" />
+      <workItem from="1432781048760" duration="615000" />
+      <workItem from="1432866733419" duration="2530000" />
+      <workItem from="1433100265770" duration="304000" />
+      <workItem from="1433125361230" duration="1790000" />
+      <workItem from="1433213441516" duration="1552000" />
+      <workItem from="1433293963730" duration="2927000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1431480952304</created>
@@ -1026,35 +1231,35 @@
       <option name="project" value="LOCAL" />
       <updated>1431480952304</updated>
     </task>
-    <task id="LOCAL-00002" summary="Upload images to the public folder in the server.... OK.">
-      <created>1431580491983</created>
+    <task id="LOCAL-00002" summary="Merge branch 'master' of https://github.com/nestor-01/Genekasoft&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;src/main/java/com/geneka/product/ws/ProductWS.java&#10;">
+      <created>1431581912036</created>
       <option name="number" value="00002" />
       <option name="project" value="LOCAL" />
-      <updated>1431580491983</updated>
+      <updated>1431581912036</updated>
     </task>
-    <task id="LOCAL-00003" summary="Upload images to the public folder in the server.... OK.">
-      <created>1431580637524</created>
+    <task id="LOCAL-00003" summary="Merge branch 'master' of https://github.com/nestor-01/Genekasoft&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;src/main/java/com/geneka/product/ws/ProductWS.java&#10;">
+      <created>1432271443962</created>
       <option name="number" value="00003" />
       <option name="project" value="LOCAL" />
-      <updated>1431580637524</updated>
+      <updated>1432271443962</updated>
     </task>
-    <task id="LOCAL-00004" summary="Links 2">
-      <created>1432130310822</created>
+    <task id="LOCAL-00004" summary="save search service">
+      <created>1432608777863</created>
       <option name="number" value="00004" />
       <option name="project" value="LOCAL" />
-      <updated>1432130310822</updated>
+      <updated>1432608777863</updated>
     </task>
-    <task id="LOCAL-00005" summary="Links 3">
-      <created>1432130328469</created>
+    <task id="LOCAL-00005" summary="save search service">
+      <created>1432779259341</created>
       <option name="number" value="00005" />
       <option name="project" value="LOCAL" />
-      <updated>1432130328469</updated>
+      <updated>1432779259341</updated>
     </task>
     <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29362000" />
+    <option name="totallyTimeSpent" value="46053000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1066,37 +1271,37 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="6" width="1382" height="770" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296875" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.50292826" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329429" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="true" weight="0.47106108" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="0" y="235" width="1366" height="312" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51607716" sideWeight="0.49707174" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.340625" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="true" weight="0.57276994" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="0" y="235" width="1366" height="312" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3395931" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2647504" sideWeight="0.4883721" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24357034" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2647504" sideWeight="0.5116279" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39879155" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39879155" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4913928" sideWeight="0.49707174" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286385" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1112,10 +1317,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changes" />
-    <MESSAGE value="Upload images to the public folder in the server.... OK." />
-    <MESSAGE value="Links 2" />
-    <MESSAGE value="Links 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Links 3" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/nestor-01/Genekasoft&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;src/main/java/com/geneka/product/ws/ProductWS.java&#10;" />
+    <MESSAGE value="save search service" />
+    <option name="LAST_COMMIT_MESSAGE" value="save search service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1126,53 +1330,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="34" selection-start-line="49" selection-start-column="34" selection-end-line="49" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/conf/spring/application-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="85" selection-start-line="51" selection-start-column="74" selection-end-line="51" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/base.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/user/bo/UserEngineImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/user/bo/UserEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1184,9 +1341,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="54" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1433299263974" expanded="false" signature="39:250" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1225,7 +1382,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1433299263974" expanded="false" signature="39:250" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1264,46 +1421,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/base.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/user/bo/UserEngineImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/user/bo/UserEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1433299263974" expanded="false" signature="39:250" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1387,13 +1505,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/dao/Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2905983">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/bs/CategoryService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33903134">
@@ -1405,13 +1516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.28">
           <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/ws/CategoryWS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5058824">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
         </state>
       </provider>
     </entry>
@@ -1429,32 +1533,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5552764">
           <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/modelnosql/Image.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/modelnosql/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8396226">
-          <caret line="173" column="21" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.5212264">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -1467,28 +1563,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/io/File.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/dao/Dao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1433121">
-          <caret line="1338" column="19" selection-start-line="1338" selection-start-column="19" selection-end-line="1338" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/common/ws/CategoryWS.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41734862">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="173" column="21" selection-start-line="173" selection-start-column="21" selection-end-line="173" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/classes/META-INF/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/less/main.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80656934">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0369005">
+          <caret line="20" column="97" selection-start-line="20" selection-start-column="97" selection-end-line="20" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/html/index3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.37638375">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/template/documentation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-80.39852">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/conf/spring/application-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="136" column="97" selection-start-line="136" selection-start-column="68" selection-end-line="136" selection-end-column="97" />
+          <caret line="189" column="0" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1433299263974" expanded="false" signature="39:250" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/bs/ProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding>
+            <marker date="1433299263970" expanded="false" signature="39:55" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1496,25 +1657,61 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/user/ws/UserWS.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="102" column="91" selection-start-line="102" selection-start-column="91" selection-end-line="102" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/remoting/bs/CorsFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
+          <caret line="88" column="29" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1433299263981" expanded="false" signature="37:140" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/user/bs/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8168498">
-          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <marker date="1433299263977" expanded="false" signature="37:83" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/user/bs/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="63" selection-start-line="84" selection-start-column="12" selection-end-line="85" selection-end-column="87" />
+          <folding>
+            <marker date="1433299263979" expanded="false" signature="36:358" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/product/bs/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="42" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/modelnosql/Image.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/geneka/modelnosql/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="24" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/src/app/app.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66775775">
+          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1529,7 +1726,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.21149425" />
+                <option value="0.46781608" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1538,11 +1735,11 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring (Geneka)|Spring</last-edited>
+          <last-edited>JPA</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.21149425" />
+                <option value="0.46781608" />
               </list>
             </option>
           </splitter-proportions>
@@ -1574,7 +1771,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|Geneka</last-edited>
+          <last-edited>Geneka</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
