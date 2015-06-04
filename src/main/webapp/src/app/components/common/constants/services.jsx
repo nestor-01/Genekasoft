@@ -36,7 +36,7 @@ module.exports = {
       return mode + path + '/category/getAllCategories';
     },
     saveProduct: function() {
-      return mode + path + '/user/logOut';
+      return mode + path + '/product/save';
     }
   }
 };

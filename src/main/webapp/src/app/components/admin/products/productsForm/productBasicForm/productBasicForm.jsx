@@ -17,19 +17,28 @@ var ProductsForm = React.createClass({
         <form>
           <div className="form-group">
             <label for="product-code">Código</label>
-            <input type="text" className="form-control" id="product-code" placeholder="" />
+            <input ref="code" type="text" className="form-control" id="product-code" placeholder="" />
           </div>
           <div className="form-group info">
             <label for="product-name">Nombre</label>
-            <input type="text" className="form-control" id="product-name" placeholder="" />
+            <input ref="name" type="text" className="form-control" id="product-name" placeholder="" />
           </div>
           <div className="form-group">
             <label for="product-desc">Descripción</label>
-            <textarea className="form-control" id="product-desc" placeholder=""></textarea>
+            <textarea ref="description" className="form-control" id="product-desc" placeholder=""></textarea>
           </div>
         </form>
       </div>
     );
+  },
+
+  getBasicData()
+  {
+    return {
+      code: React.findDOMNode(this.refs.code).value,
+      name: React.findDOMNode(this.refs.name).value,
+      description: React.findDOMNode(this.refs.description).value
+    };
   }
 });
 

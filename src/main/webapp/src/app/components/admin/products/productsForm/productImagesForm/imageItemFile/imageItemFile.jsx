@@ -4,8 +4,10 @@ var ImageItemFile = React.createClass({
 
   getInitialState()
   {
+    var fileName = this.props.file.name;
+
     return {
-      name: '',
+      name: fileName,
       description: '',
       thumbnail: '',
       file: ''
@@ -32,11 +34,11 @@ var ImageItemFile = React.createClass({
               <img style={{maxWidth: '195px', maxHeight: '130px', minHeight: '130px'}} src={this.state.thumbnail} />
             </div>
             <div className="caption">
-              <input onChange={this._onChangeTitle} type="text" className="form-control" placeholder="Titulo" defaultValue={this.props.file.name} value={name} onChange={this.handleChange('name')}></input>
+              <input type="text" className="form-control" placeholder="Titulo" defaultValue={this.props.file.name} value={name} onChange={this.handleChange('name')}></input>
               <br/>
               <div>
                 <div className="form-group">
-                  <input onChange={this._onChangeDescription} type="text" className="form-control" placeholder="Descripción" defaultValue={this.props.file.description} value={this.state.description} onChange={this.handleChange('description')}/>
+                  <input type="text" className="form-control" placeholder="Descripción" defaultValue={this.props.file.description} value={this.state.description} onChange={this.handleChange('description')}/>
                 </div>
                 <strong className="error text-danger">{this.props.errormessage}</strong>
               </div>
@@ -59,6 +61,13 @@ var ImageItemFile = React.createClass({
   {
     this.setState({
       thumbnail: data
+    });
+  },
+
+  setFilePath(path)
+  {
+    this.setState({
+      file: path
     });
   },
 

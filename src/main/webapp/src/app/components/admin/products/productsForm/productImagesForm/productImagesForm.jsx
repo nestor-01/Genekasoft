@@ -111,7 +111,8 @@ var ProductsImagesForm = React.createClass({
       }
     };
 
-    var myDropzone = new Dropzone('#messageToDragImgs', {
+    this.uploadPromise = $.Deferred();
+    this.myDropzone = new Dropzone('#messageToDragImgs', {
       previewsContainer: "#previews",
       thumbnailWidth: 295,
       thumbnailHeight: 150,
@@ -131,41 +132,46 @@ var ProductsImagesForm = React.createClass({
       }
     });
 
-    myDropzone.on("addedfile", function(file) {
+    this.myDropzone.on("addedfile", function(file) {
       $('#messageToDragImgs').hide();
       //myDropzone.enqueueFile(file);
       //file.previewElement.querySelector(".start").onclick = function() { myDropzone.enqueueFile(file); };
     });
 
-    myDropzone.on("removedfile", function(file) {
-      console.log(myDropzone.getQueuedFiles());
-      if(myDropzone.getQueuedFiles().length == 0)
+    this.myDropzone.on("removedfile", function(file) {
+      console.log(this.myDropzone.getQueuedFiles());
+      if(this.myDropzone.getQueuedFiles().length == 0)
       {
         $('#messageToDragImgs').show();
       }
-    });
+    }.bind(this));
 
-    myDropzone.on("totaluploadprogress", function(progress) {
+    this.myDropzone.on("totaluploadprogress", function(progress) {
       //document.querySelector("#total-progress .progress-bar").style.width = progress + "%";
     });
 
-    myDropzone.on("sending", function(file) {
+    this.myDropzone.on("sending", function(file) {
       //document.querySelector("#total-progress").style.opacity = "1";
       $(file.previewElement).find(".info").html('Uploaded!');
     });
 
-    myDropzone.on("queuecomplete", function(progress) {
+    this.myDropzone.on("queuecomplete", function(progress) {
+      this.uploadPromise.resolve()
       //document.querySelector("#total-progress").style.opacity = "0";
-    });
+    }.bind(this));
+
+    this.myDropzone.on("success", function(file, responseText, e) {
+      this.refs[file.name].setFilePath(responseText.path);
+    }.bind(this));
 
     $(".start").on('click', function() {
-      myDropzone.processQueue();
-    });
+      this.myDropzone.processQueue();
+    }.bind(this));
 
     document.querySelector("#picture-actions .cancel").onclick = function() {
-      myDropzone.removeAllFiles(true);
+      this.myDropzone.removeAllFiles(true);
       $('#messageToDragImgs').show();
-    };
+    }.bind(this);
   },
 
   render()
@@ -256,6 +262,12 @@ var ProductsImagesForm = React.createClass({
   _onChangeDescription(e)
   {
 
+  },
+
+  uploadImages()
+  {
+    this.myDropzone.processQueue();
+    return this.uploadPromise.promise();
   },
 
   getImagesData()
