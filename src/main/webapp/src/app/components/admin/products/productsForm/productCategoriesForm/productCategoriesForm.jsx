@@ -1,5 +1,5 @@
 var React = require('react');
-var ProductCRUDStyles = require('../productCRUDStyles.jsx');
+var Services = require('../../../../common/constants/services.jsx');
 
 var TreeCategories = require('./treeCategories/treeCategories.jsx');
 var ValuedCategories = require('./valuedCategories/valuedCategories.jsx');
@@ -16,7 +16,7 @@ var ProductCategoriesForm = React.createClass({
 
   _createTreeCategoryData()
   {
-    $.get('http://localhost:8080/geneka/api/category/getAllCategories')
+    $.get(Services.Products.getCategories())
       .done(function (response) {
         var rawCategoriesList = JSON.parse(response);
 

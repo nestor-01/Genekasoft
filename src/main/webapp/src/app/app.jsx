@@ -5,7 +5,8 @@
 })();
 
 var React = require('react'),
-    Router = require('react-router');
+    Router = require('react-router'),
+    Services = require('./components/common/constants/services.jsx');
 
 var Main = require('./components/client/main.jsx'),
     Content = require('./components/client/content/content.jsx'),
@@ -21,6 +22,9 @@ var Main = require('./components/client/main.jsx'),
 
 var DefaultRoute = Router.DefaultRoute,
     Route = Router.Route;
+
+// Define mode
+Services.setMode(Services.modes.TESTING);
 
 var routes = (
   <Route path="/">

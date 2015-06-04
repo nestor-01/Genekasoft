@@ -1,4 +1,6 @@
 var React = require('react');
+var Services = require('../../common/constants/services.jsx');
+
 var TextField = require('../../common/widgets/forms/textfield/textfield.jsx');
 var Label = require('../../common/widgets/forms/label/label.jsx');
 var Authenticated = require('../../common/mixins/authenticated.jsx');
@@ -11,7 +13,7 @@ var SignIn = React.createClass({
     var _width = 300;
     var _top = ($(window).height()/2) - (_height / 2);
     var _left = ($(window).width()/2) - (_width / 2);
-    
+
     return {
       _height: _height,
       _width: _width,
@@ -27,7 +29,7 @@ var SignIn = React.createClass({
       invalidInfo: 'none'
     };
   },
-  
+
   componentDidMount()
   {
     this.props.onInit('signin');
@@ -35,21 +37,21 @@ var SignIn = React.createClass({
     this.setState({
       opacity: .3
     });
-    
+
     var buttonTimer = setTimeout(function(){
       this.setState({
         opacityButton: 1
       });
     }.bind(this),380);
-    
+
     React.findDOMNode(this.refs.userTextfield).focus();
   },
-  
+
   componentWillUnmount()
   {
     this.replaceState(this.getInitialState());
   },
-  
+
   render()
   {
     var errorsStyle = {
@@ -72,13 +74,13 @@ var SignIn = React.createClass({
             <br/>
             <span style={{color: 'white'}}>Usuario</span>
             <TextField ref="userTextfield" />
-            
+
             <br/>
             <br/>
-            
+
             <span style={{color: 'white'}}>Contraseña</span>
             <TextField type="password" ref="passwordTextField" />
-            
+
             <br/>
             <div style={missingInfoStyle}>{"Faltan datos"}</div>
             <div style={invalidInfoStyle}>{"Usuario o contraseña incorrecta"}</div>
@@ -106,7 +108,7 @@ var SignIn = React.createClass({
         password: password
       };
 
-      $.post('http://localhost:8080/geneka/api/user/loginUser', data)
+      $.post(Services.Security.signIn(), data)
         .done(function (response) {
           window.location.replace('#/admin/users');
         })

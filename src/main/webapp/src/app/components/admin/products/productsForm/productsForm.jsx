@@ -41,7 +41,7 @@ var ProductsForm = React.createClass({
             <ProductBasicForm />
           </WizardPage>
           <WizardPage key="imagesUploader">
-            <ProductImagesForm />
+            <ProductImagesForm ref="imagesForm" />
           </WizardPage>
           <WizardPage key="categories">
             <ProductCategoriesForm ref="categoriesForm" />
@@ -125,6 +125,7 @@ var ProductsForm = React.createClass({
   onSave()
   {
     console.log("Categories:", this.refs.categoriesForm.getCategories());
+    console.log("Images:", this.refs.imagesForm.getImagesData());
     console.log("Valued categories:", this.refs.categoriesForm.getValuedCategories());
   }
 });
