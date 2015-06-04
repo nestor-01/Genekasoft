@@ -72,32 +72,32 @@ var TreeCategories = React.createClass({
         });
 
         return (
-          <li key={category.id}>
+            <li key={category.id}>
             <span key={category.id} style={withoutChildren ? TreeCategoriesStyles.parent : {}}>
                   {withoutChildren ? checkbox : category.name}
-                  {createElements(category.children)}
+              {createElements(category.children)}
             </span>
-          </li>
+            </li>
         );
       }.bind(this)));
     }.bind(this);
 
     return (
-      <div style={{height: '100%'}}>
-        <div style={ProductCategoriesFormStyles.toolBarSection}>
-          <div className="input-group">
-            <input type="text" className="form-control" id="exampleInputAmount" placeholder="Amount" />
+        <div style={{height: '100%'}}>
+          <div style={ProductCategoriesFormStyles.toolBarSection}>
+            <div className="input-group">
+              <input type="text" className="form-control" id="exampleInputAmount" placeholder="Amount" />
               <div className="input-group-addon">
                 <i className="glyphicon glyphicon-search"></i>
               </div>
+            </div>
+          </div>
+          <div style={ProductCategoriesFormStyles.bodySection}>
+            <div ref="treeCategories" className="tree">
+              {createElements(this.state.tree.children || [])}
+            </div>
           </div>
         </div>
-        <div style={ProductCategoriesFormStyles.bodySection}>
-          <div ref="treeCategories" className="tree">
-            {createElements(this.state.tree.children || [])}
-          </div>
-        </div>
-      </div>
     );
   },
 
