@@ -4,6 +4,7 @@ var ProductCategoriesFormStyles = require('../productCategoriesFormStyles.jsx');
 
 var CheckBox = require('../../../../../common/widgets/forms/checkbox/checkbox.jsx');
 
+
 var TreeCategories = React.createClass({
 
   getInitialState()
