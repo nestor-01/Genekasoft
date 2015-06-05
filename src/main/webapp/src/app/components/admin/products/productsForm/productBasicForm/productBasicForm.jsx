@@ -2,8 +2,10 @@ var React = require('react');
 
 var ProductsForm = React.createClass({
 
-  componentDidMount() {
-
+  getInitialState() {
+    return {
+      data: {}
+    };
   },
 
   render()
@@ -17,11 +19,11 @@ var ProductsForm = React.createClass({
         <form>
           <div className="form-group">
             <label for="product-code">Código</label>
-            <input ref="code" type="text" className="form-control" id="product-code" placeholder="" />
+            <input ref="code" type="text" className="form-control" id="product-code" placeholder="" defaultValue={this.state.data.code} />
           </div>
           <div className="form-group info">
             <label for="product-name">Nombre</label>
-            <input ref="name" type="text" className="form-control" id="product-name" placeholder="" />
+            <input ref="name" type="text" className="form-control" id="product-name" placeholder="" defaultValue={this.state.data.name} />
           </div>
           <div className="form-group">
             <label for="product-desc">Descripción</label>

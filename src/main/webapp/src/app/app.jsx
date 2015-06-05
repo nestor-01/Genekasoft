@@ -37,6 +37,7 @@ var routes = (
       <Route name="users/newUser" handler={UsersForm} />
       <Route name="products" handler={ProductsList} />
       <Route name="products/newProduct" handler={ProductsForm} />
+      <Route name="products/editProduct/:productId" handler={ProductsForm} />
     </Route>
   </Route>
 );

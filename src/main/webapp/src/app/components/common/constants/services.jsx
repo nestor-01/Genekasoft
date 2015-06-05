@@ -35,8 +35,17 @@ module.exports = {
     getCategories: function() {
       return mode + path + '/category/getAllCategories';
     },
+    getProduct: function() {
+      return mode + path + '/product/getById';
+    },
+    getProducts: function() {
+      return mode + path + '/product/getAll';
+    },
     saveProduct: function() {
       return mode + path + '/product/save';
+    },
+    deleteProduct: function() {
+      return mode + path + '/product/deleteProduct';
     }
   }
 };

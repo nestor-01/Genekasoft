@@ -13,9 +13,54 @@ var ProductCategoriesForm = require('./productCategoriesForm/productCategoriesFo
 
 var ProductsForm = React.createClass({
 
+  contextTypes: {
+    router: React.PropTypes.func
+  },
+
+  getInitialState()
+  {
+    return {
+      basicData: {},
+      imagesData: [],
+      categoriesData: [],
+    };
+  },
+
   componentDidMount()
   {
     this.props.onInit('newProduct');
+
+    var { router } = this.context;
+    var productId = router.getCurrentParams().productId;
+
+    console.log(productId);
+
+    if(productId) // It's an edition
+    {
+      $.get(Services.Products.getProduct(), {id: productId})
+        .done(function(productRaw) {
+          if(productRaw)
+          {
+            var product = JSON.parse(productRaw);
+
+            this.refs.basicForm.setState({
+              data: {
+                id: product.id,
+                code: product.code,
+                name: product.name,
+                description: product.description,
+                active: product.active
+              },
+
+              imagesData: product.images,
+              categoriesData: product.categories
+            });
+          }
+        }.bind(this))
+        .fail(function(error) {
+          alert(JSON.stringify(error));
+        });
+    }
   },
 
   componentWillUnmount()
@@ -39,13 +84,13 @@ var ProductsForm = React.createClass({
         <br />
         <Wizard style={ProductCRUDStyles.wizardStyle} activePage="basicData">
           <WizardPage key="basicData">
-            <ProductBasicForm ref="basicForm" />
+            <ProductBasicForm ref="basicForm" data={this.state.basicData} />
           </WizardPage>
           <WizardPage key="imagesUploader">
-            <ProductImagesForm ref="imagesForm" />
+            <ProductImagesForm ref="imagesForm" data={this.state.imagesData} />
           </WizardPage>
           <WizardPage key="categories">
-            <ProductCategoriesForm ref="categoriesForm" />
+            <ProductCategoriesForm ref="categoriesForm" data={this.state.categoriesData} />
           </WizardPage>
         </Wizard>
       </div>
@@ -63,7 +108,7 @@ var ProductsForm = React.createClass({
           images: this.refs.imagesForm.getImagesData()
         });
 
-        console.log(data)
+        console.log(data);
 
         $.ajax({
             type: "post",
