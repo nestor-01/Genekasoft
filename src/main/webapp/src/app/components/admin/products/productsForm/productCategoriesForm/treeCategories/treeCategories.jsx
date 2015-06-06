@@ -35,17 +35,9 @@ var TreeCategories = React.createClass({
       if (children.is(":visible")) {
         children.hide('fast');
 
-        /*self.setState({
-         stateIndicator: "plus"
-         });*/
-
         $(this).attr('title', 'Expand this branch').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
       } else {
         children.show('fast');
-
-        /*self.setState({
-         stateIndicator: "minus"
-         });*/
 
         $(this).attr('title', 'Collapse this branch').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
 
