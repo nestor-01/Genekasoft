@@ -24,7 +24,7 @@ var DefaultRoute = Router.DefaultRoute,
     Route = Router.Route;
 
 // Define mode
-Services.setMode(Services.modes.DEVELOPMENT);
+Services.setMode(Services.modes.TESTING);
 
 var routes = (
   <Route path="/">

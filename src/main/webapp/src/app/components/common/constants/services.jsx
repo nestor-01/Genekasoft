@@ -4,7 +4,7 @@ var path = '/geneka/api';
 module.exports = {
   modes: {
     DEVELOPMENT: 'http://localhost:8080',
-    TESTING: 'https://geneka.getsandbox.com',
+    TESTING: 'https://restfulmock.herokuapp.com',
     PRODUCTION: 'http://localhost:8080'
   },
   setMode: function(_mode)
