@@ -15,6 +15,7 @@ var Main = require('./components/client/main.jsx'),
 
     UsersList = require('./components/admin/users/usersList/usersList.jsx'),
     UsersForm = require('./components/admin/users/usersForm/usersForm.jsx'),
+    UserStatistics = require('./components/admin/users/userStatistics/userStatistics.jsx'),
 
 
     ProductsList = require('./components/admin/products/productsList/productsList.jsx'),
@@ -32,6 +33,7 @@ var routes = (
     <Route path="/admin" handler={Admin}>
       <Route name="users" handler={UsersList} />
       <Route name="users/newUser" handler={UsersForm} />
+      <Route name="users/userStatistics" handler={UserStatistics} />
 
       <Route name="products" handler={ProductsList} />
       <Route name="products/newProduct" handler={ProductsForm} />
