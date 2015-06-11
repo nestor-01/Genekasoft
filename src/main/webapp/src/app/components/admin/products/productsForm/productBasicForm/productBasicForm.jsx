@@ -1,11 +1,26 @@
 var React = require('react');
+var Form = require('../../../../common/widgets/forms/form/form.jsx');
+var TextField = require('../../../../common/widgets/forms/textfield/textfield.jsx');
 
-var ProductsForm = React.createClass({
+var ProductsBasicForm = React.createClass({
 
   getInitialState() {
     return {
       data: {}
     };
+  },
+
+  componentDidMount()
+  {
+    /*$(React.findDOMNode(this.refs.productBasicForm)).validate({
+      errorPlacement: function(error, element)
+      {
+        element.parent().parent().addClass('has-error');
+
+        error.css(UserFormStyles.errorField);
+        error.insertAfter(element);
+      }
+    });*/
   },
 
   render()
@@ -16,20 +31,11 @@ var ProductsForm = React.createClass({
           <h5>Datos básicos</h5>
         </div>
         <hr/>
-        <form>
-          <div className="form-group">
-            <label for="product-code">Código</label>
-            <input ref="code" type="text" className="form-control" id="product-code" placeholder="" defaultValue={this.state.data.code} />
-          </div>
-          <div className="form-group info">
-            <label for="product-name">Nombre</label>
-            <input ref="name" type="text" className="form-control" id="product-name" placeholder="" defaultValue={this.state.data.name} />
-          </div>
-          <div className="form-group">
-            <label for="product-desc">Descripción</label>
-            <textarea ref="description" className="form-control" id="product-desc" placeholder=""></textarea>
-          </div>
-        </form>
+        <Form ref="productBasicForm">
+          <TextField ref="code" id="code" label="Código" labelType="top" />
+          <TextField ref="name" id="name" label="Nombre" labelType="top" />
+          <TextField ref="desc" id="desc" label="Descripción" labelType="top" />
+        </Form>
       </div>
     );
   },
@@ -37,11 +43,21 @@ var ProductsForm = React.createClass({
   getBasicData()
   {
     return {
-      code: React.findDOMNode(this.refs.code).value,
-      name: React.findDOMNode(this.refs.name).value,
-      description: React.findDOMNode(this.refs.description).value
+      code: this.refs.code.getValue(),
+      name: this.refs.name.getValue(),
+      description: this.refs.desc.getValue()
     };
+  },
+
+  isValid()
+  {
+    return this.refs.productBasicForm.isValid();
+  },
+
+  resetForm()
+  {
+    this.refs.productBasicForm.reset();
   }
 });
 
-module.exports = ProductsForm;
+module.exports = ProductsBasicForm;

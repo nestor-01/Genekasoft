@@ -2,6 +2,21 @@ var mode;
 var path = '/geneka/api';
 
 module.exports = {
+  request: {
+    400: 'Problema al realizar la petición',
+    401: 'Problema al autorizar la petición',
+    404: 'Problema localizando recurso en el servidor',
+    405: 'Problema con el método utilizado para realizar la petición',
+    500: 'Problema en el servidor',
+    503: 'El servicio no está disponible'
+  },
+  response: {
+    status: {
+      OK: 'OK',
+      ERROR: 'ERROR',
+      EXCEPTION: 'EXCEPTION'
+    },
+  },
   modes: {
     DEVELOPMENT: 'http://localhost:8080',
     TESTING: 'https://restfulmock.herokuapp.com',

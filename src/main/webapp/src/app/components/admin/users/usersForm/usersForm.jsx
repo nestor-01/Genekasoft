@@ -1,7 +1,11 @@
 var React = require('react');
+var Services = require('../../../common/constants/services.jsx');
 var UserFormStyles = require('./usersFormStyles.jsx');
 
+var Form = require('../../../common/widgets/forms/form/form.jsx');
+var TextField = require('../../../common/widgets/forms/textfield/textfield.jsx');
 var MapContainer = require('../../../common/widgets/map/map.jsx');
+var CheckBox = require('../../../common/widgets/forms/checkbox/checkbox.jsx');
 var Events = require('../../../common/constants/events.jsx');
 
 var SignUp = React.createClass({
@@ -48,19 +52,7 @@ var SignUp = React.createClass({
       }.bind(this)
     );
 
-    $(React.findDOMNode(this.refs.newUserForm)).validate({
-      errorPlacement: function(error, element)
-      {
-        console.log(error);
-
-        element.parent().parent().addClass('has-error');
-
-        error.css(UserFormStyles.errorField);
-        error.insertAfter(element);
-      }
-    });
-
-    $('.datepicker').datepicker();
+    //$('.datepicker').datepicker();
   },
   
   render()
@@ -81,27 +73,12 @@ var SignUp = React.createClass({
         <br /><br />
         <div style={{height: '100%', padding: '40px 50px 0 25px'}}>
           <div className="col-md-6">
-            <form className="form-horizontal" id="myForm" ref="newUserForm" role="form">
+            <Form ref="newUserForm" direction="left">
+              <TextField ref="name" id="name" label="Nombre" labelType="left" placeholder="Nombres" />
+              <TextField ref="lastName" id="lastName" label="Apellidos" labelType="left" placeholder="Apellidos" />
+              <TextField ref="email" id="email" label="Correo" labelType="left" type="email" placeholder="Correo" />
               <div className="form-group">
-                <label for="inputEmail3" className="col-sm-3 control-label">Nombre</label>
-                <div className="col-sm-8">
-                  <input ref="nameTextField" type="text" className="form-control" id="nameTextField" name="nameTextField" data-validate="required" data-message-required="This is custom message for required field."  placeholder="Nombre" autoComplete="off" required />
-                </div>
-              </div>
-              <div className="form-group">
-                <label for="lastname" className="col-sm-3 control-label">Apellidos</label>
-                <div className="col-sm-8">
-                  <input ref="lastnameTextField" type="text" className="form-control" name="lastname"data-validate="required" data-message-required="This is custom message for required field."  placeholder="Apellidos" autoComplete="off" required />
-                </div>
-              </div>
-              <div className="form-group">
-                <label for="email" className="col-sm-3 control-label">Correo</label>
-                <div className="col-sm-8">
-                  <input ref="userTextField" name="userTextField" type="email" className="form-control" name="email" data-validate="required" data-message-required="This is custom message for required field."  placeholder="Email" required />
-                </div>
-              </div>
-              <div className="form-group">
-                <label for="gender" className="col-sm-3 control-label">Género</label>
+                <label htmlFor="gender" className="col-sm-3 control-label">Género</label>
                 <div className="col-sm-8">
                   <div className="radio">
                     <label style={{paddingRight: '20px'}}>
@@ -113,37 +90,11 @@ var SignUp = React.createClass({
                   </div>
                 </div>
               </div>
-              <div className="form-group">
-                <label for="birthdate" className="col-sm-3 control-label">Cumpleaños</label>
-                <div className="col-sm-8">
-                  <input ref="birthdateTextField" type="text" className="form-control datepicker" name="birthdate" data-format="dd MM yyyy" data-validate="required" data-message-required="This is custom message for required field." placeholder="Fecha de nacimiento" data-date-format="dd-MM-yyyy" required />
-                </div>
-              </div>
-              <div className="form-group">
-                <label for="phoneTextField" className="col-sm-3 control-label">Teléfono</label>
-                <div className="col-sm-8">
-                  <input ref="phoneTextField" name="phoneTextField" type="number" ref="phoneTextField" className="form-control" name="phone"data-validate="required" data-message-required="This is custom message for required field." placeholder="Teléfono" autoComplete="off" required />
-                </div>
-              </div>
-              <div className="form-group">
-                <label for="address" className="col-sm-3 control-label">Dirección</label>
-                <div className="col-sm-8">
-                  <input ref="addressTextField" type="text" className="form-control" name="address"data-validate="required" data-message-required="This is custom message for required field."  placeholder="Dirección" autoComplete="off" required />
-                </div>
-              </div>
-              <br />
-              <div className="form-group">
-                <label for="password" className="col-sm-3 control-label">Contraseña</label>
-                <div className="col-sm-8">
-                  <input ref="passwordTextField" type="password" className="form-control" id="password" placeholder="Contraseña" required />
-                </div>
-              </div>
-              <div className="form-group">
-                <label for="password_again" className="col-sm-3 control-label">Confirmar Contraseña</label>
-                <div className="col-sm-8">
-                  <input ref="password_againTextField" type="password" className="form-control" id="password_again" name="password_again" data-validate="equalTo[#password]"placeholder="Confirmar Contraseña" required />
-                </div>
-              </div>
+              <TextField ref="birthDate" id="birthDate" label="Cumpleaños" labelType="left" placeholder="Fecha de nacmiento" className="datepicker" dateFormat="yyyy-mm-dd" />
+              <TextField ref="phone" id="phone" label="Teléfono" labelType="left" placeholder="Teléfono" />
+              <TextField ref="address" id="address" label="Dirección" labelType="left" placeholder="Dirección" />
+              <TextField ref="password" id="password" label="Contraseña" labelType="left" type="password" placeholder="Contraseña" />
+              <TextField ref="passwordConfirm" id="passwordConfirm" label="Confirmar Contraseña" labelType="left" type="password" placeholder="Confirmar contraseña" />
               <div className="form-group">
                 <div className="col-sm-offset-2 col-sm-10">
                   <div className="checkbox">
@@ -153,7 +104,7 @@ var SignUp = React.createClass({
                   </div>
                 </div>
               </div>
-            </form>
+            </Form>
           </div>
           <div className="col-xs-12 col-md-6 pull-right" style={{height: '100%'}}>
             <div id="userPictureUpload" style={{width: '100%', height: '100px', borderRadius: '4px', boxShadow: '0px 1px 4px rgba(0, 0, 0, 0.1)', backgroundColor: 'rgb(249, 249, 249)'}}>
@@ -177,7 +128,7 @@ var SignUp = React.createClass({
 
   _onLoadAddress(address)
   {
-    $(React.findDOMNode(this.refs.addressTextField)).val(address);
+    this.refs.address.setValue(address);
   },
 
   _onDragStartMap()
@@ -194,54 +145,49 @@ var SignUp = React.createClass({
 
   onSignUp(e)
   {
-    var name = $(React.findDOMNode(this.refs.nameTextField)).val();
-    var lastname = $(React.findDOMNode(this.refs.lastnameTextField)).val();
-    var user = $(React.findDOMNode(this.refs.userTextField)).val();
+    var name = this.refs.name.getValue();
+    var lastName = this.refs.lastName.getValue();
+    var email = this.refs.email.getValue();
+    
     var genderM = $(React.findDOMNode(this.refs.genderTextFieldM)).is(':checked');
     var genderF = $(React.findDOMNode(this.refs.genderTextFieldF)).is(':checked');
-    var address = $(React.findDOMNode(this.refs.addressTextField)).val();
-    var phone = $(React.findDOMNode(this.refs.phoneTextField)).val();
-    var birthdate = $(React.findDOMNode(this.refs.birthdateTextField)).val();
-    var groupId = $(React.findDOMNode(this.refs.groupIdTextField)).val();
-    var password = $(React.findDOMNode(this.refs.passwordTextField)).val();
-    var password_again = $(React.findDOMNode(this.refs.password_againTextField)).val();
+
+    var address = this.refs.address.getValue();
+    var phone = this.refs.phone.getValue();
+    var birthDate = this.refs.birthDate.getValue();
+    var password = this.refs.password.getValue();
+    var passwordConfirm = this.refs.passwordConfirm.getValue();
+
     var checkbox= $(React.findDOMNode(this.refs.checkboxTextField)).val();
 
     var data = {
-      id: Math.floor((Math.random() * 1000) + 1), // tmp
+      id: Math.floor((Math.random() * 1000) + 1),
       name: name,
-      lastname: lastname,
-      email: user,
+      lastName: lastName,
+      email: email,
       gender: (genderM) ? 'M' : 'F',
       address: address,
       phone: phone,
-      datoOfBirth: birthdate,
-      groupId: 1, //
-      password: password,
-      checkbox: checkbox
+      dateOfBirth: birthDate,
+      groupId: 1,
+      password: password
     };
 
-    console.log(data);
-
-    if($(React.findDOMNode(this.refs.newUserForm)).valid() &&
-    password == password_again)
+    if(this.refs.newUserForm.isValid() && password == passwordConfirm)
     {
       $.ajax({
         type: "post",
-        url: '/geneka/api/user/saveUser',
+        url: Services.Users.saveUser(),
         contentType: "application/json",
         data: JSON.stringify(data)
       })
-        .done(function (response) {
-          console.log(response);
-          $('#myForm').trigger("reset");
-        })
-        .fail(function (error) {
-          console.log(error);
-        }.bind(this));
-    }
-    else{
-      console.log('no valid');
+      .done(function (response) {
+        window.notify.info('El usuario fue guardado con éxito');
+        this.refs.newUserForm.reset();
+      }.bind(this))
+      .fail(function (error) {
+        window.notify.info(Services.request[error.status]);
+      }.bind(this));
     }
   }
 });

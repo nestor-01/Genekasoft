@@ -15,8 +15,6 @@ var TreeCategories = React.createClass({
 
   componentDidMount()
   {
-    // Checkbox list
-
     this.checkboxes = [];
   },
 
@@ -96,6 +94,13 @@ var TreeCategories = React.createClass({
   {
     return this.checkboxes.filter(function(checkbox) {
       if(this.refs[checkbox.id].isChecked()) return checkbox;
+    }.bind(this));
+  },
+
+  resetForm()
+  {
+    this.checkboxes.forEach(function(checkbox) {
+      this.refs[checkbox.id].setValue(false);
     }.bind(this));
   }
 });

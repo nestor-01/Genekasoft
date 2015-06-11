@@ -1,8 +1,9 @@
 var React = require('react');
 var Services = require('../../../common/constants/services.jsx');
 var CheckBox = require('../../../common/widgets/forms/checkbox/checkbox.jsx');
+var Dialog = require('../../../common/widgets/dialog/dialog.jsx');
 
-var Products = React.createClass({
+var ProductsList = React.createClass({
 
   getInitialState() {
     return {
@@ -14,7 +15,10 @@ var Products = React.createClass({
   {
     this.getProducsList()
       .done(function(list) {
-        JSON.parse(list).forEach(function(product) {
+
+        console.log("products", list);
+
+        list.forEach(function(product) {
           this.state.productsList[product.id] = product;
         }.bind(this));
 
@@ -35,9 +39,7 @@ var Products = React.createClass({
 
       productsList.push(
         <tr key={product.id}>
-          {/*<td><CheckBox id={product.id} label="" /></td>*/}
           <td style={{textAlign: 'center'}} width="50"><img src={firstThumbnail} /></td>
-          <td>{product.id}</td>
           <td>{product.name}</td>
           <td>{product.description}</td>
           <td style={{textAlign: 'center'}}>
@@ -60,9 +62,7 @@ var Products = React.createClass({
           <table className="table table-bordered table-hover" style={{backgroundColor: 'rgb(250, 250, 250)'}}>
             <thead>
               <tr>
-                {/*<th width="35"><CheckBox /></th>*/}
                 <th>Vista previa</th>
-                <th>Codigo</th>
                 <th>Name</th>
                 <th>Description</th>
                 <th width="110" style={{textAlign: 'center'}}>Actions</th>
@@ -73,6 +73,13 @@ var Products = React.createClass({
             </tbody>
           </table>
         </div>
+        <Dialog ref="confirmDelete" onConfirm={this._onConfirm}>
+          <p>¿Está seguro que desea eliminar este producto?</p>
+          <div style={{position: 'relative', width: '100%', height: '40px', top: '35px'}}>
+            <button onClick={this._onYes} className="btn btn-primary" style={{width: '55px', outline: 'none'}}>Si</button>&nbsp;
+            <button onClick={this._onNo} className="btn" style={{width: '55px', outline: 'none'}} data-dialog-close>No</button>
+          </div>
+        </Dialog>
       </div>
     );
   },
@@ -82,31 +89,39 @@ var Products = React.createClass({
     return $.get(Services.Products.getProducts());
   },
 
+  _onYes()
+  {
+    this.doDelete();
+    this.refs.confirmDelete.close();
+  },
+
+  _onNo()
+  {
+    this.refs.confirmDelete.close();
+  },
+
   _onDelete(e)
   {
-    var productId = e.target.dataset.productid;
+    this.productIdToDelete = e.target.dataset.productid;
+    this.refs.confirmDelete.open();
+  },
 
-    if(productId)
+  doDelete()
+  {
+    if(this.productIdToDelete)
     {
-      $.post(Services.Products.deleteProduct(), {productId: productId})
+      $.post(Services.Products.deleteProduct(), {productId: this.productIdToDelete})
         .done(function(response) {
-          var resp = JSON.parse(response);
-
-          if(resp.status == 'ok')
+          if(response.status == Services.response.status.OK)
           {
-            alert('Producto eliminado con éxito');
-            delete this.state.productsList[productId];
-
+            delete this.state.productsList[this.productIdToDelete];
             this.forceUpdate();
-          }
 
-          else
-          {
-            alert(resp.info);
+            window.notify.info('El producto fue eliminado con éxito');
           }
         }.bind(this))
         .fail(function(error) {
-          alert('Problema al eliminar producto, revisar la consola');
+          alert(error.message);
           console.log(error);
         });
     }
@@ -114,4 +129,4 @@ var Products = React.createClass({
 
 });
 
-module.exports = Products;
+module.exports = ProductsList;

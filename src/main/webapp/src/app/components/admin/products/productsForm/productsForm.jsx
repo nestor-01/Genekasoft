@@ -82,7 +82,7 @@ var ProductsForm = React.createClass({
         </div>
         <br />
         <br />
-        <Wizard style={ProductCRUDStyles.wizardStyle} activePage="basicData">
+        <Wizard ref="productWizard" style={ProductCRUDStyles.wizardStyle} activePage="basicData">
           <WizardPage key="basicData">
             <ProductBasicForm ref="basicForm" data={this.state.basicData} />
           </WizardPage>
@@ -99,32 +99,46 @@ var ProductsForm = React.createClass({
 
   onSave()
   {
-    this.refs.imagesForm.uploadImages()
-      .done(function(response) {
-
-        var data = $.extend(this.refs.basicForm.getBasicData(), {
-          active: true,
-          categories: this.refs.categoriesForm.getCategories().concat(this.refs.categoriesForm.getValuedCategories()),
-          images: this.refs.imagesForm.getImagesData()
-        });
-
-        console.log(data);
-
-        $.ajax({
-            type: "post",
-            url: Services.Products.saveProduct(),
-            contentType: "application/json",
-            data: JSON.stringify(data)
-          })
-          .done(function(response) {
-          })
-          .fail(function(error) {
-
+    if(this.refs.basicForm.isValid())
+    {
+      this.refs.imagesForm.uploadImages(this.refs.basicForm.getBasicData().name)
+        .done(function(paths) {
+          var data = $.extend(this.refs.basicForm.getBasicData(), {
+            active: true,
+            categories: this.refs.categoriesForm.getCategories().concat(this.refs.categoriesForm.getValuedCategories()),
+            images: this.refs.imagesForm.getImagesData()
           });
-      })
-      .fail(function(error) {
 
-      });
+          $.ajax({
+              type: "post",
+              url: Services.Products.saveProduct(),
+              contentType: "application/json",
+              data: JSON.stringify(data)
+            })
+            .done(function(response) {
+              window.notify.info('El producto fue guardado con éxito');
+
+              this._resetForm();
+            }.bind(this))
+            .fail(function(error) {
+              window.notify.info(Services.request[error.status]);
+            });
+        }.bind(this))
+        .fail(function(error) {
+          window.notify.info(Services.request[error.status]);
+        });
+    }
+  },
+
+  _resetForm()
+  {
+    this.refs.basicForm.resetForm();
+    this.refs.imagesForm.resetForm();
+    this.refs.categoriesForm.resetForm();
+
+    this.refs.productWizard.setState({
+      activePage: 'basicData'
+    });
   }
 });
 

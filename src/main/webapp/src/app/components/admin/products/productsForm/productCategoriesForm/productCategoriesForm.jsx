@@ -17,9 +17,7 @@ var ProductCategoriesForm = React.createClass({
   _createTreeCategoryData()
   {
     $.get(Services.Products.getCategories())
-      .done(function (response) {
-        var rawCategoriesList = JSON.parse(response);
-
+      .done(function (categoriesList) {
         var createTree = function (list) {
           var idToNodeMap = {"root": {"children": []}};
           var root = idToNodeMap.root;
@@ -47,15 +45,15 @@ var ProductCategoriesForm = React.createClass({
           return obj;
         };
 
-        var treeCategories = createTree(rawCategoriesList);
-        var valuedCategories = createValuedArray(rawCategoriesList);
+        this.treeCategories = createTree(categoriesList);
+        this.valuedCategories = createValuedArray(categoriesList);
 
         this.refs.treeCategories.setState({
-          tree: treeCategories
+          tree: this.treeCategories
         });
 
         this.refs.valuedCategories.setState({
-          categories: valuedCategories
+          categories: this.valuedCategories
         });
 
       }.bind(this))
@@ -91,6 +89,12 @@ var ProductCategoriesForm = React.createClass({
   getValuedCategories()
   {
     return this.refs.valuedCategories.getValuedCategories();
+  },
+
+  resetForm()
+  {
+    this.refs.treeCategories.resetForm();
+    this.refs.valuedCategories.resetForm();
   }
 });
 

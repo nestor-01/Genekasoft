@@ -135,6 +135,15 @@ var ValuedCategories = React.createClass({
       categoryValues.push(this.state.categoryValues[categoryName]);
 
     return categoryValues;
+  },
+
+  resetForm()
+  {
+    this.setState({
+      categoryValues: [],
+      lastCategory: null,
+      categoryElements: []
+    }); //
   }
 });
 

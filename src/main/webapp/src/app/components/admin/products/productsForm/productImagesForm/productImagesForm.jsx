@@ -11,18 +11,29 @@ var ProductsImagesForm = React.createClass({
   {
     return {
       filePreviews: {},
-      images: {}
+      images: {},
+      dropzoneProps: {
+        previewsContainer: "#previews",
+        thumbnailWidth: 295,
+        thumbnailHeight: 150,
+        maxThumbnailFilesize: 3,
+        parallelUploads: 20,
+        uploadMultiple: true,
+        url: "http://localhost:8080/geneka/api/product/uploadImages",
+        paramName: "file",
+        autoProcessQueue: false,
+        maxFilesize: 2,
+        headers: {
+          'Cache-Control': null,
+          'X-Requested-With': null
+        }
+      }
     };
   },
 
   componentDidMount()
   {
     Dropzone.autoDiscover = false;
-
-    //var previewNode = document.querySelector("#template");
-    /*previewNode.id = "";
-    var previewTemplate = previewNode.parentNode.innerHTML;
-    previewNode.parentNode.removeChild(previewNode);*/
 
     var self = this;
 
@@ -112,25 +123,7 @@ var ProductsImagesForm = React.createClass({
     };
 
     this.uploadPromise = $.Deferred();
-    this.myDropzone = new Dropzone('#messageToDragImgs', {
-      previewsContainer: "#previews",
-      thumbnailWidth: 295,
-      thumbnailHeight: 150,
-      maxThumbnailFilesize: 3,
-      parallelUploads: 20,
-      uploadMultiple: false,
-      url: "http://localhost:8080/geneka/api/product/uploadImages",
-      paramName: "file",
-      params: {
-        productName: 'myProduct'
-      },
-      autoProcessQueue: false,
-      maxFilesize: 2,
-      headers: {
-        'Cache-Control': null,
-        'X-Requested-With': null
-      }
-    });
+    this.myDropzone = new Dropzone('#messageToDragImgs', this.state.dropzoneProps);
 
     this.myDropzone.on("addedfile", function(file) {
       $('#messageToDragImgs').hide();
@@ -156,12 +149,20 @@ var ProductsImagesForm = React.createClass({
     });
 
     this.myDropzone.on("queuecomplete", function(progress) {
-      this.uploadPromise.resolve()
+      //console.log("response: ", this.uploadResponse);
+      
       //document.querySelector("#total-progress").style.opacity = "0";
     }.bind(this));
 
-    this.myDropzone.on("success", function(file, responseText, e) {
-      this.refs[file.name].setFilePath(responseText.path);
+    this.myDropzone.on("successmultiple", function(files, response, e) {
+      var dataFiles = response.data.paths;
+
+      for(var fileName in dataFiles)
+      {
+        this.refs[fileName].setFilePath(dataFiles[fileName]);
+      }
+
+      this.uploadPromise.resolve(response);
     }.bind(this));
 
     $(".start").on('click', function() {
@@ -169,8 +170,7 @@ var ProductsImagesForm = React.createClass({
     }.bind(this));
 
     document.querySelector("#picture-actions .cancel").onclick = function() {
-      this.myDropzone.removeAllFiles(true);
-      $('#messageToDragImgs').show();
+      this.resetForm();
     }.bind(this);
   },
 
@@ -199,10 +199,6 @@ var ProductsImagesForm = React.createClass({
           </div>
           <div id="picture-actions" className="col-lg-8 pull-right" style={{textAlign: 'right', paddingTop: '10px'}}>
             <div className="btn-group" role="group">
-              {/*<button type="submit" className="btn btn-primary start">
-                <i className="glyphicon glyphicon-upload"></i>
-                <span> Upload</span>
-              </button>*/}
               <button type="reset" className="btn cancel">
                 <i className="glyphicon glyphicon-ban-circle"></i>
                 <span> Cancel</span>
@@ -219,36 +215,6 @@ var ProductsImagesForm = React.createClass({
           <div className="row" style={{width: '100%', padding: '0 10px 80px 40px', textAlign: 'center'}}>
             {getImageElements()}
           </div>
-          {/*<div id="template" className="file-row" style={{float: 'left'}}>
-            <div className="row" style={{width: '100%', paddingRight: '10px'}}>
-              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4" style={{width: '100%', minWidth: '235px'}}>
-                <a className="thumbnail">
-                  <div className="preview" style={{textAlign: 'center'}}>
-                    <img style={{maxWidth: '195px', maxHeight: '130px', minHeight: '130px'}} data-dz-thumbnail />
-                  </div>
-                  <div className="caption">
-                    <input onChange={this._onChangeTitle} type="text" className="form-control" placeholder="Titulo" data-dz-name></input>
-                    <br/>
-                    <div>
-                      <div className="form-group">
-                        <input onChange={this._onChangeDescription} type="text" className="form-control" placeholder="Descripción"/>
-                      </div>
-                      <strong className="error text-danger" data-dz-errormessage></strong>
-                    </div>
-                    <div>
-                      <h6 className="size" data-dz-size></h6>
-                    </div>
-                    <p style={{marginBottom: '0'}}>
-                      <button data-dz-remove className="btn btn-xs btn-danger delete" style={{width: '100%'}}>
-                        <i className="glyphicon glyphicon-trash"></i>
-                        <span> Delete</span>
-                      </button>
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>*/}
         </div>
       </div>
     );
@@ -264,8 +230,12 @@ var ProductsImagesForm = React.createClass({
 
   },
 
-  uploadImages()
+  uploadImages(productName)
   {
+    this.myDropzone.options.params = {
+      productName: productName
+    };
+
     this.myDropzone.processQueue();
     return this.uploadPromise.promise();
   },
@@ -280,6 +250,12 @@ var ProductsImagesForm = React.createClass({
     }
 
     return imageObjects;
+  },
+
+  resetForm()
+  {
+    this.myDropzone.removeAllFiles(true);
+    $('#messageToDragImgs').show();
   }
 });
 

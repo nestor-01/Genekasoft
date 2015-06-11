@@ -19,29 +19,38 @@ var Admin = React.createClass({
 
   componentDidMount()
   {
-    $('.menu').on('click', function(){
+    $leftMenu = $('#leftMenu');
+
+    $leftMenu.on('click', function(){
       if ($('.l-site').hasClass('is-open')) {
-        $('.menu').removeClass('is-active');
+        $leftMenu.removeClass('is-active');
         $('.l-site').removeClass('is-open');
       } else {
-        $('.menu').addClass('is-active');
+        $leftMenu.addClass('is-active');
         $('.l-site').addClass('is-open');
       }
     });
 
 
     $('.tree li:has(ul)').addClass('parent_li').find(' > span').attr('title', 'Collapse this branch');
-    /*$('.tree li.parent_li > span').on('click', function (e) {
+    $('.tree li.parent_li > span').on('click', function (e) {
         var children = $(this).parent('li.parent_li').find(' > ul > li');
-        if (children.is(":visible")) {
+        /*if (children.is(":visible"))
+        {
             children.hide('fast');
             $(this).attr('title', 'Expand this branch').find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
-        } else {
+        }
+        else
+        {
             children.show('fast');
             $(this).attr('title', 'Collapse this branch').find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
-        }
+        }*/
         e.stopPropagation();
-    });*/
+    });
+
+    $('.tree li > span > a').on('click', function() {
+      this.hideLeftMenu();
+    }.bind(this));
 
     this.refs.particlesEffect.setSize('100%');
   },
@@ -93,7 +102,7 @@ var Admin = React.createClass({
             <div>
               <div style={{width: 'calc(100% - 55px)', float: 'left'}}>
                 <ol className="breadcrumb">
-                  <li>
+                  <li id="leftMenu" style={{cursor: 'pointer'}}>
                     <div className="menu">
                       <div className="menu-hamburger"></div>
                     </div>
@@ -117,6 +126,18 @@ var Admin = React.createClass({
         </div>
       </div>
     );
+  },
+
+  openLeftMenu()
+  {    
+    $leftMenu.addClass('is-active');
+    $('.l-site').addClass('is-open');
+  },
+
+  hideLeftMenu()
+  {
+    $leftMenu.removeClass('is-active');
+    $('.l-site').removeClass('is-open');
   },
   
   _onChangeView(item)
