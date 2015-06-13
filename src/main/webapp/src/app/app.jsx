@@ -5,7 +5,8 @@
 })();
 
 var React = require('react'),
-    Router = require('react-router');
+    Router = require('react-router'),
+    Services = require('./components/common/constants/services.jsx');
 
 var Main = require('./components/client/main.jsx'),
     Content = require('./components/client/content/content.jsx'),
@@ -22,6 +23,9 @@ var Main = require('./components/client/main.jsx'),
 var DefaultRoute = Router.DefaultRoute,
     Route = Router.Route;
 
+// Define mode
+Services.setMode(Services.modes.DEVELOPMENT);
+
 var routes = (
   <Route path="/">
     <Route path="/" handler={Main}>
@@ -33,6 +37,7 @@ var routes = (
       <Route name="users/newUser" handler={UsersForm} />
       <Route name="products" handler={ProductsList} />
       <Route name="products/newProduct" handler={ProductsForm} />
+      <Route name="products/editProduct/:productId" handler={ProductsForm} />
     </Route>
   </Route>
 );

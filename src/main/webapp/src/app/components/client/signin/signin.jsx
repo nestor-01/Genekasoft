@@ -1,4 +1,6 @@
 var React = require('react');
+var Services = require('../../common/constants/services.jsx');
+
 var TextField = require('../../common/widgets/forms/textfield/textfield.jsx');
 var Label = require('../../common/widgets/forms/label/label.jsx');
 var Authenticated = require('../../common/mixins/authenticated.jsx');
@@ -11,7 +13,7 @@ var SignIn = React.createClass({
     var _width = 300;
     var _top = ($(window).height()/2) - (_height / 2);
     var _left = ($(window).width()/2) - (_width / 2);
-    
+
     return {
       _height: _height,
       _width: _width,
@@ -23,11 +25,10 @@ var SignIn = React.createClass({
       left: _left + 'px',
       opacity: 0,
       opacityButton: 0,
-      missingInfo: 'none',
-      invalidInfo: 'none'
+      errorMessage: ''
     };
   },
-  
+
   componentDidMount()
   {
     this.props.onInit('signin');
@@ -35,21 +36,21 @@ var SignIn = React.createClass({
     this.setState({
       opacity: .3
     });
-    
+
     var buttonTimer = setTimeout(function(){
       this.setState({
         opacityButton: 1
       });
     }.bind(this),380);
-    
+
     React.findDOMNode(this.refs.userTextfield).focus();
   },
-  
+
   componentWillUnmount()
   {
     this.replaceState(this.getInitialState());
   },
-  
+
   render()
   {
     var errorsStyle = {
@@ -57,12 +58,15 @@ var SignIn = React.createClass({
       fontSize: '14px',
       textAlign: 'center',
       textShadow: '0px 0px 2px #fff',
-      color: '#C55050',
-      //paddingBottom: '5px'
+      color: '#C55050'
     };
 
-    var missingInfoStyle = $.extend({display: this.state.missingInfo}, errorsStyle);
-    var invalidInfoStyle = $.extend({display: this.state.invalidInfo}, errorsStyle);
+    var errorInfoStyle;
+
+    if(this.state.errorMessage != '')
+      errorInfoStyle = $.extend({display: 'block'}, errorsStyle);
+    else
+      errorInfoStyle = $.extend({display: 'none'}, errorsStyle);
 
     return (
       <div className="col-xs-12 col-sm-12 col-md-12" style={{marginTop: '80px'}}>
@@ -72,25 +76,21 @@ var SignIn = React.createClass({
             <br/>
             <span style={{color: 'white'}}>Usuario</span>
             <TextField ref="userTextfield" />
-            
+
             <br/>
             <br/>
-            
+
             <span style={{color: 'white'}}>Contraseña</span>
             <TextField type="password" ref="passwordTextField" />
-            
+
             <br/>
-            <div style={missingInfoStyle}>{"Faltan datos"}</div>
-            <div style={invalidInfoStyle}>{"Usuario o contraseña incorrecta"}</div>
+            <div style={errorInfoStyle}>{this.state.errorMessage}</div>
             <br/>
 
             <button onTouchTap={this.onSignIn} className="btn btn-success col-md-12" style={{width: '100%'}}>Entrar</button>
           </div>
         </div>
         <br/>
-        {/*<div className="transition" style={{textAlign: 'center', opacity: this.state.opacityButton}}>
-          <a href="#/signup" style={{color: 'white', fontWeight: '500', fontSize: '12px'}}>{"¿No tienes una cuenta?"}</a>
-        </div>*/}
       </div>
     );
   },
@@ -106,14 +106,22 @@ var SignIn = React.createClass({
         password: password
       };
 
-      $.post('http://localhost:8080/geneka/api/user/loginUser', data)
+      $.post(Services.Security.signIn(), data)
         .done(function (response) {
-          window.location.replace('#/admin/users');
-        })
+          if(response.status == Services.response.status.OK)
+          {
+            window.location.replace('#/admin/users');
+          }
+          else
+          {
+            this.setState({
+              errorMessage: response.message
+            });
+          }
+        }.bind(this))
         .fail(function (error) {
           this.setState({
-            invalidInfo: 'block',
-            missingInfo: 'none'
+            errorMessage: response.message
           });
         }.bind(this));
     }
@@ -121,8 +129,7 @@ var SignIn = React.createClass({
     else
     {
       this.setState({
-        missingInfo: 'block',
-        invalidInfo: 'none'
+        errorMessage: 'Faltan datos'
       });
     }
   }

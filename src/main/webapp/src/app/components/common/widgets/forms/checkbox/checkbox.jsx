@@ -55,7 +55,7 @@ var CheckBox = React.createClass({
       }
     }.bind(this);
 
-    el.addEventListener( 'change', onClick);
+    el.addEventListener('change', onClick);
   },
 
   _draw( el, type )
@@ -137,6 +137,11 @@ var CheckBox = React.createClass({
   isChecked()
   {
     return this.refs.checkbox.value;
+  },
+
+  setValue(value)
+  {
+    this._reset(React.findDOMNode(this.refs.checkbox));
   }
 });
 

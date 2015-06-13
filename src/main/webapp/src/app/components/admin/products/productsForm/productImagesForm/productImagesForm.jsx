@@ -11,18 +11,29 @@ var ProductsImagesForm = React.createClass({
   {
     return {
       filePreviews: {},
-      images: {}
+      images: {},
+      dropzoneProps: {
+        previewsContainer: "#previews",
+        thumbnailWidth: 295,
+        thumbnailHeight: 150,
+        maxThumbnailFilesize: 3,
+        parallelUploads: 20,
+        uploadMultiple: true,
+        url: "http://localhost:8080/geneka/api/product/uploadImages",
+        paramName: "file",
+        autoProcessQueue: false,
+        maxFilesize: 2,
+        headers: {
+          'Cache-Control': null,
+          'X-Requested-With': null
+        }
+      }
     };
   },
 
   componentDidMount()
   {
     Dropzone.autoDiscover = false;
-
-    var previewNode = document.querySelector("#template");
-    /*previewNode.id = "";
-    var previewTemplate = previewNode.parentNode.innerHTML;
-    previewNode.parentNode.removeChild(previewNode);*/
 
     var self = this;
 
@@ -35,8 +46,8 @@ var ProductsImagesForm = React.createClass({
         if (this.previewsContainer) {
           file.previewElement = Dropzone.createElement(this.options.previewTemplate.trim());
           file.previewTemplate = file.previewElement;
-          
-          self.state.filePreviews[file.name] = <ImageItemFile key={file.name} name={file.name} size={file.size} />
+
+          self.state.filePreviews[file.name] = file;
           self.forceUpdate();
 
           _ref = file.previewElement.querySelectorAll("[data-dz-name]");
@@ -53,40 +64,47 @@ var ProductsImagesForm = React.createClass({
             file._removeLink = Dropzone.createElement("<a class=\"dz-remove\" href=\"javascript:undefined;\" data-dz-remove>" + this.options.dictRemoveFile + "</a>");
             file.previewElement.appendChild(file._removeLink);
           }
-          removeFileEvent = (function(_this) {
+          removeFileEvent = function(file) {
             return function(e) {
               e.preventDefault();
               e.stopPropagation();
               if (file.status === Dropzone.UPLOADING) {
-                return Dropzone.confirm(_this.options.dictCancelUploadConfirmation, function() {
-                  return _this.removeFile(file);
+                return Dropzone.confirm(this.options.dictCancelUploadConfirmation, function() {
+                  return this.removeFile(file);
                 });
               } else {
-                if (_this.options.dictRemoveFileConfirmation) {
-                  return Dropzone.confirm(_this.options.dictRemoveFileConfirmation, function() {
-                    return _this.removeFile(file);
+                if (this.options && this.options.dictRemoveFileConfirmation) {
+                  return Dropzone.confirm(this.options.dictRemoveFileConfirmation, function() {
+                    return this.removeFile(file);
                   });
                 } else {
-                  return _this.removeFile(file);
+                  return this.removeFile(file);
                 }
               }
-            };
-          })(this);
-          _ref2 = file.previewElement.querySelectorAll("[data-dz-remove]");
-          _results = [];
-          for (_k = 0, _len2 = _ref2.length; _k < _len2; _k++) {
-            removeLink = _ref2[_k];
-            _results.push(removeLink.addEventListener("click", removeFileEvent));
+            }.bind(this);
+          }.bind(this);
+
+          /** Remove event **/
+          for(var fileName in self.state.filePreviews)
+          {
+            self.state.filePreviews[fileName]["onRemove"] = removeFileEvent(self.state.filePreviews[fileName]);
           }
           return _results;
         }
+    };
+
+    Dropzone.prototype.defaultOptions.removedfile = function(file) {
+      delete self.state.filePreviews[file.name];
+      self.forceUpdate();
+
+      return this._updateMaxFilesReachedClass();
     };
 
     Dropzone.prototype.defaultOptions.thumbnail = function(file, dataUrl)
     {
       var thumbnailElement, _i, _len, _ref;
 
-      self.state.filePreviews[file.name].setThumbnail(dataUrl);
+      self.refs[file.name].setThumbnail(dataUrl);
 
       if (file.previewElement) {
         file.previewElement.classList.remove("dz-file-preview");
@@ -104,72 +122,83 @@ var ProductsImagesForm = React.createClass({
       }
     };
 
-    var myDropzone = new Dropzone('#messageToDragImgs', {
-      previewsContainer: "#previews",
-      thumbnailWidth: 295,
-      thumbnailHeight: 150,
-      maxThumbnailFilesize: 3,
-      parallelUploads: 20,
-      uploadMultiple: false,
-      //previewTemplate: previewTemplate,
-      url: "http://localhost:8080/geneka/api/product/uploadImages",
-      paramName: "file",
-      params: {
-        productName: 'myProduct'
-      },
-      autoProcessQueue: false,
-      maxFilesize: 2,
-      headers: {
-        'Cache-Control': null,
-        'X-Requested-With': null
-      }
-    });
+    this.uploadPromise = $.Deferred();
+    this.myDropzone = new Dropzone('#messageToDragImgs', this.state.dropzoneProps);
 
-    myDropzone.on("addedfile", function(file) {
-      $('#messageToDragImgs').hide();
+    this.myDropzone.on("addedfile", function(file) {
+      //$('#messageToDragImgs').hide();
       //myDropzone.enqueueFile(file);
       //file.previewElement.querySelector(".start").onclick = function() { myDropzone.enqueueFile(file); };
     });
 
-    myDropzone.on("removedfile", function(file) {
-      if(myDropzone.getQueuedFiles().length == 0)
+    this.myDropzone.on("removedfile", function(file) {
+      //console.log(this.myDropzone.getQueuedFiles());
+      /*if(this.myDropzone.getQueuedFiles().length == 0)
       {
         $('#messageToDragImgs').show();
-      }
-    });
+      }*/
+    }.bind(this));
 
-    myDropzone.on("totaluploadprogress", function(progress) {
+    this.myDropzone.on("totaluploadprogress", function(progress) {
       //document.querySelector("#total-progress .progress-bar").style.width = progress + "%";
     });
 
-    myDropzone.on("sending", function(file) {
+    this.myDropzone.on("sending", function(file) {
       //document.querySelector("#total-progress").style.opacity = "1";
       $(file.previewElement).find(".info").html('Uploaded!');
     });
 
-    myDropzone.on("queuecomplete", function(progress) {
+    this.myDropzone.on("queuecomplete", function(progress) {
+      //console.log("response: ", this.uploadResponse);
+      
       //document.querySelector("#total-progress").style.opacity = "0";
-    });
+    }.bind(this));
+
+    this.myDropzone.on("successmultiple", function(files, response, e) {
+      var dataFiles = response.data.paths;
+
+      for(var fileName in dataFiles)
+      {
+        this.refs[fileName].setFilePath(dataFiles[fileName]);
+      }
+
+      this.uploadPromise.resolve(response);
+    }.bind(this));
 
     $(".start").on('click', function() {
-      myDropzone.processQueue();
-    });
+      this.myDropzone.processQueue();
+    }.bind(this));
 
     document.querySelector("#picture-actions .cancel").onclick = function() {
-      myDropzone.removeAllFiles(true);
+      this.resetForm();
+    }.bind(this);
+  },
+
+  componentDidUpdate()
+  {
+    if(Object.keys(this.state.filePreviews).length == 0)
+    {
       $('#messageToDragImgs').show();
-    };
+    }
+
+    else
+    {
+      $('#messageToDragImgs').hide();
+    }
   },
 
   render()
   {
-    getImageElements = function()
+    var getImageElements = function()
     {
       var images = [];
 
       for(var name in this.state.filePreviews)
       {
-        images.push(this.state.filePreviews[name]);
+        var file = this.state.filePreviews[name];
+        var element = <ImageItemFile ref={file.name} key={file.name} file={file} />;
+
+        images.push(element);
       }
 
       return images;
@@ -183,10 +212,6 @@ var ProductsImagesForm = React.createClass({
           </div>
           <div id="picture-actions" className="col-lg-8 pull-right" style={{textAlign: 'right', paddingTop: '10px'}}>
             <div className="btn-group" role="group">
-              {/*<button type="submit" className="btn btn-primary start">
-                <i className="glyphicon glyphicon-upload"></i>
-                <span> Upload</span>
-              </button>*/}
               <button type="reset" className="btn cancel">
                 <i className="glyphicon glyphicon-ban-circle"></i>
                 <span> Cancel</span>
@@ -200,37 +225,9 @@ var ProductsImagesForm = React.createClass({
           <h6 style={DnDStyles.message2}>Tamaño máximo de 2 MB</h6>
         </div>
         <div key="tablePreviews" className="table table-striped" className="files" id="previews">
-          {getImageElements()}
-          {/*<div id="template" className="file-row" style={{float: 'left'}}>
-            <div className="row" style={{width: '100%', paddingRight: '10px'}}>
-              <div className="col-xs-12 col-sm-6 col-md-4 col-lg-4" style={{width: '100%', minWidth: '235px'}}>
-                <a className="thumbnail">
-                  <div className="preview" style={{textAlign: 'center'}}>
-                    <img style={{maxWidth: '195px', maxHeight: '130px', minHeight: '130px'}} data-dz-thumbnail />
-                  </div>
-                  <div className="caption">
-                    <input onChange={this._onChangeTitle} type="text" className="form-control" placeholder="Titulo" data-dz-name></input>
-                    <br/>
-                    <div>
-                      <div className="form-group">
-                        <input onChange={this._onChangeDescription} type="text" className="form-control" placeholder="Descripción"/>
-                      </div>
-                      <strong className="error text-danger" data-dz-errormessage></strong>
-                    </div>
-                    <div>
-                      <h6 className="size" data-dz-size></h6>
-                    </div>
-                    <p style={{marginBottom: '0'}}>
-                      <button data-dz-remove className="btn btn-xs btn-danger delete" style={{width: '100%'}}>
-                        <i className="glyphicon glyphicon-trash"></i>
-                        <span> Delete</span>
-                      </button>
-                    </p>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>*/}
+          <div className="row" style={{width: '100%', padding: '0 10px 80px 40px', textAlign: 'center'}}>
+            {getImageElements()}
+          </div>
         </div>
       </div>
     );
@@ -246,14 +243,32 @@ var ProductsImagesForm = React.createClass({
 
   },
 
+  uploadImages(productName)
+  {
+    this.myDropzone.options.params = {
+      productName: productName
+    };
+
+    this.myDropzone.processQueue();
+    return this.uploadPromise.promise();
+  },
+
   getImagesData()
   {
     var imageObjects = [];
 
-    for(imageName in this.state.images)
-      imageObjects.push(this.state.images[imageName]);
+    for(var fileName in this.state.filePreviews)
+    {
+      imageObjects.push(this.refs[fileName].getData());
+    }
 
     return imageObjects;
+  },
+
+  resetForm()
+  {
+    this.myDropzone.removeAllFiles(true);
+    $('#messageToDragImgs').show();
   }
 });
 
