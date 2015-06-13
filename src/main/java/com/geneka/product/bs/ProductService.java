@@ -26,4 +26,7 @@ public interface ProductService {
 	
 	public boolean deleteProduct(String productId)throws Exception;
 	
+	public boolean deleteProduct(String productId)throws Exception;
+
+	public boolean inactive(String productId, Boolean active)throws Exception;
 }

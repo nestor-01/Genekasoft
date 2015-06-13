@@ -73,12 +73,19 @@ public class UserWS {
             }
             else
             {
-                return response.setStatus(Response.ERROR).setMessage("Usuario o contraseÃ±a incorrecta");
+                return response.setStatus(Response.ERROR).setMessage("Usuario o contraseña incorrecta");
             }
         }
         catch (Exception e)
         {
             return response.setStatus(Response.EXCEPTION).setMessage(e.getMessage());
         }
+	}
+
+	@RequestMapping(value = "/changeStatus", method = RequestMethod.GET)
+	public @ResponseBody String inactive(@RequestParam(value="id", required=true) Integer id,
+										 @RequestParam(value="active", required=true) Boolean active) throws Exception
+	{
+		return userService.inactive(id, active)?"ok":"null";
 	}
 }

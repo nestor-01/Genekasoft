@@ -21,5 +21,7 @@ public interface UserService {
 	public boolean deleteUser(Integer userId)throws Exception;
 	
 	public Boolean loginUser(String email, String password)throws Exception;
+
+	public boolean inactive(Integer userId, Boolean active) throws Exception;
 	
 }

@@ -76,4 +76,11 @@ public class ProductServiceImpl implements ProductService
 		return daoNS.delete(daoNS.findById(Product.class, productId));
 	}
 
+	@Override
+	public boolean inactive(String productId, Boolean active) throws Exception {
+		Product product = daoNS.updateByQuery(Product.class, "id",
+				productId, "active", active);
+		return product != null? false : true;
+	}
+
 }

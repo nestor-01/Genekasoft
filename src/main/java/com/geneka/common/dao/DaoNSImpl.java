@@ -63,7 +63,7 @@ public class DaoNSImpl implements DaoNS
 	{
 		Query query = new Query();
 		query.addCriteria(Criteria.where(nameFieldFind).is(valueFind));
-		query.fields().include(nameFieldFind);
+		//query.fields().include(nameFieldFind);
 		
 		Update update = new Update();
 		update.set(nameFieldSet, valueSet);

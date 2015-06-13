@@ -8,7 +8,6 @@ import org.springframework.data.annotation.Id;
 import com.geneka.model.Category;
 
 
-//@Document
 public class Product {
 
 	@Id

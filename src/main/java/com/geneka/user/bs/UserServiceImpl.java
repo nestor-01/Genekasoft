@@ -132,4 +132,16 @@ public class UserServiceImpl implements UserService
 		}
 	}
 
+	@Override
+	public boolean inactive(Integer userId, Boolean active) throws Exception {
+		User user = dao.findById(User.class, userId);
+		if (user != null)
+		{
+			user.setStatusUser(active?1:0);
+			dao.save(user);
+			return true;
+		}
+		return false;
+	}
+
 }

@@ -148,13 +148,26 @@ public class ProductWS {
             {
                 response
                     .setStatus(Response.ERROR)
-                    .setMessage("FallÃ³ la carga del archivo");
+                    .setMessage("Falló la carga del archivo");
             }
         }
 
 
         response.addData("paths", dataFiles);
         return response;
+	}
+
+	@RequestMapping(value = "/changeStatus", method = RequestMethod.GET)
+	public @ResponseBody String inactive(@RequestParam(value="id", required=true) String id,
+										 @RequestParam(value="active", required=true) Boolean active) throws Exception
+	{
+		return productService.inactive(id, active)?"ok":"null";
+	}
+
+	@RequestMapping(value = "/findByWord", method = RequestMethod.GET)
+	public @ResponseBody String findByWord(@RequestParam(value="", required=true) String id) throws Exception
+	{
+		return "";
 	}
 
     @RequestMapping(value = "/deleteProduct", method = RequestMethod.POST)
