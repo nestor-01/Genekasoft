@@ -24,6 +24,6 @@ public interface ProductService {
 	
 	public boolean saveProduct(String id, String name, String description, String code, List<Category> categories, List<Image> images)throws Exception;
 	
-	public boolean deleteProduct(Integer productId)throws Exception;
+	public boolean deleteProduct(String productId)throws Exception;
 	
 }

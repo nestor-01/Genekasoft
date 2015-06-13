@@ -52,7 +52,7 @@ var SignUp = React.createClass({
       }.bind(this)
     );
 
-    //$('.datepicker').datepicker();
+    $('.datepicker').datepicker();
   },
   
   render()

@@ -154,13 +154,13 @@
     <pathelement location="${path.variable.maven_repository}/org/aspectj/aspectjweaver/1.8.4/aspectjweaver-1.8.4.jar"/>
   </path>
   
-  <path id="library.maven:_org.codehaus.jackson:jackson-core-asl:1.9.13.classpath">
+  <!--path id="library.maven:_org.codehaus.jackson:jackson-core-asl:1.9.13.classpath">
     <pathelement location="${path.variable.maven_repository}/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar"/>
   </path>
   
   <path id="library.maven:_org.codehaus.jackson:jackson-mapper-asl:1.9.13.classpath">
     <pathelement location="${path.variable.maven_repository}/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar"/>
-  </path>
+  </path-->
   
   <path id="library.maven:_org.hibernate.common:hibernate-commons-annotations:4.0.5.final.classpath">
     <pathelement location="${path.variable.maven_repository}/org/hibernate/common/hibernate-commons-annotations/4.0.5.Final/hibernate-commons-annotations-4.0.5.Final.jar"/>
@@ -365,8 +365,8 @@
     <copy file="${path.variable.maven_repository}/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar" tofile="${artifact.output.geneka:war_exploded}/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
     <copy file="${path.variable.maven_repository}/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.0.0.Final/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" tofile="${artifact.output.geneka:war_exploded}/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
     <copy file="${path.variable.maven_repository}/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar" tofile="${artifact.output.geneka:war_exploded}/WEB-INF/lib/javassist-3.18.1-GA.jar"/>
-    <copy file="${path.variable.maven_repository}/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar" tofile="${artifact.output.geneka:war_exploded}/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar"/>
-    <copy file="${path.variable.maven_repository}/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar" tofile="${artifact.output.geneka:war_exploded}/WEB-INF/lib/jackson-core-asl-1.9.13.jar"/>
+    <!--copy file="${path.variable.maven_repository}/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar" tofile="${artifact.output.geneka:war_exploded}/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar"/>
+    <copy file="${path.variable.maven_repository}/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar" tofile="${artifact.output.geneka:war_exploded}/WEB-INF/lib/jackson-core-asl-1.9.13.jar"/-->
     <copy file="${path.variable.maven_repository}/org/reflections/reflections/0.9.9-RC2/reflections-0.9.9-RC2.jar" tofile="${artifact.output.geneka:war_exploded}/WEB-INF/lib/reflections-0.9.9-RC2.jar"/>
     <copy file="${path.variable.maven_repository}/com/google/guava/guava/15.0/guava-15.0.jar" tofile="${artifact.output.geneka:war_exploded}/WEB-INF/lib/guava-15.0.jar"/>
     <copy file="${path.variable.maven_repository}/com/google/code/findbugs/annotations/2.0.1/annotations-2.0.1.jar" tofile="${artifact.output.geneka:war_exploded}/WEB-INF/lib/annotations-2.0.1.jar"/>

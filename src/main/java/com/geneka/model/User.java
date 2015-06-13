@@ -55,6 +55,9 @@ public class User implements Serializable {
 	@Column(name = "group_id")
 	private Integer groupId;
 
+	@Column(name = "address")
+	private String address;
+
 	public User() {
 	}
 
@@ -146,4 +149,11 @@ public class User implements Serializable {
 		this.groupId = groupId;
 	}
 
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
 }

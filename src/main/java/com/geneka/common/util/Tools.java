@@ -1,11 +1,11 @@
 package com.geneka.common.util;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.common.base.Charsets;
 import com.google.common.cache.Cache;
 import com.google.common.collect.Maps;
 import com.google.common.io.Files;
 
-import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.util.DigestUtils;
 
 import javax.annotation.Nonnull;

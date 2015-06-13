@@ -115,12 +115,21 @@ public class UserServiceImpl implements UserService
 	public Boolean loginUser(String email, String password) throws Exception {
 		Map<String, Object> parameters = new HashMap<String, Object>();
 		parameters.put("aemail", email);
-		User user = dao.getEntityByNamedQuery(User.class, "User.findByEmail", parameters);
-		if(user.getPassword().equals(password))
-		{
-			return true;
+
+		User user;
+
+		try {
+			user = dao.getEntityByNamedQuery(User.class, "User.findByEmail", parameters);
+
+			if (user.getPassword().equals(password)) {
+				return true;
+			}
+			return false;
 		}
-		return false;
+		catch (Exception e)
+		{
+			return false;
+		}
 	}
 
 }

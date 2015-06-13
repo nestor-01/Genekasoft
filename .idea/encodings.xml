@@ -2,5 +2,18 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pom.xml" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/geneka/common/dao/DaoNSImpl.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/geneka/common/util/Response.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/geneka/common/util/Tools.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/geneka/common/ws/CategoryWS.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/geneka/model/User.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/geneka/product/bs/ProductService.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/geneka/product/bs/ProductServiceImpl.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/geneka/product/ws/ProductWS.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/geneka/remoting/bs/CorsFilter.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/geneka/user/bs/UserServiceImpl.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/geneka/user/ws/UserWS.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/conf/spring/application-config.xml" charset="windows-1252" />
   </component>
 </project>

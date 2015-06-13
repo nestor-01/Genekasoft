@@ -54,7 +54,7 @@ public class DaoNSImpl implements DaoNS
 	public <T> T findById(Class<T> entityClass, String entityId)
 			throws Exception
 	{
-		return findById(entityClass, entityId);
+		return mongoTemplate.findById(entityId, entityClass);
 	}
 
 	@Override

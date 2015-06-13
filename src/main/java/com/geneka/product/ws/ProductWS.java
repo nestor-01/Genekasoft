@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.*;
 
+import com.geneka.common.util.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,6 +19,9 @@ import com.geneka.modelnosql.Image;
 import com.geneka.modelnosql.Product;
 import com.geneka.product.bs.ProductService;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
+import org.springframework.web.multipart.MultipartRequest;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
@@ -27,19 +30,13 @@ import javax.servlet.http.HttpSession;
 
 
 @RestController
+@EnableWebMvc
 @RequestMapping("/product")
 public class ProductWS {
 	
 	@Autowired
 	ProductService productService;
-	
-	@RequestMapping(value = "/test", method = RequestMethod.GET)
-	public @ResponseBody String test() throws Exception
-	{
-		List<Product> lstProducts = productService.getAllProducts();
-		return Tools.serializeToJSon(lstProducts);
-	}
-	
+
 	@RequestMapping(value = "/saveTest", method = RequestMethod.GET)
 	public @ResponseBody String saveProductTest() throws Exception
 	{
@@ -66,137 +63,125 @@ public class ProductWS {
 	}
 
 	@RequestMapping(value = "/getAll", method = RequestMethod.GET)
-	public @ResponseBody String getAllProducts() throws Exception
+	public @ResponseBody List<Product> getAllProducts() throws Exception
 	{
-		List<Product> lstProducts = productService.getAllProducts();
-		return Tools.serializeToJSon(lstProducts);
+		return productService.getAllProducts();
 	}
 
 	@RequestMapping(value = "/getById", method = RequestMethod.GET)
-	public @ResponseBody String getProductById(String  id) throws Exception
+	public @ResponseBody Product getProductById(@RequestParam("id") String  id) throws Exception
 	{
-		Product product = productService.getProductById(id);
-		return Tools.serializeToJSon(product);
+		return productService.getProductById(id);
 	}
 	
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
-	public @ResponseBody String saveProduct(@RequestBody String paramsNewProduct) throws Exception
+	public @ResponseBody Response saveProduct(@RequestBody Product product)
 	{
-		Map<String, Object> attributesDef = new DefaultContextImpl();
-		try
-		{
-			HashMap attributes = Tools.deserializeFromJSon(paramsNewProduct, HashMap.class);
-			attributesDef.putAll(attributes);
-			Product product = new Product();
-			product.setDescription((String) attributesDef.get("description"));
-			product.setName((String) attributesDef.get("name"));
-			product.setCode((String) attributesDef.get("code"));
-			product.setActive((Boolean) attributesDef.get("active"));
-			List<Map<String, Object>> lstCategories = (List) attributesDef.get("categories");
-			if(lstCategories != null)
-			{
-				List<Category> categories = new ArrayList<>();
-				for (Map<String, Object> categoryMap : lstCategories)
-				{
-					Category category = new Category();
-					category.setId((Integer) categoryMap.get("id"));
-					category.setDescription((String) categoryMap.get("description"));
-					category.setName((String) categoryMap.get("name"));
-					category.setParentsId((Integer) categoryMap.get("parentsId"));
-					category.setValue((Integer) categoryMap.get("value"));
-					categories.add(category);
-				}
-				product.setCategories(categories);
-			}
-			List<Map<String, Object>> lstImages = (List)attributesDef.get("images");
-			if(lstImages != null)
-			{
-				List<Image> images = new ArrayList<>();
-				for (Map<String, Object> imageMap : lstImages)
-				{
-					Image image = new Image();
-					image.setId((Integer) imageMap.get("id"));
-					image.setName((String) imageMap.get("name"));
-					image.setDescription((String) imageMap.get("description"));
-					image.setThumbnail((String) imageMap.get("thumbnail"));
-					image.setFile((String) imageMap.get("file"));
-					images.add(image);
-				}
-				product.setImages(images);
-			}
-			productService.saveProduct(product);
-		}
-		catch (Exception e)
-		{
-			return e.getCause().toString();
-		}
-		return "ok";
+        Response response = new Response();
+
+        try
+        {
+            productService.saveProduct(product);
+
+            return response.setStatus(Response.OK);
+        }
+        catch (Exception e)
+        {
+            return response
+                    .setStatus(Response.EXCEPTION)
+                    .setMessage(e.getMessage());
+        }
 	}
 
 	@RequestMapping(value = "/uploadImages", method = RequestMethod.POST)
-	public @ResponseBody String openApp(HttpServletRequest request, HttpServletResponse response, @RequestParam("productName") String productName, @RequestParam("file") MultipartFile image)
+	public @ResponseBody Response uploadImages(HttpServletResponse _response, @RequestParam("productName") String productName, MultipartHttpServletRequest request)//HttpServletRequest request, @RequestParam("productName") String productName, @RequestParam("file") MultipartRequest multipartRequest)
 	{
-		if(!image.isEmpty())
+        _response.setHeader("Access-Control-Allow-Headers", "Origin, Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Cache-Control");
+
+        Response response = new Response();
+        Map<String, MultipartFile> fileMap = request.getFileMap();
+        Map<String, String> dataFiles = new HashMap<>();
+
+        for (MultipartFile image : fileMap.values())
         {
-            String name = image.getOriginalFilename();
-
-            HttpSession session = request.getSession();
-            ServletContext sc = session.getServletContext();
-            String path = sc.getRealPath("/") + "build\\img\\products\\" + productName + "\\";
-
-            try
+            if(!image.isEmpty())
             {
-                File pathObj = new File(path);
-                pathObj.mkdirs();
-                if(pathObj.exists())
-                {
-                    byte[] bytes = image.getBytes();
-                    BufferedOutputStream stream =
-                            new BufferedOutputStream(new FileOutputStream(new File(path + name)));
-                    stream.write(bytes);
-                    stream.close();
-                    return "You successfully uploaded " + name + "!";
-                }
+                String name = image.getOriginalFilename();
 
-                else
+                HttpSession session = request.getSession();
+                ServletContext sc = session.getServletContext();
+                String relativePath = "build\\img\\products\\" + productName + "\\";
+                String path = sc.getRealPath("/") + "build\\img\\products\\" + productName + "\\";
+
+                try
                 {
-                    return "bad folder creation";
+                    File pathObj = new File(path);
+                    pathObj.mkdirs();
+                    if(pathObj.exists())
+                    {
+                        byte[] bytes = image.getBytes();
+                        BufferedOutputStream stream =
+                                new BufferedOutputStream(new FileOutputStream(new File(path + name)));
+                        stream.write(bytes);
+                        stream.close();
+
+                        response.setStatus(Response.OK);
+                        dataFiles.put(name, relativePath.replaceAll("\\\\", "/") + name);
+                    }
+
+                    else
+                    {
+                        response
+                            .setStatus(Response.ERROR)
+                            .setMessage("Error creando directorios");
+                    }
+                }
+                catch(Exception e)
+                {
+                    response
+                        .setStatus(Response.EXCEPTION)
+                        .setMessage(e.getMessage());
                 }
             }
-            catch(Exception e)
+
+            else
             {
-                return "You failed to upload " + name + " => " + e.getMessage();
+                response
+                    .setStatus(Response.ERROR)
+                    .setMessage("Falló la carga del archivo");
             }
         }
 
-        else
-        {
-            return "You failed to upload because the file was empty.";
-        }
+
+        response.addData("paths", dataFiles);
+        return response;
 	}
-	
-	/*@RequestMapping(value = "/saveProductImages", method = RequestMethod.POST)
-	public @ResponseBody String saveProductImages(@RequestBody String paramsCategories) throws Exception
-	{
-		Map<String, Object> attributesDef = new DefaultContextImpl();
-		try
-		{
-			List<Category> categories = new ArrayList<>();
-			List listCategory = Tools.deserializeFromJSon(paramsCategories, List.class);
-			for(Object c : listCategory)
-			{
-				Category category = (Category) c;
-				categories.add(category);
-			}
-			//productService.addProduct(product);
-		}
-		catch (Exception e)
-		{
-			return e.getCause().toString();
-		}
-		return "ok";
-	}*/
-	
-	
 
+    @RequestMapping(value = "/deleteProduct", method = RequestMethod.POST)
+    public @ResponseBody Response deleteProduct(@RequestParam("productId") String productId)
+    {
+        Response response = new Response();
+
+        try
+        {
+            if(productService.deleteProduct(productId))
+            {
+                return response.setStatus(Response.OK);
+            }
+
+            else
+            {
+                return response
+                        .setStatus(Response.ERROR)
+                        .setMessage("Error al intentar borrar el producto");
+            }
+
+        }
+        catch (Exception e)
+        {
+            return response
+                    .setStatus(Response.EXCEPTION)
+                    .setMessage(e.getMessage());
+        }
+    }
 }

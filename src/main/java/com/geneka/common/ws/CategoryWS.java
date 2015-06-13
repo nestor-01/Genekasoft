@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import java.util.List;
 
@@ -16,6 +17,7 @@ import java.util.List;
  */
 
 @RestController
+@EnableWebMvc
 @RequestMapping("/category")
 public class CategoryWS {
 
@@ -23,10 +25,8 @@ public class CategoryWS {
     CategoryService categoryService;
 
     @RequestMapping(value = "/getAllCategories", method = RequestMethod.GET)
-    public @ResponseBody
-    String getAllCategories() throws Exception
+    public @ResponseBody List<Category> getAllCategories() throws Exception
     {
-        List<Category> lstCategory = categoryService.getAllCategories();
-        return Tools.serializeToJSon(lstCategory);
+        return categoryService.getAllCategories();
     }
 }
