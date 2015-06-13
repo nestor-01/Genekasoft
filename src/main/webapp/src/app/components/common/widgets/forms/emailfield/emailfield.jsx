@@ -26,7 +26,7 @@ var EmailField = React.createClass({
     render: function()
     {
         return (
-            <input type="email" name={this.props.id} id={this.props.id} className={"input-field form-control " + this.state.style} placeholder={this.props.placeholder} />
+            <input type="email" name={this.props.id} id={this.props.id} className={"input-field form-control " + this.state.style} placeholder={this.props.placeholder} style={this.props.style} />
         );
     },
 

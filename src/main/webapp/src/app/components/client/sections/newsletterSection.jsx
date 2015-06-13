@@ -46,14 +46,14 @@ var Newsletter = React.createClass({
                             <div className="col-md-8 col-md-offset-2">
 
                                 {/* Heading */}
-                                <div className="heading center inverted">
+                                <div className="heading center">
                                     <h2>MANTENTE AL DÍA</h2>
                                     <p className="subheadline">Recibe notificaciones de nuestras promociones directamente en tu correo electrónico.</p>
                                 </div>
 
                                 {/* Subscribe Form */}
                                 <Form ref="newsletterForm" nomethod={true}>
-                                    <EmailField ref="newsletterMail" placeholder="Tu correo electrónico" />
+                                    <EmailField style={{height: '55px'}} ref="newsletterMail" placeholder="Tu correo electrónico" />
                                     <Label ref="subscribeMessage" />
                                     <Submit id="subscribeSubmit" label="Send" />
                                 </Form>
