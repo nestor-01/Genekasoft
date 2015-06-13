@@ -24354,7 +24354,7 @@ module.exports = ProductCRUDStyles;
 var React = require('react');
 var ProductCRUDStyles = require('../productCRUDStyles.jsx');
 
-var TreeCategories = require('./treeCategories/treeCategories.jsx');
+var TreeCategories = require('./treeCategories/TreeCategories.jsx');
 var ValuedCategories = require('./valuedCategories/valuedCategories.jsx');
 
 var ProductCategoriesForm = React.createClass({displayName: "ProductCategoriesForm",
