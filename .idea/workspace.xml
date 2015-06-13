@@ -7,7 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02f66e1a-9e80-41b9-bce9-53ab81921636" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/build/app.js" afterPath="$PROJECT_DIR$/src/main/webapp/build/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Geneka.iws" />
@@ -1934,7 +1933,7 @@
       <workItem from="1433125361230" duration="1790000" />
       <workItem from="1433213441516" duration="1552000" />
       <workItem from="1433293963730" duration="2927000" />
-      <workItem from="1434162296659" duration="1459000" />
+      <workItem from="1434162296659" duration="1471000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1431480952304</created>
@@ -1984,11 +1983,17 @@
       <option name="project" value="LOCAL" />
       <updated>1434163644435</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixing datepicker">
+      <created>1434163780856</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1434163780856</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47512000" />
+    <option name="totallyTimeSpent" value="47524000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2053,7 +2058,8 @@
     <MESSAGE value="Merge branch 'testFix' of https://github.com/nestor-01/Genekasoft into testFix&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;&#9;src/main/webapp/src/app/components/admin/products/productsForm/productCategoriesForm/treeCategories/treeCategories.jsx&#10;" />
     <MESSAGE value="Demo" />
     <MESSAGE value="Demo v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Demo v1" />
+    <MESSAGE value="fixing datepicker" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing datepicker" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
