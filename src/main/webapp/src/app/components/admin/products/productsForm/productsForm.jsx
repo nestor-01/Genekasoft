@@ -38,27 +38,35 @@ var ProductsForm = React.createClass({
     if(productId) // It's an edition
     {
       $.get(Services.Products.getProduct(), {id: productId})
-        .done(function(productRaw) {
-          if(productRaw)
+        .done(function(product) {
+          if(product)
           {
-            var product = JSON.parse(productRaw);
-
+            // Transfer basic data
             this.refs.basicForm.setState({
-              data: {
-                id: product.id,
-                code: product.code,
-                name: product.name,
-                description: product.description,
-                active: product.active
-              },
+              code: product.code,
+              name: product.name,
+              description: product.description
+            });
 
-              imagesData: product.images,
-              categoriesData: product.categories
+            // Transfer images
+            var filePreviews = {};
+
+            product.images.forEach(function(image) {
+              filePreviews[image.name] = image;
+            });
+
+            this.refs.imagesForm.setState({
+              filePreviews: filePreviews
+            });
+
+            // Transfer categories
+            this.refs.categoriesForm.setState({
+
             });
           }
         }.bind(this))
         .fail(function(error) {
-          alert(JSON.stringify(error));
+          window.notify.info(Services.request[error.status]);
         });
     }
   },

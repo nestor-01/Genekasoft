@@ -143,7 +143,7 @@ var ValuedCategories = React.createClass({
       categoryValues: [],
       lastCategory: null,
       categoryElements: []
-    }); //
+    });
   }
 });
 

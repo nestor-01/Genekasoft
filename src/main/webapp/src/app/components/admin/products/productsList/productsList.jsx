@@ -15,9 +15,6 @@ var ProductsList = React.createClass({
   {
     this.getProducsList()
       .done(function(list) {
-
-        console.log("products", list);
-
         list.forEach(function(product) {
           this.state.productsList[product.id] = product;
         }.bind(this));
@@ -43,7 +40,7 @@ var ProductsList = React.createClass({
           <td>{product.name}</td>
           <td>{product.description}</td>
           <td style={{textAlign: 'center'}}>
-           <button className="btn btn-sm btn-primary" title="Editar" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"><i className="glyphicon glyphicon-pencil"></i></button>&nbsp;&nbsp;
+           <button onClick={this._onEdit} data-productid={product.id} className="btn btn-sm btn-primary" title="Editar"><i className="glyphicon glyphicon-pencil"></i></button>&nbsp;&nbsp;
            <button onClick={this._onDelete} data-productid={product.id} className="btn btn-sm btn-danger" title="Eliminar"><i className="glyphicon glyphicon-remove"></i></button>
           </td>
         </tr>
@@ -104,6 +101,16 @@ var ProductsList = React.createClass({
   {
     this.productIdToDelete = e.target.dataset.productid;
     this.refs.confirmDelete.open();
+  },
+
+  _onEdit(e)
+  {
+    var productIdToEdit = e.target.dataset.productid;
+
+    if(!productIdToEdit)
+      productIdToEdit = $(e.target).closest('button')[0].dataset.productid;
+
+    window.location = '#/admin/products/editProduct/' + productIdToEdit;
   },
 
   doDelete()

@@ -126,17 +126,17 @@ var ProductsImagesForm = React.createClass({
     this.myDropzone = new Dropzone('#messageToDragImgs', this.state.dropzoneProps);
 
     this.myDropzone.on("addedfile", function(file) {
-      $('#messageToDragImgs').hide();
+      //$('#messageToDragImgs').hide();
       //myDropzone.enqueueFile(file);
       //file.previewElement.querySelector(".start").onclick = function() { myDropzone.enqueueFile(file); };
     });
 
     this.myDropzone.on("removedfile", function(file) {
-      console.log(this.myDropzone.getQueuedFiles());
-      if(this.myDropzone.getQueuedFiles().length == 0)
+      //console.log(this.myDropzone.getQueuedFiles());
+      /*if(this.myDropzone.getQueuedFiles().length == 0)
       {
         $('#messageToDragImgs').show();
-      }
+      }*/
     }.bind(this));
 
     this.myDropzone.on("totaluploadprogress", function(progress) {
@@ -172,6 +172,19 @@ var ProductsImagesForm = React.createClass({
     document.querySelector("#picture-actions .cancel").onclick = function() {
       this.resetForm();
     }.bind(this);
+  },
+
+  componentDidUpdate()
+  {
+    if(Object.keys(this.state.filePreviews).length == 0)
+    {
+      $('#messageToDragImgs').show();
+    }
+
+    else
+    {
+      $('#messageToDragImgs').hide();
+    }
   },
 
   render()

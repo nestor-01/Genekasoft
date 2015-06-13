@@ -140,12 +140,14 @@ var TextField = React.createClass({
 
     getValue()
     {
-      return React.findDOMNode(this.refs.textfield).value;
+      return this.state.value;
     },
 
     setValue(value)
     {
-        React.findDOMNode(this.refs.textfield).value = value;
+        this.setState({
+            value: value
+        });
     }
 });
 

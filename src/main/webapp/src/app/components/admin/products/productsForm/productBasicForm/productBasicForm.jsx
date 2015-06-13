@@ -6,8 +6,17 @@ var ProductsBasicForm = React.createClass({
 
   getInitialState() {
     return {
-      data: {}
+      code: '',
+      name: '',
+      description: ''
     };
+  },
+
+  componentDidUpdate()
+  {
+    this.refs.code.setValue(this.state.code);
+    this.refs.name.setValue(this.state.name);
+    this.refs.desc.setValue(this.state.description);
   },
 
   componentDidMount()
@@ -32,9 +41,9 @@ var ProductsBasicForm = React.createClass({
         </div>
         <hr/>
         <Form ref="productBasicForm">
-          <TextField ref="code" id="code" label="Código" labelType="top" />
-          <TextField ref="name" id="name" label="Nombre" labelType="top" />
-          <TextField ref="desc" id="desc" label="Descripción" labelType="top" />
+          <TextField ref="code" id="code" label="Código" labelType="top" defaultValue={this.state.code} />
+          <TextField ref="name" id="name" label="Nombre" labelType="top" defaultValue={this.state.value} />
+          <TextField ref="desc" id="desc" label="Descripción" labelType="top" defaultValue={this.state.description} />
         </Form>
       </div>
     );
