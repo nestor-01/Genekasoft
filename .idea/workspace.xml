@@ -8,7 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02f66e1a-9e80-41b9-bce9-53ab81921636" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\Documents\Projects\Genekasoft\src\main\webapp\src\app\components\admin\products\productsForm\productCategoriesForm\treeCategories\treeCategories.jsx" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Geneka.iws" />
@@ -1384,7 +1383,7 @@
       <workItem from="1432606864505" duration="95000" />
       <workItem from="1432606998398" duration="5503000" />
       <workItem from="1433013667979" duration="11561000" />
-      <workItem from="1434161927745" duration="237000" />
+      <workItem from="1434161927745" duration="249000" />
     </task>
     <task id="LOCAL-00001" summary="changes">
       <created>1431480952304</created>
@@ -1422,11 +1421,17 @@
       <option name="project" value="LOCAL" />
       <updated>1434162136548</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="control commit 2">
+      <created>1434162185223</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1434162185223</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54979000" />
+    <option name="totallyTimeSpent" value="54991000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1488,7 +1493,8 @@
     <MESSAGE value="Links 2" />
     <MESSAGE value="Links 3" />
     <MESSAGE value="control commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="control commit" />
+    <MESSAGE value="control commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="control commit 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
