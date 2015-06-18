@@ -34,26 +34,6 @@ var TopBar = React.createClass({
 
               <TopMenu items={[
                 {
-                  url: "#/",
-                  text: "Inicio",
-                  onClick: function(e)
-                  {
-                    //this.props.onSelectMenu(e, this);
-                  }.bind(this)
-                },
-                {
-                  section: "1",
-                  text: "Galería"
-                },
-                {
-                  section: "2",
-                  text: "Suscripciones"
-                },
-                {
-                  section: "3",
-                  text: "Contacto"
-                },
-                {
                   text: "Ingresar",
                   url: "#/signin",
                   hightlighted: true,

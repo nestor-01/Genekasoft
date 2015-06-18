@@ -34,15 +34,18 @@ var Main = React.createClass(
       if(this.refs.particlesEffect) {
         this.refs.particlesEffect.pause();
 
-        var height = '800px';
+        //var height = '800px';
+        var height = '100vh';
 
         if (item === "signin") {
           this.refs.loader.hide();
-          height = $(window).height() + 'px';
+          //height = $(window).height() + 'px';
+          height = '100vh';
         }
         else if(item === "app")
         {
-          height = '800px';
+          //height = '800px';
+          height = '100vh';
         }
         else {
           height = '150px';
