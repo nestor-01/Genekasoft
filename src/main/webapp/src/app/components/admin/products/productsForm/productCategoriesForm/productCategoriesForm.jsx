@@ -14,57 +14,66 @@ var ProductCategoriesForm = React.createClass({
     };
   },
 
-  _createTreeCategoryData()
+  _createTreeCategoryData(options)
   {
     $.get(Services.Products.getCategories())
       .done(function (categoriesList) {
-        var createTree = function (list) {
-          var idToNodeMap = {"root": {"children": []}};
-          var root = idToNodeMap.root;
-          var parentNode;
 
-          for (var i = 0; i < list.length; i++) {
-            var category = list[i];
-            category.children = [];
-            idToNodeMap[category.id] = category;
+        // Define what categories should be checked
+        options.success(categoriesList).done(function() {
+          var createTree = function (list) {
+            var idToNodeMap = {"root": {"children": []}};
+            var root = idToNodeMap.root;
+            var parentNode;
 
-            parentNode = idToNodeMap[category.parentsId || "root"];
-            parentNode.children.push(category);
-          }
+            for (var i = 0; i < list.length; i++) {
+              var category = list[i];
+              category.children = [];
+              idToNodeMap[category.id] = category;
 
-          return root;
-        };
+              parentNode = idToNodeMap[category.parentsId || "root"];
+              parentNode.children.push(category);
+            }
 
-        var createValuedArray = function(list) {
-          var obj = {};
+            return root;
+          };
 
-          list.forEach(function(category) {
-            obj[category.name] = category
+          var createValuedArray = function(list) {
+            var obj = {};
+
+            list.forEach(function(category) {
+              obj[category.name] = category
+            });
+
+            return obj;
+          };
+
+          this.treeCategories = createTree(categoriesList);
+          this.valuedCategories = createValuedArray(categoriesList);
+
+          this.refs.treeCategories.setState({
+            tree: this.treeCategories
           });
 
-          return obj;
-        };
-
-        this.treeCategories = createTree(categoriesList);
-        this.valuedCategories = createValuedArray(categoriesList);
-
-        this.refs.treeCategories.setState({
-          tree: this.treeCategories
-        });
-
-        this.refs.valuedCategories.setState({
-          categories: this.valuedCategories
-        });
+          this.refs.valuedCategories.setState({
+            categories: this.valuedCategories
+          });
+        }.bind(this));
 
       }.bind(this))
       .fail(function (error) {
-
+        options.fail();
       });
+  },
+
+  init(options)
+  {
+    this._createTreeCategoryData(options);
   },
 
   componentDidMount()
   {
-    this._createTreeCategoryData();
+
   },
 
   render()

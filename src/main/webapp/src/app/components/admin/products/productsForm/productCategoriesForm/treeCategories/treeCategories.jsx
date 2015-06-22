@@ -50,7 +50,7 @@ var TreeCategories = React.createClass({
       return React.DOM.ul(null, list.map(function(category)
       {
         var withoutChildren = category.children.length == 0;
-        var checkbox = <CheckBox ref={withoutChildren ? category.id : 'parent_'+category.id} key={category.id} label={category.name} />;
+        var checkbox = <CheckBox ref={withoutChildren ? category.id : 'parent_'+category.id} key={category.id} label={category.name} checked={category.checked} />;
 
         if(withoutChildren) this.checkboxes.push({
           id: category.id,

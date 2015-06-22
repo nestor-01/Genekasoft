@@ -18,6 +18,14 @@ var ValuedCategories = React.createClass({
   {
     if(!this.configured)
     {
+      // Load previous categories with values
+      for(var categoryName in this.state.categories)
+      {
+        this.setState({
+          lastCategory: this.state.categories[categoryName]
+        });
+      }
+      
       var typeahead = $(React.findDOMNode(this.refs.typeahead));
 
       typeahead.typeahead({
@@ -71,7 +79,8 @@ var ValuedCategories = React.createClass({
 
   render()
   {
-    if(this.state.lastCategory) {
+    if(this.state.lastCategory)
+    {
       var category = this.state.lastCategory;
       var value = category.value;
 

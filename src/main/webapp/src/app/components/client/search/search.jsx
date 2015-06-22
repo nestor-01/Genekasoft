@@ -135,27 +135,6 @@ var Search = React.createClass({
     									<a href="#">View more</a>
     								</figcaption>			
     							</figure>
-    							<figure className="effect-honey">
-    								<img src="img/products/7.jpg" alt="img05"/>
-    								<figcaption>
-    									<h2>Dreamy <span>Honey</span> <i>Now</i></h2>
-    									<a href="#">View more</a>
-    								</figcaption>			
-    							</figure>
-    							<figure className="effect-honey">
-    								<img src="img/products/8.jpg" alt="img05"/>
-    								<figcaption>
-    									<h2>Dreamy <span>Honey</span> <i>Now</i></h2>
-    									<a href="#">View more</a>
-    								</figcaption>			
-    							</figure>
-    							<figure className="effect-honey">
-    								<img src="img/products/9.jpg" alt="img05"/>
-    								<figcaption>
-    									<h2>Dreamy <span>Honey</span> <i>Now</i></h2>
-    									<a href="#">View more</a>
-    								</figcaption>			
-    							</figure>
     						</div>
     					
     				</div>

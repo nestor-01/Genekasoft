@@ -122,6 +122,11 @@ var CheckBox = React.createClass({
 
     // CSS before injection
     CheckBoxStyles.labelStyle_before();
+
+    if(this.props.checked)
+    {
+      this.setValue(true);
+    }
   },
 
   render()
@@ -141,7 +146,15 @@ var CheckBox = React.createClass({
 
   setValue(value)
   {
-    this._reset(React.findDOMNode(this.refs.checkbox));
+    if(value)
+    {
+      this._draw(React.findDOMNode(this.refs.checkbox), 'checkmark');
+    }
+
+    else
+    {
+      this._reset(React.findDOMNode(this.refs.checkbox));
+    }
   }
 });
 

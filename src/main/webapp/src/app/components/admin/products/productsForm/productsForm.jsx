@@ -33,42 +33,70 @@ var ProductsForm = React.createClass({
     var { router } = this.context;
     var productId = router.getCurrentParams().productId;
 
-    console.log(productId);
+    this.refs.categoriesForm.init({
+      success: function(categoriesList)
+      {
+        if(productId) // It's an edition
+        {
+          return $.get(Services.Products.getProduct(), {id: productId})
+            .done(function(product) {
+              if(product)
+              {
+                // Transfer basic data
+                this.refs.basicForm.setState({
+                  code: product.code,
+                  name: product.name,
+                  description: product.description
+                });
 
-    if(productId) // It's an edition
-    {
-      $.get(Services.Products.getProduct(), {id: productId})
-        .done(function(product) {
-          if(product)
-          {
-            // Transfer basic data
-            this.refs.basicForm.setState({
-              code: product.code,
-              name: product.name,
-              description: product.description
+                // Transfer images
+                var filePreviews = {};
+
+                product.images.forEach(function(image) {
+                  filePreviews[image.name] = image;
+                });
+
+                this.refs.imagesForm.setState({
+                  filePreviews: filePreviews
+                });
+
+                // Modify the categories's state
+                var shouldMarked = function(categoryFromList)
+                {
+                  var response = false;
+
+                  product.categories.every(function(categoryFromProduct) {
+                    response = categoryFromList.id === categoryFromProduct.id;
+
+                    return response ? false : true;
+                  });
+
+                  return response;
+                };
+
+                categoriesList.forEach(function(category) {
+                  if(shouldMarked(category))
+                  {
+                    category["checked"] = true;
+                  }
+                });
+              }
+            }.bind(this))
+            .fail(function(error) {
+              window.notify.info(Services.request[error.status]);
             });
+        }
 
-            // Transfer images
-            var filePreviews = {};
+        else
+        {
+          var promise = $.Deferred();
+          promise.resolve();
 
-            product.images.forEach(function(image) {
-              filePreviews[image.name] = image;
-            });
-
-            this.refs.imagesForm.setState({
-              filePreviews: filePreviews
-            });
-
-            // Transfer categories
-            this.refs.categoriesForm.setState({
-
-            });
-          }
-        }.bind(this))
-        .fail(function(error) {
-          window.notify.info(Services.request[error.status]);
-        });
-    }
+          return promise;
+        }
+      }.bind(this),
+      fail: function(){}
+    });
   },
 
   componentWillUnmount()
